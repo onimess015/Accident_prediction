@@ -1,0 +1,865 @@
+"id","year","state_name","state_code","mode_of_transport","injured","died"
+0,"2021","Andaman And Nicobar Islands","35","Animal Drawn Vehicle",0.0,0.0
+1,"2021","Andaman And Nicobar Islands","35","Bicycle",2.0,0.0
+2,"2021","Andaman And Nicobar Islands","35","Bus",1.0,1.0
+3,"2021","Andaman And Nicobar Islands","35","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+4,"2021","Andaman And Nicobar Islands","35","Other Motor Vehicles",0.0,0.0
+5,"2021","Andaman And Nicobar Islands","35","Others",0.0,0.0
+6,"2021","Andaman And Nicobar Islands","35","Pedestrian",18.0,9.0
+7,"2021","Andaman And Nicobar Islands","35","Suv / Car / Jeep / Etc.",17.0,1.0
+8,"2021","Andaman And Nicobar Islands","35","Three Wheeler/Auto Rickshaw",6.0,1.0
+9,"2021","Andaman And Nicobar Islands","35","Tractor",0.0,0.0
+10,"2021","Andaman And Nicobar Islands","35","Truck/Lorry/Mini Truck",4.0,0.0
+11,"2021","Andaman And Nicobar Islands","35","Two Wheeler",49.0,10.0
+12,"2021","Andhra Pradesh","28","Animal Drawn Vehicle",20.0,4.0
+13,"2021","Andhra Pradesh","28","Bicycle",248.0,146.0
+14,"2021","Andhra Pradesh","28","Bus",559.0,146.0
+15,"2021","Andhra Pradesh","28","Hand Drawn Vehicle/ Cycle Rickshaw",36.0,4.0
+16,"2021","Andhra Pradesh","28","Other Motor Vehicles",106.0,93.0
+17,"2021","Andhra Pradesh","28","Others",521.0,244.0
+18,"2021","Andhra Pradesh","28","Pedestrian",2355.0,1346.0
+19,"2021","Andhra Pradesh","28","Suv / Car / Jeep / Etc.",2448.0,652.0
+20,"2021","Andhra Pradesh","28","Three Wheeler/Auto Rickshaw",2772.0,644.0
+21,"2021","Andhra Pradesh","28","Tractor",318.0,218.0
+22,"2021","Andhra Pradesh","28","Truck/Lorry/Mini Truck",1308.0,523.0
+23,"2021","Andhra Pradesh","28","Two Wheeler",10349.0,4166.0
+24,"2021","Arunachal Pradesh","12","Animal Drawn Vehicle",0.0,0.0
+25,"2021","Arunachal Pradesh","12","Bicycle",3.0,1.0
+26,"2021","Arunachal Pradesh","12","Bus",13.0,3.0
+27,"2021","Arunachal Pradesh","12","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+28,"2021","Arunachal Pradesh","12","Other Motor Vehicles",4.0,3.0
+29,"2021","Arunachal Pradesh","12","Others",6.0,10.0
+30,"2021","Arunachal Pradesh","12","Pedestrian",6.0,2.0
+31,"2021","Arunachal Pradesh","12","Suv / Car / Jeep / Etc.",101.0,77.0
+32,"2021","Arunachal Pradesh","12","Three Wheeler/Auto Rickshaw",6.0,8.0
+33,"2021","Arunachal Pradesh","12","Tractor",0.0,3.0
+34,"2021","Arunachal Pradesh","12","Truck/Lorry/Mini Truck",46.0,33.0
+35,"2021","Arunachal Pradesh","12","Two Wheeler",81.0,33.0
+36,"2021","Assam","18","Animal Drawn Vehicle",2.0,1.0
+37,"2021","Assam","18","Bicycle",223.0,177.0
+38,"2021","Assam","18","Bus",454.0,144.0
+39,"2021","Assam","18","Hand Drawn Vehicle/ Cycle Rickshaw",52.0,3.0
+40,"2021","Assam","18","Other Motor Vehicles",95.0,56.0
+41,"2021","Assam","18","Others",0.0,2.0
+42,"2021","Assam","18","Pedestrian",516.0,350.0
+43,"2021","Assam","18","Suv / Car / Jeep / Etc.",1145.0,569.0
+44,"2021","Assam","18","Three Wheeler/Auto Rickshaw",516.0,127.0
+45,"2021","Assam","18","Tractor",37.0,30.0
+46,"2021","Assam","18","Truck/Lorry/Mini Truck",513.0,256.0
+47,"2021","Assam","18","Two Wheeler",1867.0,1299.0
+48,"2021","Bihar","10","Animal Drawn Vehicle",0.0,0.0
+49,"2021","Bihar","10","Bicycle",570.0,495.0
+50,"2021","Bihar","10","Bus",163.0,71.0
+51,"2021","Bihar","10","Hand Drawn Vehicle/ Cycle Rickshaw",3.0,10.0
+52,"2021","Bihar","10","Other Motor Vehicles",146.0,88.0
+53,"2021","Bihar","10","Others",564.0,443.0
+54,"2021","Bihar","10","Pedestrian",1943.0,2796.0
+55,"2021","Bihar","10","Suv / Car / Jeep / Etc.",770.0,504.0
+56,"2021","Bihar","10","Three Wheeler/Auto Rickshaw",821.0,405.0
+57,"2021","Bihar","10","Tractor",78.0,65.0
+58,"2021","Bihar","10","Truck/Lorry/Mini Truck",139.0,126.0
+59,"2021","Bihar","10","Two Wheeler",2749.0,2657.0
+60,"2021","Chandigarh","4","Animal Drawn Vehicle",0.0,0.0
+61,"2021","Chandigarh","4","Bicycle",14.0,17.0
+62,"2021","Chandigarh","4","Bus",0.0,1.0
+63,"2021","Chandigarh","4","Hand Drawn Vehicle/ Cycle Rickshaw",4.0,1.0
+64,"2021","Chandigarh","4","Other Motor Vehicles",0.0,0.0
+65,"2021","Chandigarh","4","Others",0.0,0.0
+66,"2021","Chandigarh","4","Pedestrian",19.0,7.0
+67,"2021","Chandigarh","4","Suv / Car / Jeep / Etc.",26.0,6.0
+68,"2021","Chandigarh","4","Three Wheeler/Auto Rickshaw",27.0,17.0
+69,"2021","Chandigarh","4","Tractor",0.0,0.0
+70,"2021","Chandigarh","4","Truck/Lorry/Mini Truck",6.0,0.0
+71,"2021","Chandigarh","4","Two Wheeler",76.0,47.0
+72,"2021","Chhattisgarh","22","Animal Drawn Vehicle",10.0,4.0
+73,"2021","Chhattisgarh","22","Bicycle",325.0,215.0
+74,"2021","Chhattisgarh","22","Bus",155.0,37.0
+75,"2021","Chhattisgarh","22","Hand Drawn Vehicle/ Cycle Rickshaw",7.0,5.0
+76,"2021","Chhattisgarh","22","Other Motor Vehicles",498.0,271.0
+77,"2021","Chhattisgarh","22","Others",1602.0,585.0
+78,"2021","Chhattisgarh","22","Pedestrian",900.0,430.0
+79,"2021","Chhattisgarh","22","Suv / Car / Jeep / Etc.",1491.0,361.0
+80,"2021","Chhattisgarh","22","Three Wheeler/Auto Rickshaw",117.0,205.0
+81,"2021","Chhattisgarh","22","Tractor",192.0,175.0
+82,"2021","Chhattisgarh","22","Truck/Lorry/Mini Truck",516.0,330.0
+83,"2021","Chhattisgarh","22","Two Wheeler",4869.0,2795.0
+84,"2021","Delhi","7","Animal Drawn Vehicle",4.0,0.0
+85,"2021","Delhi","7","Bicycle",95.0,41.0
+86,"2021","Delhi","7","Bus",98.0,30.0
+87,"2021","Delhi","7","Hand Drawn Vehicle/ Cycle Rickshaw",24.0,0.0
+88,"2021","Delhi","7","Other Motor Vehicles",123.0,56.0
+89,"2021","Delhi","7","Others",252.0,98.0
+90,"2021","Delhi","7","Pedestrian",277.0,84.0
+91,"2021","Delhi","7","Suv / Car / Jeep / Etc.",1105.0,278.0
+92,"2021","Delhi","7","Three Wheeler/Auto Rickshaw",252.0,121.0
+93,"2021","Delhi","7","Tractor",17.0,7.0
+94,"2021","Delhi","7","Truck/Lorry/Mini Truck",171.0,71.0
+95,"2021","Delhi","7","Two Wheeler",1571.0,453.0
+96,"2021","Goa","30","Animal Drawn Vehicle",0.0,0.0
+97,"2021","Goa","30","Bicycle",11.0,6.0
+98,"2021","Goa","30","Bus",30.0,0.0
+99,"2021","Goa","30","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+100,"2021","Goa","30","Other Motor Vehicles",0.0,0.0
+101,"2021","Goa","30","Others",0.0,0.0
+102,"2021","Goa","30","Pedestrian",53.0,34.0
+103,"2021","Goa","30","Suv / Car / Jeep / Etc.",164.0,29.0
+104,"2021","Goa","30","Three Wheeler/Auto Rickshaw",3.0,0.0
+105,"2021","Goa","30","Tractor",0.0,0.0
+106,"2021","Goa","30","Truck/Lorry/Mini Truck",19.0,6.0
+107,"2021","Goa","30","Two Wheeler",576.0,151.0
+108,"2021","Gujarat","24","Animal Drawn Vehicle",12.0,14.0
+109,"2021","Gujarat","24","Bicycle",200.0,117.0
+110,"2021","Gujarat","24","Bus",463.0,111.0
+111,"2021","Gujarat","24","Hand Drawn Vehicle/ Cycle Rickshaw",3.0,2.0
+112,"2021","Gujarat","24","Other Motor Vehicles",81.0,64.0
+113,"2021","Gujarat","24","Others",0.0,5.0
+114,"2021","Gujarat","24","Pedestrian",1431.0,1354.0
+115,"2021","Gujarat","24","Suv / Car / Jeep / Etc.",2844.0,1113.0
+116,"2021","Gujarat","24","Three Wheeler/Auto Rickshaw",1413.0,522.0
+117,"2021","Gujarat","24","Tractor",118.0,86.0
+118,"2021","Gujarat","24","Truck/Lorry/Mini Truck",902.0,534.0
+119,"2021","Gujarat","24","Two Wheeler",6255.0,3535.0
+120,"2021","Haryana","6","Animal Drawn Vehicle",8.0,0.0
+121,"2021","Haryana","6","Bicycle",111.0,91.0
+122,"2021","Haryana","6","Bus",160.0,65.0
+123,"2021","Haryana","6","Hand Drawn Vehicle/ Cycle Rickshaw",17.0,10.0
+124,"2021","Haryana","6","Other Motor Vehicles",827.0,376.0
+125,"2021","Haryana","6","Others",0.0,0.0
+126,"2021","Haryana","6","Pedestrian",1504.0,1107.0
+127,"2021","Haryana","6","Suv / Car / Jeep / Etc.",1259.0,700.0
+128,"2021","Haryana","6","Three Wheeler/Auto Rickshaw",249.0,126.0
+129,"2021","Haryana","6","Tractor",347.0,217.0
+130,"2021","Haryana","6","Truck/Lorry/Mini Truck",447.0,374.0
+131,"2021","Haryana","6","Two Wheeler",3043.0,1917.0
+132,"2021","Himachal Pradesh","2","Animal Drawn Vehicle",0.0,0.0
+133,"2021","Himachal Pradesh","2","Bicycle",6.0,2.0
+134,"2021","Himachal Pradesh","2","Bus",235.0,23.0
+135,"2021","Himachal Pradesh","2","Hand Drawn Vehicle/ Cycle Rickshaw",1.0,0.0
+136,"2021","Himachal Pradesh","2","Other Motor Vehicles",69.0,24.0
+137,"2021","Himachal Pradesh","2","Others",0.0,0.0
+138,"2021","Himachal Pradesh","2","Pedestrian",84.0,24.0
+139,"2021","Himachal Pradesh","2","Suv / Car / Jeep / Etc.",1667.0,536.0
+140,"2021","Himachal Pradesh","2","Three Wheeler/Auto Rickshaw",45.0,5.0
+141,"2021","Himachal Pradesh","2","Tractor",50.0,34.0
+142,"2021","Himachal Pradesh","2","Truck/Lorry/Mini Truck",222.0,123.0
+143,"2021","Himachal Pradesh","2","Two Wheeler",1066.0,261.0
+144,"2021","Jammu And Kashmir","1","Animal Drawn Vehicle",0.0,0.0
+145,"2021","Jammu And Kashmir","1","Bicycle",37.0,3.0
+146,"2021","Jammu And Kashmir","1","Bus",516.0,55.0
+147,"2021","Jammu And Kashmir","1","Hand Drawn Vehicle/ Cycle Rickshaw",9.0,0.0
+148,"2021","Jammu And Kashmir","1","Other Motor Vehicles",541.0,65.0
+149,"2021","Jammu And Kashmir","1","Others",33.0,22.0
+150,"2021","Jammu And Kashmir","1","Pedestrian",473.0,77.0
+151,"2021","Jammu And Kashmir","1","Suv / Car / Jeep / Etc.",2567.0,264.0
+152,"2021","Jammu And Kashmir","1","Three Wheeler/Auto Rickshaw",262.0,28.0
+153,"2021","Jammu And Kashmir","1","Tractor",64.0,22.0
+154,"2021","Jammu And Kashmir","1","Truck/Lorry/Mini Truck",398.0,73.0
+155,"2021","Jammu And Kashmir","1","Two Wheeler",1956.0,195.0
+156,"2021","Jharkhand","20","Animal Drawn Vehicle",7.0,19.0
+157,"2021","Jharkhand","20","Bicycle",36.0,121.0
+158,"2021","Jharkhand","20","Bus",63.0,76.0
+159,"2021","Jharkhand","20","Hand Drawn Vehicle/ Cycle Rickshaw",67.0,59.0
+160,"2021","Jharkhand","20","Other Motor Vehicles",69.0,36.0
+161,"2021","Jharkhand","20","Others",24.0,44.0
+162,"2021","Jharkhand","20","Pedestrian",228.0,273.0
+163,"2021","Jharkhand","20","Suv / Car / Jeep / Etc.",510.0,494.0
+164,"2021","Jharkhand","20","Three Wheeler/Auto Rickshaw",402.0,393.0
+165,"2021","Jharkhand","20","Tractor",51.0,64.0
+166,"2021","Jharkhand","20","Truck/Lorry/Mini Truck",199.0,335.0
+167,"2021","Jharkhand","20","Two Wheeler",1571.0,1599.0
+168,"2021","Karnataka","29","Animal Drawn Vehicle",29.0,5.0
+169,"2021","Karnataka","29","Bicycle",277.0,70.0
+170,"2021","Karnataka","29","Bus",1461.0,173.0
+171,"2021","Karnataka","29","Hand Drawn Vehicle/ Cycle Rickshaw",5.0,0.0
+172,"2021","Karnataka","29","Other Motor Vehicles",997.0,347.0
+173,"2021","Karnataka","29","Others",1428.0,373.0
+174,"2021","Karnataka","29","Pedestrian",4266.0,1631.0
+175,"2021","Karnataka","29","Suv / Car / Jeep / Etc.",7955.0,1311.0
+176,"2021","Karnataka","29","Three Wheeler/Auto Rickshaw",2378.0,334.0
+177,"2021","Karnataka","29","Tractor",314.0,157.0
+178,"2021","Karnataka","29","Truck/Lorry/Mini Truck",2238.0,616.0
+179,"2021","Karnataka","29","Two Wheeler",19406.0,5021.0
+180,"2021","Kerala","32","Animal Drawn Vehicle",1.0,5.0
+181,"2021","Kerala","32","Bicycle",730.0,84.0
+182,"2021","Kerala","32","Bus",870.0,79.0
+183,"2021","Kerala","32","Hand Drawn Vehicle/ Cycle Rickshaw",2.0,0.0
+184,"2021","Kerala","32","Other Motor Vehicles",782.0,82.0
+185,"2021","Kerala","32","Others",190.0,12.0
+186,"2021","Kerala","32","Pedestrian",4449.0,657.0
+187,"2021","Kerala","32","Suv / Car / Jeep / Etc.",5115.0,323.0
+188,"2021","Kerala","32","Three Wheeler/Auto Rickshaw",2555.0,188.0
+189,"2021","Kerala","32","Tractor",4.0,2.0
+190,"2021","Kerala","32","Truck/Lorry/Mini Truck",1001.0,186.0
+191,"2021","Kerala","32","Two Wheeler",20815.0,1811.0
+192,"2021","Ladakh","37","Animal Drawn Vehicle",0.0,0.0
+193,"2021","Ladakh","37","Bicycle",0.0,0.0
+194,"2021","Ladakh","37","Bus",60.0,7.0
+195,"2021","Ladakh","37","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+196,"2021","Ladakh","37","Other Motor Vehicles",20.0,1.0
+197,"2021","Ladakh","37","Others",0.0,0.0
+198,"2021","Ladakh","37","Pedestrian",0.0,0.0
+199,"2021","Ladakh","37","Suv / Car / Jeep / Etc.",126.0,29.0
+200,"2021","Ladakh","37","Three Wheeler/Auto Rickshaw",0.0,0.0
+201,"2021","Ladakh","37","Tractor",0.0,0.0
+202,"2021","Ladakh","37","Truck/Lorry/Mini Truck",78.0,16.0
+203,"2021","Ladakh","37","Two Wheeler",7.0,3.0
+204,"2021","Lakshadweep","31","Animal Drawn Vehicle",0.0,0.0
+205,"2021","Lakshadweep","31","Bicycle",0.0,0.0
+206,"2021","Lakshadweep","31","Bus",0.0,0.0
+207,"2021","Lakshadweep","31","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+208,"2021","Lakshadweep","31","Other Motor Vehicles",0.0,0.0
+209,"2021","Lakshadweep","31","Others",0.0,0.0
+210,"2021","Lakshadweep","31","Pedestrian",0.0,0.0
+211,"2021","Lakshadweep","31","Suv / Car / Jeep / Etc.",0.0,0.0
+212,"2021","Lakshadweep","31","Three Wheeler/Auto Rickshaw",0.0,0.0
+213,"2021","Lakshadweep","31","Tractor",0.0,0.0
+214,"2021","Lakshadweep","31","Truck/Lorry/Mini Truck",0.0,1.0
+215,"2021","Lakshadweep","31","Two Wheeler",6.0,0.0
+216,"2021","Madhya Pradesh","23","Animal Drawn Vehicle",29.0,9.0
+217,"2021","Madhya Pradesh","23","Bicycle",360.0,61.0
+218,"2021","Madhya Pradesh","23","Bus",1872.0,383.0
+219,"2021","Madhya Pradesh","23","Hand Drawn Vehicle/ Cycle Rickshaw",24.0,5.0
+220,"2021","Madhya Pradesh","23","Other Motor Vehicles",1902.0,462.0
+221,"2021","Madhya Pradesh","23","Others",744.0,286.0
+222,"2021","Madhya Pradesh","23","Pedestrian",4360.0,1239.0
+223,"2021","Madhya Pradesh","23","Suv / Car / Jeep / Etc.",6621.0,1934.0
+224,"2021","Madhya Pradesh","23","Three Wheeler/Auto Rickshaw",1900.0,452.0
+225,"2021","Madhya Pradesh","23","Tractor",1204.0,440.0
+226,"2021","Madhya Pradesh","23","Truck/Lorry/Mini Truck",3243.0,1150.0
+227,"2021","Madhya Pradesh","23","Two Wheeler",24858.0,6059.0
+228,"2021","Maharashtra","27","Animal Drawn Vehicle",31.0,46.0
+229,"2021","Maharashtra","27","Bicycle",191.0,143.0
+230,"2021","Maharashtra","27","Bus",802.0,256.0
+231,"2021","Maharashtra","27","Hand Drawn Vehicle/ Cycle Rickshaw",2.0,3.0
+232,"2021","Maharashtra","27","Other Motor Vehicles",287.0,339.0
+233,"2021","Maharashtra","27","Others",0.0,0.0
+234,"2021","Maharashtra","27","Pedestrian",1308.0,1383.0
+235,"2021","Maharashtra","27","Suv / Car / Jeep / Etc.",4168.0,2104.0
+236,"2021","Maharashtra","27","Three Wheeler/Auto Rickshaw",950.0,453.0
+237,"2021","Maharashtra","27","Tractor",338.0,383.0
+238,"2021","Maharashtra","27","Truck/Lorry/Mini Truck",2373.0,1646.0
+239,"2021","Maharashtra","27","Two Wheeler",9226.0,7155.0
+240,"2021","Manipur","14","Animal Drawn Vehicle",0.0,0.0
+241,"2021","Manipur","14","Bicycle",13.0,7.0
+242,"2021","Manipur","14","Bus",15.0,3.0
+243,"2021","Manipur","14","Hand Drawn Vehicle/ Cycle Rickshaw",1.0,0.0
+244,"2021","Manipur","14","Other Motor Vehicles",19.0,8.0
+245,"2021","Manipur","14","Others",6.0,1.0
+246,"2021","Manipur","14","Pedestrian",60.0,17.0
+247,"2021","Manipur","14","Suv / Car / Jeep / Etc.",83.0,17.0
+248,"2021","Manipur","14","Three Wheeler/Auto Rickshaw",13.0,1.0
+249,"2021","Manipur","14","Tractor",0.0,0.0
+250,"2021","Manipur","14","Truck/Lorry/Mini Truck",65.0,15.0
+251,"2021","Manipur","14","Two Wheeler",229.0,41.0
+252,"2021","Meghalaya","17","Animal Drawn Vehicle",0.0,0.0
+253,"2021","Meghalaya","17","Bicycle",1.0,2.0
+254,"2021","Meghalaya","17","Bus",51.0,9.0
+255,"2021","Meghalaya","17","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+256,"2021","Meghalaya","17","Other Motor Vehicles",0.0,0.0
+257,"2021","Meghalaya","17","Others",0.0,0.0
+258,"2021","Meghalaya","17","Pedestrian",16.0,36.0
+259,"2021","Meghalaya","17","Suv / Car / Jeep / Etc.",114.0,76.0
+260,"2021","Meghalaya","17","Three Wheeler/Auto Rickshaw",10.0,1.0
+261,"2021","Meghalaya","17","Tractor",0.0,0.0
+262,"2021","Meghalaya","17","Truck/Lorry/Mini Truck",24.0,22.0
+263,"2021","Meghalaya","17","Two Wheeler",47.0,41.0
+264,"2021","Mizoram","15","Animal Drawn Vehicle",0.0,0.0
+265,"2021","Mizoram","15","Bicycle",0.0,0.0
+266,"2021","Mizoram","15","Bus",0.0,0.0
+267,"2021","Mizoram","15","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+268,"2021","Mizoram","15","Other Motor Vehicles",0.0,4.0
+269,"2021","Mizoram","15","Others",0.0,0.0
+270,"2021","Mizoram","15","Pedestrian",0.0,3.0
+271,"2021","Mizoram","15","Suv / Car / Jeep / Etc.",10.0,25.0
+272,"2021","Mizoram","15","Three Wheeler/Auto Rickshaw",0.0,1.0
+273,"2021","Mizoram","15","Tractor",7.0,1.0
+274,"2021","Mizoram","15","Truck/Lorry/Mini Truck",4.0,14.0
+275,"2021","Mizoram","15","Two Wheeler",7.0,16.0
+276,"2021","Nagaland","13","Animal Drawn Vehicle",0.0,0.0
+277,"2021","Nagaland","13","Bicycle",0.0,0.0
+278,"2021","Nagaland","13","Bus",12.0,2.0
+279,"2021","Nagaland","13","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+280,"2021","Nagaland","13","Other Motor Vehicles",0.0,0.0
+281,"2021","Nagaland","13","Others",0.0,0.0
+282,"2021","Nagaland","13","Pedestrian",0.0,1.0
+283,"2021","Nagaland","13","Suv / Car / Jeep / Etc.",15.0,7.0
+284,"2021","Nagaland","13","Three Wheeler/Auto Rickshaw",0.0,2.0
+285,"2021","Nagaland","13","Tractor",0.0,0.0
+286,"2021","Nagaland","13","Truck/Lorry/Mini Truck",8.0,7.0
+287,"2021","Nagaland","13","Two Wheeler",0.0,4.0
+288,"2021","Odisha","21","Animal Drawn Vehicle",0.0,0.0
+289,"2021","Odisha","21","Bicycle",276.0,164.0
+290,"2021","Odisha","21","Bus",476.0,171.0
+291,"2021","Odisha","21","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+292,"2021","Odisha","21","Other Motor Vehicles",588.0,309.0
+293,"2021","Odisha","21","Others",699.0,113.0
+294,"2021","Odisha","21","Pedestrian",691.0,569.0
+295,"2021","Odisha","21","Suv / Car / Jeep / Etc.",1395.0,576.0
+296,"2021","Odisha","21","Three Wheeler/Auto Rickshaw",632.0,194.0
+297,"2021","Odisha","21","Tractor",153.0,83.0
+298,"2021","Odisha","21","Truck/Lorry/Mini Truck",838.0,462.0
+299,"2021","Odisha","21","Two Wheeler",4034.0,2440.0
+300,"2021","Puducherry","34","Animal Drawn Vehicle",0.0,0.0
+301,"2021","Puducherry","34","Bicycle",56.0,0.0
+302,"2021","Puducherry","34","Bus",17.0,4.0
+303,"2021","Puducherry","34","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+304,"2021","Puducherry","34","Other Motor Vehicles",6.0,21.0
+305,"2021","Puducherry","34","Others",119.0,0.0
+306,"2021","Puducherry","34","Pedestrian",132.0,0.0
+307,"2021","Puducherry","34","Suv / Car / Jeep / Etc.",51.0,44.0
+308,"2021","Puducherry","34","Three Wheeler/Auto Rickshaw",6.0,3.0
+309,"2021","Puducherry","34","Tractor",49.0,5.0
+310,"2021","Puducherry","34","Truck/Lorry/Mini Truck",13.0,18.0
+311,"2021","Puducherry","34","Two Wheeler",650.0,48.0
+312,"2021","Punjab","3","Animal Drawn Vehicle",8.0,14.0
+313,"2021","Punjab","3","Bicycle",131.0,194.0
+314,"2021","Punjab","3","Bus",57.0,81.0
+315,"2021","Punjab","3","Hand Drawn Vehicle/ Cycle Rickshaw",25.0,42.0
+316,"2021","Punjab","3","Other Motor Vehicles",54.0,120.0
+317,"2021","Punjab","3","Others",0.0,24.0
+318,"2021","Punjab","3","Pedestrian",192.0,395.0
+319,"2021","Punjab","3","Suv / Car / Jeep / Etc.",834.0,1140.0
+320,"2021","Punjab","3","Three Wheeler/Auto Rickshaw",172.0,225.0
+321,"2021","Punjab","3","Tractor",62.0,64.0
+322,"2021","Punjab","3","Truck/Lorry/Mini Truck",164.0,289.0
+323,"2021","Punjab","3","Two Wheeler",1335.0,1928.0
+324,"2021","Rajasthan","8","Animal Drawn Vehicle",0.0,0.0
+325,"2021","Rajasthan","8","Bicycle",57.0,28.0
+326,"2021","Rajasthan","8","Bus",1388.0,441.0
+327,"2021","Rajasthan","8","Hand Drawn Vehicle/ Cycle Rickshaw",4.0,1.0
+328,"2021","Rajasthan","8","Other Motor Vehicles",816.0,508.0
+329,"2021","Rajasthan","8","Others",140.0,83.0
+330,"2021","Rajasthan","8","Pedestrian",1435.0,877.0
+331,"2021","Rajasthan","8","Suv / Car / Jeep / Etc.",5164.0,2415.0
+332,"2021","Rajasthan","8","Three Wheeler/Auto Rickshaw",501.0,177.0
+333,"2021","Rajasthan","8","Tractor",776.0,592.0
+334,"2021","Rajasthan","8","Truck/Lorry/Mini Truck",1909.0,1326.0
+335,"2021","Rajasthan","8","Two Wheeler",7167.0,3595.0
+336,"2021","Sikkim","11","Animal Drawn Vehicle",0.0,0.0
+337,"2021","Sikkim","11","Bicycle",0.0,0.0
+338,"2021","Sikkim","11","Bus",1.0,0.0
+339,"2021","Sikkim","11","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+340,"2021","Sikkim","11","Other Motor Vehicles",0.0,0.0
+341,"2021","Sikkim","11","Others",3.0,2.0
+342,"2021","Sikkim","11","Pedestrian",4.0,4.0
+343,"2021","Sikkim","11","Suv / Car / Jeep / Etc.",118.0,42.0
+344,"2021","Sikkim","11","Three Wheeler/Auto Rickshaw",0.0,0.0
+345,"2021","Sikkim","11","Tractor",0.0,0.0
+346,"2021","Sikkim","11","Truck/Lorry/Mini Truck",36.0,11.0
+347,"2021","Sikkim","11","Two Wheeler",16.0,5.0
+348,"2021","Tamil Nadu","33","Animal Drawn Vehicle",46.0,30.0
+349,"2021","Tamil Nadu","33","Bicycle",732.0,234.0
+350,"2021","Tamil Nadu","33","Bus",1825.0,551.0
+351,"2021","Tamil Nadu","33","Hand Drawn Vehicle/ Cycle Rickshaw",82.0,9.0
+352,"2021","Tamil Nadu","33","Other Motor Vehicles",1036.0,370.0
+353,"2021","Tamil Nadu","33","Others",463.0,187.0
+354,"2021","Tamil Nadu","33","Pedestrian",5609.0,2085.0
+355,"2021","Tamil Nadu","33","Suv / Car / Jeep / Etc.",10357.0,1998.0
+356,"2021","Tamil Nadu","33","Three Wheeler/Auto Rickshaw",1935.0,534.0
+357,"2021","Tamil Nadu","33","Tractor",302.0,89.0
+358,"2021","Tamil Nadu","33","Truck/Lorry/Mini Truck",3072.0,1038.0
+359,"2021","Tamil Nadu","33","Two Wheeler",30537.0,8259.0
+360,"2021","Telangana","36","Animal Drawn Vehicle",0.0,2.0
+361,"2021","Telangana","36","Bicycle",140.0,68.0
+362,"2021","Telangana","36","Bus",525.0,68.0
+363,"2021","Telangana","36","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,3.0
+364,"2021","Telangana","36","Other Motor Vehicles",279.0,39.0
+365,"2021","Telangana","36","Others",250.0,304.0
+366,"2021","Telangana","36","Pedestrian",2699.0,1310.0
+367,"2021","Telangana","36","Suv / Car / Jeep / Etc.",2735.0,604.0
+368,"2021","Telangana","36","Three Wheeler/Auto Rickshaw",2114.0,390.0
+369,"2021","Telangana","36","Tractor",218.0,176.0
+370,"2021","Telangana","36","Truck/Lorry/Mini Truck",1080.0,511.0
+371,"2021","Telangana","36","Two Wheeler",10067.0,4082.0
+372,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Animal Drawn Vehicle",0.0,0.0
+373,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Bicycle",2.0,1.0
+374,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Bus",14.0,0.0
+375,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+376,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Other Motor Vehicles",0.0,0.0
+377,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Others",1.0,1.0
+378,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Pedestrian",19.0,19.0
+379,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Suv / Car / Jeep / Etc.",21.0,3.0
+380,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Three Wheeler/Auto Rickshaw",12.0,0.0
+381,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Tractor",0.0,4.0
+382,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Truck/Lorry/Mini Truck",11.0,0.0
+383,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Two Wheeler",91.0,48.0
+384,"2021","Tripura","16","Animal Drawn Vehicle",0.0,0.0
+385,"2021","Tripura","16","Bicycle",16.0,9.0
+386,"2021","Tripura","16","Bus",12.0,1.0
+387,"2021","Tripura","16","Hand Drawn Vehicle/ Cycle Rickshaw",3.0,0.0
+388,"2021","Tripura","16","Other Motor Vehicles",76.0,16.0
+389,"2021","Tripura","16","Others",1.0,0.0
+390,"2021","Tripura","16","Pedestrian",72.0,44.0
+391,"2021","Tripura","16","Suv / Car / Jeep / Etc.",146.0,30.0
+392,"2021","Tripura","16","Three Wheeler/Auto Rickshaw",62.0,19.0
+393,"2021","Tripura","16","Tractor",0.0,0.0
+394,"2021","Tripura","16","Truck/Lorry/Mini Truck",46.0,24.0
+395,"2021","Tripura","16","Two Wheeler",112.0,51.0
+396,"2021","Uttar Pradesh","9","Animal Drawn Vehicle",171.0,106.0
+397,"2021","Uttar Pradesh","9","Bicycle",540.0,349.0
+398,"2021","Uttar Pradesh","9","Bus",1238.0,1337.0
+399,"2021","Uttar Pradesh","9","Hand Drawn Vehicle/ Cycle Rickshaw",120.0,80.0
+400,"2021","Uttar Pradesh","9","Other Motor Vehicles",520.0,556.0
+401,"2021","Uttar Pradesh","9","Others",1097.0,1285.0
+402,"2021","Uttar Pradesh","9","Pedestrian",356.0,401.0
+403,"2021","Uttar Pradesh","9","Suv / Car / Jeep / Etc.",3686.0,4039.0
+404,"2021","Uttar Pradesh","9","Three Wheeler/Auto Rickshaw",1704.0,1925.0
+405,"2021","Uttar Pradesh","9","Tractor",771.0,862.0
+406,"2021","Uttar Pradesh","9","Truck/Lorry/Mini Truck",2650.0,3423.0
+407,"2021","Uttar Pradesh","9","Two Wheeler",6960.0,7429.0
+408,"2021","Uttarakhand","5","Animal Drawn Vehicle",0.0,0.0
+409,"2021","Uttarakhand","5","Bicycle",28.0,17.0
+410,"2021","Uttarakhand","5","Bus",33.0,16.0
+411,"2021","Uttarakhand","5","Hand Drawn Vehicle/ Cycle Rickshaw",1.0,0.0
+412,"2021","Uttarakhand","5","Other Motor Vehicles",0.0,0.0
+413,"2021","Uttarakhand","5","Others",13.0,8.0
+414,"2021","Uttarakhand","5","Pedestrian",82.0,67.0
+415,"2021","Uttarakhand","5","Suv / Car / Jeep / Etc.",206.0,118.0
+416,"2021","Uttarakhand","5","Three Wheeler/Auto Rickshaw",36.0,12.0
+417,"2021","Uttarakhand","5","Tractor",0.0,0.0
+418,"2021","Uttarakhand","5","Truck/Lorry/Mini Truck",44.0,38.0
+419,"2021","Uttarakhand","5","Two Wheeler",684.0,548.0
+420,"2021","West Bengal","19","Animal Drawn Vehicle",3.0,1.0
+421,"2021","West Bengal","19","Bicycle",210.0,143.0
+422,"2021","West Bengal","19","Bus",853.0,277.0
+423,"2021","West Bengal","19","Hand Drawn Vehicle/ Cycle Rickshaw",106.0,18.0
+424,"2021","West Bengal","19","Other Motor Vehicles",828.0,687.0
+425,"2021","West Bengal","19","Others",607.0,433.0
+426,"2021","West Bengal","19","Pedestrian",290.0,305.0
+427,"2021","West Bengal","19","Suv / Car / Jeep / Etc.",2125.0,1112.0
+428,"2021","West Bengal","19","Three Wheeler/Auto Rickshaw",424.0,172.0
+429,"2021","West Bengal","19","Tractor",182.0,120.0
+430,"2021","West Bengal","19","Truck/Lorry/Mini Truck",1728.0,1025.0
+431,"2021","West Bengal","19","Two Wheeler",2440.0,1538.0
+432,"2022","Andaman And Nicobar Islands","35","Animal Drawn Vehicle",0.0,0.0
+433,"2022","Andaman And Nicobar Islands","35","Bicycle",0.0,0.0
+434,"2022","Andaman And Nicobar Islands","35","Bus",10.0,7.0
+435,"2022","Andaman And Nicobar Islands","35","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+436,"2022","Andaman And Nicobar Islands","35","Other Motor Vehicles",0.0,1.0
+437,"2022","Andaman And Nicobar Islands","35","Others",0.0,0.0
+438,"2022","Andaman And Nicobar Islands","35","Pedestrian",0.0,0.0
+439,"2022","Andaman And Nicobar Islands","35","Suv / Car / Jeep / Etc.",52.0,5.0
+440,"2022","Andaman And Nicobar Islands","35","Three Wheeler/Auto Rickshaw",13.0,0.0
+441,"2022","Andaman And Nicobar Islands","35","Tractor",0.0,0.0
+442,"2022","Andaman And Nicobar Islands","35","Truck/Lorry/Mini Truck",4.0,0.0
+443,"2022","Andaman And Nicobar Islands","35","Two Wheeler",57.0,6.0
+444,"2022","Andhra Pradesh","28","Animal Drawn Vehicle",18.0,7.0
+445,"2022","Andhra Pradesh","28","Bicycle",295.0,153.0
+446,"2022","Andhra Pradesh","28","Bus",647.0,221.0
+447,"2022","Andhra Pradesh","28","Hand Drawn Vehicle/ Cycle Rickshaw",12.0,3.0
+448,"2022","Andhra Pradesh","28","Other Motor Vehicles",650.0,269.0
+449,"2022","Andhra Pradesh","28","Others",225.0,117.0
+450,"2022","Andhra Pradesh","28","Pedestrian",2681.0,1598.0
+451,"2022","Andhra Pradesh","28","Suv / Car / Jeep / Etc.",2716.0,847.0
+452,"2022","Andhra Pradesh","28","Three Wheeler/Auto Rickshaw",2821.0,621.0
+453,"2022","Andhra Pradesh","28","Tractor",210.0,89.0
+454,"2022","Andhra Pradesh","28","Truck/Lorry/Mini Truck",1218.0,659.0
+455,"2022","Andhra Pradesh","28","Two Wheeler",9847.0,3709.0
+456,"2022","Arunachal Pradesh","12","Animal Drawn Vehicle",0.0,0.0
+457,"2022","Arunachal Pradesh","12","Bicycle",0.0,0.0
+458,"2022","Arunachal Pradesh","12","Bus",10.0,1.0
+459,"2022","Arunachal Pradesh","12","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+460,"2022","Arunachal Pradesh","12","Other Motor Vehicles",6.0,2.0
+461,"2022","Arunachal Pradesh","12","Others",3.0,3.0
+462,"2022","Arunachal Pradesh","12","Pedestrian",6.0,4.0
+463,"2022","Arunachal Pradesh","12","Suv / Car / Jeep / Etc.",62.0,37.0
+464,"2022","Arunachal Pradesh","12","Three Wheeler/Auto Rickshaw",0.0,0.0
+465,"2022","Arunachal Pradesh","12","Tractor",1.0,5.0
+466,"2022","Arunachal Pradesh","12","Truck/Lorry/Mini Truck",49.0,59.0
+467,"2022","Arunachal Pradesh","12","Two Wheeler",40.0,41.0
+468,"2022","Assam","18","Animal Drawn Vehicle",0.0,0.0
+469,"2022","Assam","18","Bicycle",232.0,142.0
+470,"2022","Assam","18","Bus",399.0,168.0
+471,"2022","Assam","18","Hand Drawn Vehicle/ Cycle Rickshaw",23.0,0.0
+472,"2022","Assam","18","Other Motor Vehicles",93.0,81.0
+473,"2022","Assam","18","Others",64.0,28.0
+474,"2022","Assam","18","Pedestrian",726.0,511.0
+475,"2022","Assam","18","Suv / Car / Jeep / Etc.",1148.0,537.0
+476,"2022","Assam","18","Three Wheeler/Auto Rickshaw",521.0,172.0
+477,"2022","Assam","18","Tractor",28.0,19.0
+478,"2022","Assam","18","Truck/Lorry/Mini Truck",423.0,213.0
+479,"2022","Assam","18","Two Wheeler",2022.0,1189.0
+480,"2022","Bihar","10","Animal Drawn Vehicle",0.0,1.0
+481,"2022","Bihar","10","Bicycle",392.0,524.0
+482,"2022","Bihar","10","Bus",165.0,106.0
+483,"2022","Bihar","10","Hand Drawn Vehicle/ Cycle Rickshaw",18.0,26.0
+484,"2022","Bihar","10","Other Motor Vehicles",2.0,22.0
+485,"2022","Bihar","10","Others",39.0,52.0
+486,"2022","Bihar","10","Pedestrian",1797.0,3345.0
+487,"2022","Bihar","10","Suv / Car / Jeep / Etc.",711.0,556.0
+488,"2022","Bihar","10","Three Wheeler/Auto Rickshaw",687.0,545.0
+489,"2022","Bihar","10","Tractor",427.0,473.0
+490,"2022","Bihar","10","Truck/Lorry/Mini Truck",223.0,213.0
+491,"2022","Bihar","10","Two Wheeler",2607.0,3035.0
+492,"2022","Chandigarh","4","Animal Drawn Vehicle",0.0,0.0
+493,"2022","Chandigarh","4","Bicycle",15.0,12.0
+494,"2022","Chandigarh","4","Bus",1.0,1.0
+495,"2022","Chandigarh","4","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+496,"2022","Chandigarh","4","Other Motor Vehicles",11.0,2.0
+497,"2022","Chandigarh","4","Others",0.0,0.0
+498,"2022","Chandigarh","4","Pedestrian",31.0,23.0
+499,"2022","Chandigarh","4","Suv / Car / Jeep / Etc.",12.0,0.0
+500,"2022","Chandigarh","4","Three Wheeler/Auto Rickshaw",13.0,5.0
+501,"2022","Chandigarh","4","Tractor",0.0,0.0
+502,"2022","Chandigarh","4","Truck/Lorry/Mini Truck",0.0,0.0
+503,"2022","Chandigarh","4","Two Wheeler",120.0,40.0
+504,"2022","Chhattisgarh","22","Animal Drawn Vehicle",0.0,1.0
+505,"2022","Chhattisgarh","22","Bicycle",299.0,138.0
+506,"2022","Chhattisgarh","22","Bus",365.0,76.0
+507,"2022","Chhattisgarh","22","Hand Drawn Vehicle/ Cycle Rickshaw",19.0,5.0
+508,"2022","Chhattisgarh","22","Other Motor Vehicles",359.0,287.0
+509,"2022","Chhattisgarh","22","Others",745.0,216.0
+510,"2022","Chhattisgarh","22","Pedestrian",837.0,498.0
+511,"2022","Chhattisgarh","22","Suv / Car / Jeep / Etc.",1872.0,455.0
+512,"2022","Chhattisgarh","22","Three Wheeler/Auto Rickshaw",238.0,40.0
+513,"2022","Chhattisgarh","22","Tractor",296.0,160.0
+514,"2022","Chhattisgarh","22","Truck/Lorry/Mini Truck",619.0,408.0
+515,"2022","Chhattisgarh","22","Two Wheeler",5810.0,3606.0
+516,"2022","Delhi","7","Animal Drawn Vehicle",9.0,7.0
+517,"2022","Delhi","7","Bicycle",153.0,41.0
+518,"2022","Delhi","7","Bus",114.0,36.0
+519,"2022","Delhi","7","Hand Drawn Vehicle/ Cycle Rickshaw",23.0,19.0
+520,"2022","Delhi","7","Other Motor Vehicles",187.0,89.0
+521,"2022","Delhi","7","Others",250.0,59.0
+522,"2022","Delhi","7","Pedestrian",355.0,98.0
+523,"2022","Delhi","7","Suv / Car / Jeep / Etc.",1066.0,316.0
+524,"2022","Delhi","7","Three Wheeler/Auto Rickshaw",294.0,73.0
+525,"2022","Delhi","7","Tractor",12.0,3.0
+526,"2022","Delhi","7","Truck/Lorry/Mini Truck",172.0,89.0
+527,"2022","Delhi","7","Two Wheeler",2078.0,631.0
+528,"2022","Goa","30","Animal Drawn Vehicle",0.0,0.0
+529,"2022","Goa","30","Bicycle",9.0,3.0
+530,"2022","Goa","30","Bus",40.0,3.0
+531,"2022","Goa","30","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+532,"2022","Goa","30","Other Motor Vehicles",2.0,0.0
+533,"2022","Goa","30","Others",0.0,3.0
+534,"2022","Goa","30","Pedestrian",79.0,54.0
+535,"2022","Goa","30","Suv / Car / Jeep / Etc.",178.0,26.0
+536,"2022","Goa","30","Three Wheeler/Auto Rickshaw",4.0,0.0
+537,"2022","Goa","30","Tractor",0.0,1.0
+538,"2022","Goa","30","Truck/Lorry/Mini Truck",28.0,4.0
+539,"2022","Goa","30","Two Wheeler",731.0,180.0
+540,"2022","Gujarat","24","Animal Drawn Vehicle",19.0,2.0
+541,"2022","Gujarat","24","Bicycle",177.0,124.0
+542,"2022","Gujarat","24","Bus",765.0,99.0
+543,"2022","Gujarat","24","Hand Drawn Vehicle/ Cycle Rickshaw",9.0,7.0
+544,"2022","Gujarat","24","Other Motor Vehicles",9.0,3.0
+545,"2022","Gujarat","24","Others",0.0,0.0
+546,"2022","Gujarat","24","Pedestrian",1578.0,1365.0
+547,"2022","Gujarat","24","Suv / Car / Jeep / Etc.",3182.0,1236.0
+548,"2022","Gujarat","24","Three Wheeler/Auto Rickshaw",1272.0,411.0
+549,"2022","Gujarat","24","Tractor",115.0,64.0
+550,"2022","Gujarat","24","Truck/Lorry/Mini Truck",1065.0,569.0
+551,"2022","Gujarat","24","Two Wheeler",6948.0,3754.0
+552,"2022","Haryana","6","Animal Drawn Vehicle",14.0,12.0
+553,"2022","Haryana","6","Bicycle",120.0,114.0
+554,"2022","Haryana","6","Bus",232.0,103.0
+555,"2022","Haryana","6","Hand Drawn Vehicle/ Cycle Rickshaw",6.0,3.0
+556,"2022","Haryana","6","Other Motor Vehicles",513.0,366.0
+557,"2022","Haryana","6","Others",90.0,141.0
+558,"2022","Haryana","6","Pedestrian",1663.0,1164.0
+559,"2022","Haryana","6","Suv / Car / Jeep / Etc.",1398.0,660.0
+560,"2022","Haryana","6","Three Wheeler/Auto Rickshaw",292.0,153.0
+561,"2022","Haryana","6","Tractor",119.0,53.0
+562,"2022","Haryana","6","Truck/Lorry/Mini Truck",486.0,277.0
+563,"2022","Haryana","6","Two Wheeler",3420.0,2182.0
+564,"2022","Himachal Pradesh","2","Animal Drawn Vehicle",0.0,0.0
+565,"2022","Himachal Pradesh","2","Bicycle",6.0,6.0
+566,"2022","Himachal Pradesh","2","Bus",460.0,41.0
+567,"2022","Himachal Pradesh","2","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+568,"2022","Himachal Pradesh","2","Other Motor Vehicles",59.0,7.0
+569,"2022","Himachal Pradesh","2","Others",10.0,11.0
+570,"2022","Himachal Pradesh","2","Pedestrian",140.0,42.0
+571,"2022","Himachal Pradesh","2","Suv / Car / Jeep / Etc.",1794.0,473.0
+572,"2022","Himachal Pradesh","2","Three Wheeler/Auto Rickshaw",29.0,17.0
+573,"2022","Himachal Pradesh","2","Tractor",44.0,21.0
+574,"2022","Himachal Pradesh","2","Truck/Lorry/Mini Truck",414.0,121.0
+575,"2022","Himachal Pradesh","2","Two Wheeler",935.0,240.0
+576,"2022","Jammu And Kashmir","1","Animal Drawn Vehicle",0.0,0.0
+577,"2022","Jammu And Kashmir","1","Bicycle",3.0,4.0
+578,"2022","Jammu And Kashmir","1","Bus",967.0,76.0
+579,"2022","Jammu And Kashmir","1","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,1.0
+580,"2022","Jammu And Kashmir","1","Other Motor Vehicles",532.0,54.0
+581,"2022","Jammu And Kashmir","1","Others",77.0,17.0
+582,"2022","Jammu And Kashmir","1","Pedestrian",574.0,69.0
+583,"2022","Jammu And Kashmir","1","Suv / Car / Jeep / Etc.",3227.0,254.0
+584,"2022","Jammu And Kashmir","1","Three Wheeler/Auto Rickshaw",241.0,13.0
+585,"2022","Jammu And Kashmir","1","Tractor",126.0,30.0
+586,"2022","Jammu And Kashmir","1","Truck/Lorry/Mini Truck",742.0,110.0
+587,"2022","Jammu And Kashmir","1","Two Wheeler",1861.0,210.0
+588,"2022","Jharkhand","20","Animal Drawn Vehicle",52.0,47.0
+589,"2022","Jharkhand","20","Bicycle",85.0,150.0
+590,"2022","Jharkhand","20","Bus",230.0,102.0
+591,"2022","Jharkhand","20","Hand Drawn Vehicle/ Cycle Rickshaw",63.0,95.0
+592,"2022","Jharkhand","20","Other Motor Vehicles",14.0,42.0
+593,"2022","Jharkhand","20","Others",0.0,1.0
+594,"2022","Jharkhand","20","Pedestrian",61.0,83.0
+595,"2022","Jharkhand","20","Suv / Car / Jeep / Etc.",527.0,473.0
+596,"2022","Jharkhand","20","Three Wheeler/Auto Rickshaw",667.0,660.0
+597,"2022","Jharkhand","20","Tractor",29.0,40.0
+598,"2022","Jharkhand","20","Truck/Lorry/Mini Truck",218.0,276.0
+599,"2022","Jharkhand","20","Two Wheeler",1801.0,1929.0
+600,"2022","Karnataka","29","Animal Drawn Vehicle",71.0,13.0
+601,"2022","Karnataka","29","Bicycle",353.0,84.0
+602,"2022","Karnataka","29","Bus",2890.0,297.0
+603,"2022","Karnataka","29","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+604,"2022","Karnataka","29","Other Motor Vehicles",1126.0,308.0
+605,"2022","Karnataka","29","Others",1234.0,375.0
+606,"2022","Karnataka","29","Pedestrian",5566.0,2073.0
+607,"2022","Karnataka","29","Suv / Car / Jeep / Etc.",9132.0,1545.0
+608,"2022","Karnataka","29","Three Wheeler/Auto Rickshaw",2619.0,408.0
+609,"2022","Karnataka","29","Tractor",487.0,113.0
+610,"2022","Karnataka","29","Truck/Lorry/Mini Truck",3257.0,747.0
+611,"2022","Karnataka","29","Two Wheeler",21419.0,5742.0
+612,"2022","Kerala","32","Animal Drawn Vehicle",0.0,1.0
+613,"2022","Kerala","32","Bicycle",773.0,80.0
+614,"2022","Kerala","32","Bus",2394.0,160.0
+615,"2022","Kerala","32","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,1.0
+616,"2022","Kerala","32","Other Motor Vehicles",703.0,59.0
+617,"2022","Kerala","32","Others",115.0,15.0
+618,"2022","Kerala","32","Pedestrian",6787.0,834.0
+619,"2022","Kerala","32","Suv / Car / Jeep / Etc.",8091.0,586.0
+620,"2022","Kerala","32","Three Wheeler/Auto Rickshaw",3939.0,280.0
+621,"2022","Kerala","32","Tractor",20.0,14.0
+622,"2022","Kerala","32","Truck/Lorry/Mini Truck",1598.0,245.0
+623,"2022","Kerala","32","Two Wheeler",24897.0,2042.0
+624,"2022","Ladakh","37","Animal Drawn Vehicle",0.0,0.0
+625,"2022","Ladakh","37","Bicycle",0.0,0.0
+626,"2022","Ladakh","37","Bus",36.0,13.0
+627,"2022","Ladakh","37","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+628,"2022","Ladakh","37","Other Motor Vehicles",0.0,0.0
+629,"2022","Ladakh","37","Others",21.0,3.0
+630,"2022","Ladakh","37","Pedestrian",0.0,0.0
+631,"2022","Ladakh","37","Suv / Car / Jeep / Etc.",180.0,38.0
+632,"2022","Ladakh","37","Three Wheeler/Auto Rickshaw",0.0,0.0
+633,"2022","Ladakh","37","Tractor",0.0,0.0
+634,"2022","Ladakh","37","Truck/Lorry/Mini Truck",76.0,9.0
+635,"2022","Ladakh","37","Two Wheeler",20.0,3.0
+636,"2022","Lakshadweep","31","Animal Drawn Vehicle",0.0,0.0
+637,"2022","Lakshadweep","31","Bicycle",0.0,0.0
+638,"2022","Lakshadweep","31","Bus",0.0,0.0
+639,"2022","Lakshadweep","31","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+640,"2022","Lakshadweep","31","Other Motor Vehicles",0.0,0.0
+641,"2022","Lakshadweep","31","Others",0.0,0.0
+642,"2022","Lakshadweep","31","Pedestrian",0.0,0.0
+643,"2022","Lakshadweep","31","Suv / Car / Jeep / Etc.",0.0,0.0
+644,"2022","Lakshadweep","31","Three Wheeler/Auto Rickshaw",0.0,0.0
+645,"2022","Lakshadweep","31","Tractor",0.0,0.0
+646,"2022","Lakshadweep","31","Truck/Lorry/Mini Truck",0.0,0.0
+647,"2022","Lakshadweep","31","Two Wheeler",3.0,2.0
+648,"2022","Madhya Pradesh","23","Animal Drawn Vehicle",20.0,0.0
+649,"2022","Madhya Pradesh","23","Bicycle",425.0,126.0
+650,"2022","Madhya Pradesh","23","Bus",2373.0,380.0
+651,"2022","Madhya Pradesh","23","Hand Drawn Vehicle/ Cycle Rickshaw",56.0,12.0
+652,"2022","Madhya Pradesh","23","Other Motor Vehicles",785.0,256.0
+653,"2022","Madhya Pradesh","23","Others",1226.0,503.0
+654,"2022","Madhya Pradesh","23","Pedestrian",4821.0,1492.0
+655,"2022","Madhya Pradesh","23","Suv / Car / Jeep / Etc.",7679.0,2064.0
+656,"2022","Madhya Pradesh","23","Three Wheeler/Auto Rickshaw",2592.0,598.0
+657,"2022","Madhya Pradesh","23","Tractor",1166.0,482.0
+658,"2022","Madhya Pradesh","23","Truck/Lorry/Mini Truck",3601.0,1336.0
+659,"2022","Madhya Pradesh","23","Two Wheeler",26520.0,6669.0
+660,"2022","Maharashtra","27","Animal Drawn Vehicle",7.0,6.0
+661,"2022","Maharashtra","27","Bicycle",176.0,127.0
+662,"2022","Maharashtra","27","Bus",1472.0,320.0
+663,"2022","Maharashtra","27","Hand Drawn Vehicle/ Cycle Rickshaw",13.0,7.0
+664,"2022","Maharashtra","27","Other Motor Vehicles",297.0,294.0
+665,"2022","Maharashtra","27","Others",74.0,143.0
+666,"2022","Maharashtra","27","Pedestrian",1827.0,1764.0
+667,"2022","Maharashtra","27","Suv / Car / Jeep / Etc.",4818.0,2305.0
+668,"2022","Maharashtra","27","Three Wheeler/Auto Rickshaw",1257.0,630.0
+669,"2022","Maharashtra","27","Tractor",481.0,302.0
+670,"2022","Maharashtra","27","Truck/Lorry/Mini Truck",2213.0,1651.0
+671,"2022","Maharashtra","27","Two Wheeler",11243.0,8199.0
+672,"2022","Manipur","14","Animal Drawn Vehicle",0.0,0.0
+673,"2022","Manipur","14","Bicycle",23.0,7.0
+674,"2022","Manipur","14","Bus",42.0,11.0
+675,"2022","Manipur","14","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+676,"2022","Manipur","14","Other Motor Vehicles",4.0,0.0
+677,"2022","Manipur","14","Others",10.0,5.0
+678,"2022","Manipur","14","Pedestrian",75.0,30.0
+679,"2022","Manipur","14","Suv / Car / Jeep / Etc.",162.0,19.0
+680,"2022","Manipur","14","Three Wheeler/Auto Rickshaw",55.0,4.0
+681,"2022","Manipur","14","Tractor",0.0,0.0
+682,"2022","Manipur","14","Truck/Lorry/Mini Truck",40.0,13.0
+683,"2022","Manipur","14","Two Wheeler",406.0,38.0
+684,"2022","Meghalaya","17","Animal Drawn Vehicle",0.0,0.0
+685,"2022","Meghalaya","17","Bicycle",0.0,2.0
+686,"2022","Meghalaya","17","Bus",37.0,7.0
+687,"2022","Meghalaya","17","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+688,"2022","Meghalaya","17","Other Motor Vehicles",0.0,1.0
+689,"2022","Meghalaya","17","Others",1.0,1.0
+690,"2022","Meghalaya","17","Pedestrian",13.0,6.0
+691,"2022","Meghalaya","17","Suv / Car / Jeep / Etc.",119.0,57.0
+692,"2022","Meghalaya","17","Three Wheeler/Auto Rickshaw",15.0,9.0
+693,"2022","Meghalaya","17","Tractor",0.0,1.0
+694,"2022","Meghalaya","17","Truck/Lorry/Mini Truck",66.0,28.0
+695,"2022","Meghalaya","17","Two Wheeler",59.0,50.0
+696,"2022","Mizoram","15","Animal Drawn Vehicle",0.0,1.0
+697,"2022","Mizoram","15","Bicycle",0.0,0.0
+698,"2022","Mizoram","15","Bus",0.0,0.0
+699,"2022","Mizoram","15","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+700,"2022","Mizoram","15","Other Motor Vehicles",0.0,1.0
+701,"2022","Mizoram","15","Others",0.0,0.0
+702,"2022","Mizoram","15","Pedestrian",0.0,0.0
+703,"2022","Mizoram","15","Suv / Car / Jeep / Etc.",14.0,31.0
+704,"2022","Mizoram","15","Three Wheeler/Auto Rickshaw",3.0,13.0
+705,"2022","Mizoram","15","Tractor",0.0,1.0
+706,"2022","Mizoram","15","Truck/Lorry/Mini Truck",9.0,26.0
+707,"2022","Mizoram","15","Two Wheeler",2.0,10.0
+708,"2022","Nagaland","13","Animal Drawn Vehicle",0.0,0.0
+709,"2022","Nagaland","13","Bicycle",0.0,0.0
+710,"2022","Nagaland","13","Bus",26.0,0.0
+711,"2022","Nagaland","13","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+712,"2022","Nagaland","13","Other Motor Vehicles",0.0,0.0
+713,"2022","Nagaland","13","Others",0.0,0.0
+714,"2022","Nagaland","13","Pedestrian",0.0,1.0
+715,"2022","Nagaland","13","Suv / Car / Jeep / Etc.",12.0,6.0
+716,"2022","Nagaland","13","Three Wheeler/Auto Rickshaw",0.0,7.0
+717,"2022","Nagaland","13","Tractor",0.0,0.0
+718,"2022","Nagaland","13","Truck/Lorry/Mini Truck",2.0,8.0
+719,"2022","Nagaland","13","Two Wheeler",2.0,0.0
+720,"2022","Odisha","21","Animal Drawn Vehicle",0.0,0.0
+721,"2022","Odisha","21","Bicycle",331.0,199.0
+722,"2022","Odisha","21","Bus",442.0,134.0
+723,"2022","Odisha","21","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+724,"2022","Odisha","21","Other Motor Vehicles",257.0,176.0
+725,"2022","Odisha","21","Others",934.0,510.0
+726,"2022","Odisha","21","Pedestrian",1093.0,775.0
+727,"2022","Odisha","21","Suv / Car / Jeep / Etc.",1605.0,617.0
+728,"2022","Odisha","21","Three Wheeler/Auto Rickshaw",613.0,181.0
+729,"2022","Odisha","21","Tractor",0.0,0.0
+730,"2022","Odisha","21","Truck/Lorry/Mini Truck",1067.0,494.0
+731,"2022","Odisha","21","Two Wheeler",3927.0,2384.0
+732,"2022","Puducherry","34","Animal Drawn Vehicle",0.0,0.0
+733,"2022","Puducherry","34","Bicycle",36.0,2.0
+734,"2022","Puducherry","34","Bus",49.0,7.0
+735,"2022","Puducherry","34","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+736,"2022","Puducherry","34","Other Motor Vehicles",0.0,0.0
+737,"2022","Puducherry","34","Others",75.0,10.0
+738,"2022","Puducherry","34","Pedestrian",102.0,18.0
+739,"2022","Puducherry","34","Suv / Car / Jeep / Etc.",135.0,19.0
+740,"2022","Puducherry","34","Three Wheeler/Auto Rickshaw",23.0,3.0
+741,"2022","Puducherry","34","Tractor",17.0,2.0
+742,"2022","Puducherry","34","Truck/Lorry/Mini Truck",65.0,35.0
+743,"2022","Puducherry","34","Two Wheeler",780.0,85.0
+744,"2022","Punjab","3","Animal Drawn Vehicle",44.0,87.0
+745,"2022","Punjab","3","Bicycle",112.0,215.0
+746,"2022","Punjab","3","Bus",109.0,57.0
+747,"2022","Punjab","3","Hand Drawn Vehicle/ Cycle Rickshaw",8.0,11.0
+748,"2022","Punjab","3","Other Motor Vehicles",88.0,48.0
+749,"2022","Punjab","3","Others",19.0,35.0
+750,"2022","Punjab","3","Pedestrian",241.0,609.0
+751,"2022","Punjab","3","Suv / Car / Jeep / Etc.",861.0,1101.0
+752,"2022","Punjab","3","Three Wheeler/Auto Rickshaw",96.0,149.0
+753,"2022","Punjab","3","Tractor",32.0,70.0
+754,"2022","Punjab","3","Truck/Lorry/Mini Truck",99.0,207.0
+755,"2022","Punjab","3","Two Wheeler",1663.0,2099.0
+756,"2022","Rajasthan","8","Animal Drawn Vehicle",1.0,1.0
+757,"2022","Rajasthan","8","Bicycle",81.0,32.0
+758,"2022","Rajasthan","8","Bus",1302.0,339.0
+759,"2022","Rajasthan","8","Hand Drawn Vehicle/ Cycle Rickshaw",3.0,0.0
+760,"2022","Rajasthan","8","Other Motor Vehicles",1031.0,607.0
+761,"2022","Rajasthan","8","Others",158.0,141.0
+762,"2022","Rajasthan","8","Pedestrian",1948.0,1369.0
+763,"2022","Rajasthan","8","Suv / Car / Jeep / Etc.",6006.0,2577.0
+764,"2022","Rajasthan","8","Three Wheeler/Auto Rickshaw",600.0,199.0
+765,"2022","Rajasthan","8","Tractor",954.0,561.0
+766,"2022","Rajasthan","8","Truck/Lorry/Mini Truck",1986.0,1215.0
+767,"2022","Rajasthan","8","Two Wheeler",8179.0,4062.0
+768,"2022","Sikkim","11","Animal Drawn Vehicle",0.0,0.0
+769,"2022","Sikkim","11","Bicycle",1.0,0.0
+770,"2022","Sikkim","11","Bus",55.0,1.0
+771,"2022","Sikkim","11","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+772,"2022","Sikkim","11","Other Motor Vehicles",13.0,3.0
+773,"2022","Sikkim","11","Others",1.0,2.0
+774,"2022","Sikkim","11","Pedestrian",10.0,5.0
+775,"2022","Sikkim","11","Suv / Car / Jeep / Etc.",194.0,40.0
+776,"2022","Sikkim","11","Three Wheeler/Auto Rickshaw",0.0,0.0
+777,"2022","Sikkim","11","Tractor",0.0,0.0
+778,"2022","Sikkim","11","Truck/Lorry/Mini Truck",53.0,39.0
+779,"2022","Sikkim","11","Two Wheeler",44.0,8.0
+780,"2022","Tamil Nadu","33","Animal Drawn Vehicle",6.0,1.0
+781,"2022","Tamil Nadu","33","Bicycle",1406.0,421.0
+782,"2022","Tamil Nadu","33","Bus",3094.0,213.0
+783,"2022","Tamil Nadu","33","Hand Drawn Vehicle/ Cycle Rickshaw",10.0,5.0
+784,"2022","Tamil Nadu","33","Other Motor Vehicles",62.0,24.0
+785,"2022","Tamil Nadu","33","Others",20.0,3.0
+786,"2022","Tamil Nadu","33","Pedestrian",11637.0,4427.0
+787,"2022","Tamil Nadu","33","Suv / Car / Jeep / Etc.",7912.0,1051.0
+788,"2022","Tamil Nadu","33","Three Wheeler/Auto Rickshaw",2256.0,267.0
+789,"2022","Tamil Nadu","33","Tractor",178.0,81.0
+790,"2022","Tamil Nadu","33","Truck/Lorry/Mini Truck",936.0,251.0
+791,"2022","Tamil Nadu","33","Two Wheeler",40186.0,11140.0
+792,"2022","Telangana","36","Animal Drawn Vehicle",0.0,0.0
+793,"2022","Telangana","36","Bicycle",158.0,69.0
+794,"2022","Telangana","36","Bus",473.0,98.0
+795,"2022","Telangana","36","Hand Drawn Vehicle/ Cycle Rickshaw",160.0,53.0
+796,"2022","Telangana","36","Other Motor Vehicles",213.0,184.0
+797,"2022","Telangana","36","Others",183.0,180.0
+798,"2022","Telangana","36","Pedestrian",2937.0,1458.0
+799,"2022","Telangana","36","Suv / Car / Jeep / Etc.",2722.0,588.0
+800,"2022","Telangana","36","Three Wheeler/Auto Rickshaw",1788.0,334.0
+801,"2022","Telangana","36","Tractor",336.0,221.0
+802,"2022","Telangana","36","Truck/Lorry/Mini Truck",839.0,397.0
+803,"2022","Telangana","36","Two Wheeler",10400.0,3977.0
+804,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Animal Drawn Vehicle",0.0,0.0
+805,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Bicycle",5.0,5.0
+806,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Bus",73.0,1.0
+807,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+808,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Other Motor Vehicles",0.0,0.0
+809,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Others",1.0,3.0
+810,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Pedestrian",28.0,18.0
+811,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Suv / Car / Jeep / Etc.",29.0,7.0
+812,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Three Wheeler/Auto Rickshaw",15.0,3.0
+813,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Tractor",0.0,0.0
+814,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Truck/Lorry/Mini Truck",3.0,1.0
+815,"2022","The Dadra And Nagar Haveli And Daman And Diu","38","Two Wheeler",103.0,42.0
+816,"2022","Tripura","16","Animal Drawn Vehicle",0.0,0.0
+817,"2022","Tripura","16","Bicycle",13.0,9.0
+818,"2022","Tripura","16","Bus",20.0,2.0
+819,"2022","Tripura","16","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+820,"2022","Tripura","16","Other Motor Vehicles",28.0,2.0
+821,"2022","Tripura","16","Others",3.0,2.0
+822,"2022","Tripura","16","Pedestrian",116.0,81.0
+823,"2022","Tripura","16","Suv / Car / Jeep / Etc.",94.0,18.0
+824,"2022","Tripura","16","Three Wheeler/Auto Rickshaw",50.0,14.0
+825,"2022","Tripura","16","Tractor",0.0,0.0
+826,"2022","Tripura","16","Truck/Lorry/Mini Truck",45.0,21.0
+827,"2022","Tripura","16","Two Wheeler",172.0,92.0
+828,"2022","Uttar Pradesh","9","Animal Drawn Vehicle",122.0,76.0
+829,"2022","Uttar Pradesh","9","Bicycle",522.0,537.0
+830,"2022","Uttar Pradesh","9","Bus",1576.0,1744.0
+831,"2022","Uttar Pradesh","9","Hand Drawn Vehicle/ Cycle Rickshaw",125.0,92.0
+832,"2022","Uttar Pradesh","9","Other Motor Vehicles",689.0,1055.0
+833,"2022","Uttar Pradesh","9","Others",486.0,492.0
+834,"2022","Uttar Pradesh","9","Pedestrian",523.0,689.0
+835,"2022","Uttar Pradesh","9","Suv / Car / Jeep / Etc.",4263.0,4337.0
+836,"2022","Uttar Pradesh","9","Three Wheeler/Auto Rickshaw",1561.0,1658.0
+837,"2022","Uttar Pradesh","9","Tractor",1012.0,1015.0
+838,"2022","Uttar Pradesh","9","Truck/Lorry/Mini Truck",3061.0,4109.0
+839,"2022","Uttar Pradesh","9","Two Wheeler",7756.0,8305.0
+840,"2022","Uttarakhand","5","Animal Drawn Vehicle",0.0,0.0
+841,"2022","Uttarakhand","5","Bicycle",18.0,11.0
+842,"2022","Uttarakhand","5","Bus",233.0,58.0
+843,"2022","Uttarakhand","5","Hand Drawn Vehicle/ Cycle Rickshaw",0.0,0.0
+844,"2022","Uttarakhand","5","Other Motor Vehicles",160.0,120.0
+845,"2022","Uttarakhand","5","Others",4.0,1.0
+846,"2022","Uttarakhand","5","Pedestrian",123.0,66.0
+847,"2022","Uttarakhand","5","Suv / Car / Jeep / Etc.",300.0,259.0
+848,"2022","Uttarakhand","5","Three Wheeler/Auto Rickshaw",64.0,23.0
+849,"2022","Uttarakhand","5","Tractor",12.0,10.0
+850,"2022","Uttarakhand","5","Truck/Lorry/Mini Truck",109.0,73.0
+851,"2022","Uttarakhand","5","Two Wheeler",590.0,421.0
+852,"2022","West Bengal","19","Animal Drawn Vehicle",0.0,1.0
+853,"2022","West Bengal","19","Bicycle",207.0,98.0
+854,"2022","West Bengal","19","Bus",954.0,329.0
+855,"2022","West Bengal","19","Hand Drawn Vehicle/ Cycle Rickshaw",91.0,34.0
+856,"2022","West Bengal","19","Other Motor Vehicles",525.0,458.0
+857,"2022","West Bengal","19","Others",151.0,475.0
+858,"2022","West Bengal","19","Pedestrian",313.0,173.0
+859,"2022","West Bengal","19","Suv / Car / Jeep / Etc.",1328.0,946.0
+860,"2022","West Bengal","19","Three Wheeler/Auto Rickshaw",381.0,211.0
+861,"2022","West Bengal","19","Tractor",176.0,125.0
+862,"2022","West Bengal","19","Truck/Lorry/Mini Truck",1366.0,1184.0
+863,"2022","West Bengal","19","Two Wheeler",2632.0,1754.0

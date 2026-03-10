@@ -1,0 +1,706 @@
+"id","year","state_name","state_code","cause","cases","injured","died"
+0,"2018","Andaman And Nicobar Islands","35","Collisions",0.0,0.0,0.0
+1,"2018","Andaman And Nicobar Islands","35","Derailments",0.0,0.0,0.0
+2,"2018","Andaman And Nicobar Islands","35","Explosion/Fire",0.0,0.0,0.0
+3,"2018","Andaman And Nicobar Islands","35","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+4,"2018","Andaman And Nicobar Islands","35","Others",0.0,0.0,0.0
+5,"2018","Andhra Pradesh","28","Collisions",0.0,0.0,0.0
+6,"2018","Andhra Pradesh","28","Derailments",0.0,0.0,0.0
+7,"2018","Andhra Pradesh","28","Explosion/Fire",0.0,0.0,0.0
+8,"2018","Andhra Pradesh","28","Fall From Train/Collision With People At Tracks",1525.0,0.0,1531.0
+9,"2018","Andhra Pradesh","28","Others",0.0,0.0,0.0
+10,"2018","Arunachal Pradesh","12","Collisions",0.0,0.0,0.0
+11,"2018","Arunachal Pradesh","12","Derailments",0.0,0.0,0.0
+12,"2018","Arunachal Pradesh","12","Explosion/Fire",0.0,0.0,0.0
+13,"2018","Arunachal Pradesh","12","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+14,"2018","Arunachal Pradesh","12","Others",0.0,0.0,0.0
+15,"2018","Assam","18","Collisions",0.0,0.0,0.0
+16,"2018","Assam","18","Derailments",0.0,0.0,0.0
+17,"2018","Assam","18","Explosion/Fire",0.0,0.0,0.0
+18,"2018","Assam","18","Fall From Train/Collision With People At Tracks",555.0,0.0,557.0
+19,"2018","Assam","18","Others",0.0,0.0,0.0
+20,"2018","Bihar","10","Collisions",0.0,0.0,0.0
+21,"2018","Bihar","10","Derailments",0.0,0.0,0.0
+22,"2018","Bihar","10","Explosion/Fire",0.0,0.0,0.0
+23,"2018","Bihar","10","Fall From Train/Collision With People At Tracks",1578.0,23.0,1580.0
+24,"2018","Bihar","10","Others",5.0,0.0,5.0
+25,"2018","Chandigarh","4","Collisions",0.0,0.0,0.0
+26,"2018","Chandigarh","4","Derailments",0.0,0.0,0.0
+27,"2018","Chandigarh","4","Explosion/Fire",0.0,0.0,0.0
+28,"2018","Chandigarh","4","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+29,"2018","Chandigarh","4","Others",0.0,0.0,0.0
+30,"2018","Chhattisgarh","22","Collisions",0.0,0.0,0.0
+31,"2018","Chhattisgarh","22","Derailments",0.0,0.0,0.0
+32,"2018","Chhattisgarh","22","Explosion/Fire",0.0,0.0,0.0
+33,"2018","Chhattisgarh","22","Fall From Train/Collision With People At Tracks",237.0,0.0,237.0
+34,"2018","Chhattisgarh","22","Others",163.0,0.0,163.0
+35,"2018","Delhi","7","Collisions",0.0,0.0,0.0
+36,"2018","Delhi","7","Derailments",0.0,0.0,0.0
+37,"2018","Delhi","7","Explosion/Fire",0.0,0.0,0.0
+38,"2018","Delhi","7","Fall From Train/Collision With People At Tracks",31.0,6.0,25.0
+39,"2018","Delhi","7","Others",959.0,110.0,849.0
+40,"2018","Goa","30","Collisions",0.0,0.0,0.0
+41,"2018","Goa","30","Derailments",0.0,0.0,0.0
+42,"2018","Goa","30","Explosion/Fire",0.0,0.0,0.0
+43,"2018","Goa","30","Fall From Train/Collision With People At Tracks",39.0,0.0,39.0
+44,"2018","Goa","30","Others",0.0,0.0,0.0
+45,"2018","Gujarat","24","Collisions",0.0,0.0,0.0
+46,"2018","Gujarat","24","Derailments",0.0,0.0,0.0
+47,"2018","Gujarat","24","Explosion/Fire",0.0,0.0,0.0
+48,"2018","Gujarat","24","Fall From Train/Collision With People At Tracks",1014.0,0.0,1022.0
+49,"2018","Gujarat","24","Others",0.0,0.0,0.0
+50,"2018","Haryana","6","Collisions",0.0,0.0,0.0
+51,"2018","Haryana","6","Derailments",0.0,0.0,0.0
+52,"2018","Haryana","6","Explosion/Fire",0.0,0.0,0.0
+53,"2018","Haryana","6","Fall From Train/Collision With People At Tracks",2140.0,0.0,2140.0
+54,"2018","Haryana","6","Others",1.0,0.0,1.0
+55,"2018","Himachal Pradesh","2","Collisions",0.0,0.0,0.0
+56,"2018","Himachal Pradesh","2","Derailments",0.0,0.0,0.0
+57,"2018","Himachal Pradesh","2","Explosion/Fire",0.0,0.0,0.0
+58,"2018","Himachal Pradesh","2","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+59,"2018","Himachal Pradesh","2","Others",0.0,0.0,0.0
+60,"2018","Jammu And Kashmir","1","Collisions",0.0,0.0,0.0
+61,"2018","Jammu And Kashmir","1","Derailments",0.0,0.0,0.0
+62,"2018","Jammu And Kashmir","1","Explosion/Fire",0.0,0.0,0.0
+63,"2018","Jammu And Kashmir","1","Fall From Train/Collision With People At Tracks",64.0,4.0,61.0
+64,"2018","Jammu And Kashmir","1","Others",0.0,0.0,0.0
+65,"2018","Jharkhand","20","Collisions",0.0,0.0,0.0
+66,"2018","Jharkhand","20","Derailments",0.0,0.0,0.0
+67,"2018","Jharkhand","20","Explosion/Fire",0.0,0.0,0.0
+68,"2018","Jharkhand","20","Fall From Train/Collision With People At Tracks",437.0,0.0,437.0
+69,"2018","Jharkhand","20","Others",10.0,0.0,10.0
+70,"2018","Karnataka","29","Collisions",0.0,0.0,0.0
+71,"2018","Karnataka","29","Derailments",0.0,0.0,0.0
+72,"2018","Karnataka","29","Explosion/Fire",0.0,0.0,0.0
+73,"2018","Karnataka","29","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+74,"2018","Karnataka","29","Others",0.0,0.0,0.0
+75,"2018","Kerala","32","Collisions",0.0,0.0,0.0
+76,"2018","Kerala","32","Derailments",0.0,0.0,0.0
+77,"2018","Kerala","32","Explosion/Fire",7.0,0.0,7.0
+78,"2018","Kerala","32","Fall From Train/Collision With People At Tracks",174.0,10.0,165.0
+79,"2018","Kerala","32","Others",77.0,6.0,81.0
+80,"2018","Lakshadweep","31","Collisions",0.0,0.0,0.0
+81,"2018","Lakshadweep","31","Derailments",0.0,0.0,0.0
+82,"2018","Lakshadweep","31","Explosion/Fire",0.0,0.0,0.0
+83,"2018","Lakshadweep","31","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+84,"2018","Lakshadweep","31","Others",0.0,0.0,0.0
+85,"2018","Madhya Pradesh","23","Collisions",0.0,0.0,0.0
+86,"2018","Madhya Pradesh","23","Derailments",0.0,0.0,0.0
+87,"2018","Madhya Pradesh","23","Explosion/Fire",0.0,0.0,0.0
+88,"2018","Madhya Pradesh","23","Fall From Train/Collision With People At Tracks",1228.0,66.0,1164.0
+89,"2018","Madhya Pradesh","23","Others",231.0,0.0,232.0
+90,"2018","Maharashtra","27","Collisions",0.0,0.0,0.0
+91,"2018","Maharashtra","27","Derailments",0.0,0.0,0.0
+92,"2018","Maharashtra","27","Explosion/Fire",0.0,0.0,0.0
+93,"2018","Maharashtra","27","Fall From Train/Collision With People At Tracks",3646.0,1750.0,1909.0
+94,"2018","Maharashtra","27","Others",2703.0,813.0,1892.0
+95,"2018","Manipur","14","Collisions",0.0,0.0,0.0
+96,"2018","Manipur","14","Derailments",0.0,0.0,0.0
+97,"2018","Manipur","14","Explosion/Fire",0.0,0.0,0.0
+98,"2018","Manipur","14","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+99,"2018","Manipur","14","Others",0.0,0.0,0.0
+100,"2018","Meghalaya","17","Collisions",0.0,0.0,0.0
+101,"2018","Meghalaya","17","Derailments",0.0,0.0,0.0
+102,"2018","Meghalaya","17","Explosion/Fire",0.0,0.0,0.0
+103,"2018","Meghalaya","17","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+104,"2018","Meghalaya","17","Others",0.0,0.0,0.0
+105,"2018","Mizoram","15","Collisions",0.0,0.0,0.0
+106,"2018","Mizoram","15","Derailments",0.0,0.0,0.0
+107,"2018","Mizoram","15","Explosion/Fire",0.0,0.0,0.0
+108,"2018","Mizoram","15","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+109,"2018","Mizoram","15","Others",0.0,0.0,0.0
+110,"2018","Nagaland","13","Collisions",0.0,0.0,0.0
+111,"2018","Nagaland","13","Derailments",0.0,0.0,0.0
+112,"2018","Nagaland","13","Explosion/Fire",0.0,0.0,0.0
+113,"2018","Nagaland","13","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+114,"2018","Nagaland","13","Others",0.0,0.0,0.0
+115,"2018","Odisha","21","Collisions",0.0,0.0,0.0
+116,"2018","Odisha","21","Derailments",0.0,0.0,0.0
+117,"2018","Odisha","21","Explosion/Fire",0.0,0.0,0.0
+118,"2018","Odisha","21","Fall From Train/Collision With People At Tracks",427.0,0.0,427.0
+119,"2018","Odisha","21","Others",0.0,0.0,0.0
+120,"2018","Puducherry","34","Collisions",0.0,0.0,0.0
+121,"2018","Puducherry","34","Derailments",0.0,0.0,0.0
+122,"2018","Puducherry","34","Explosion/Fire",0.0,0.0,0.0
+123,"2018","Puducherry","34","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+124,"2018","Puducherry","34","Others",0.0,0.0,0.0
+125,"2018","Punjab","3","Collisions",0.0,0.0,0.0
+126,"2018","Punjab","3","Derailments",0.0,0.0,0.0
+127,"2018","Punjab","3","Explosion/Fire",0.0,0.0,0.0
+128,"2018","Punjab","3","Fall From Train/Collision With People At Tracks",152.0,26.0,126.0
+129,"2018","Punjab","3","Others",713.0,98.0,746.0
+130,"2018","Rajasthan","8","Collisions",0.0,0.0,0.0
+131,"2018","Rajasthan","8","Derailments",0.0,0.0,0.0
+132,"2018","Rajasthan","8","Explosion/Fire",36.0,0.0,36.0
+133,"2018","Rajasthan","8","Fall From Train/Collision With People At Tracks",485.0,29.0,463.0
+134,"2018","Rajasthan","8","Others",134.0,0.0,134.0
+135,"2018","Sikkim","11","Collisions",0.0,0.0,0.0
+136,"2018","Sikkim","11","Derailments",0.0,0.0,0.0
+137,"2018","Sikkim","11","Explosion/Fire",0.0,0.0,0.0
+138,"2018","Sikkim","11","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+139,"2018","Sikkim","11","Others",0.0,0.0,0.0
+140,"2018","Tamil Nadu","33","Collisions",0.0,0.0,0.0
+141,"2018","Tamil Nadu","33","Derailments",0.0,0.0,0.0
+142,"2018","Tamil Nadu","33","Explosion/Fire",0.0,0.0,0.0
+143,"2018","Tamil Nadu","33","Fall From Train/Collision With People At Tracks",2184.0,173.0,2025.0
+144,"2018","Tamil Nadu","33","Others",0.0,0.0,0.0
+145,"2018","Telangana","36","Collisions",0.0,0.0,0.0
+146,"2018","Telangana","36","Derailments",0.0,0.0,0.0
+147,"2018","Telangana","36","Explosion/Fire",0.0,0.0,0.0
+148,"2018","Telangana","36","Fall From Train/Collision With People At Tracks",637.0,0.0,641.0
+149,"2018","Telangana","36","Others",0.0,0.0,0.0
+150,"2018","The Dadra And Nagar Haveli And Daman And Diu","38","Collisions",0.0,0.0,0.0
+151,"2018","The Dadra And Nagar Haveli And Daman And Diu","38","Derailments",0.0,0.0,0.0
+152,"2018","The Dadra And Nagar Haveli And Daman And Diu","38","Explosion/Fire",0.0,0.0,0.0
+153,"2018","The Dadra And Nagar Haveli And Daman And Diu","38","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+154,"2018","The Dadra And Nagar Haveli And Daman And Diu","38","Others",0.0,0.0,0.0
+155,"2018","Tripura","16","Collisions",0.0,0.0,0.0
+156,"2018","Tripura","16","Derailments",0.0,0.0,0.0
+157,"2018","Tripura","16","Explosion/Fire",0.0,0.0,0.0
+158,"2018","Tripura","16","Fall From Train/Collision With People At Tracks",7.0,0.0,7.0
+159,"2018","Tripura","16","Others",0.0,0.0,0.0
+160,"2018","Uttar Pradesh","9","Collisions",186.0,0.0,186.0
+161,"2018","Uttar Pradesh","9","Derailments",23.0,41.0,32.0
+162,"2018","Uttar Pradesh","9","Explosion/Fire",0.0,0.0,0.0
+163,"2018","Uttar Pradesh","9","Fall From Train/Collision With People At Tracks",2247.0,190.0,2093.0
+164,"2018","Uttar Pradesh","9","Others",816.0,52.0,784.0
+165,"2018","Uttarakhand","5","Collisions",0.0,0.0,0.0
+166,"2018","Uttarakhand","5","Derailments",0.0,0.0,0.0
+167,"2018","Uttarakhand","5","Explosion/Fire",0.0,0.0,0.0
+168,"2018","Uttarakhand","5","Fall From Train/Collision With People At Tracks",16.0,0.0,16.0
+169,"2018","Uttarakhand","5","Others",0.0,0.0,0.0
+170,"2018","West Bengal","19","Collisions",0.0,0.0,0.0
+171,"2018","West Bengal","19","Derailments",0.0,0.0,0.0
+172,"2018","West Bengal","19","Explosion/Fire",0.0,0.0,0.0
+173,"2018","West Bengal","19","Fall From Train/Collision With People At Tracks",71.0,0.0,37.0
+174,"2018","West Bengal","19","Others",2685.0,34.0,2685.0
+175,"2019","Andhra Pradesh","28","Collisions",0.0,0.0,0.0
+176,"2019","Andhra Pradesh","28","Derailments",0.0,0.0,0.0
+177,"2019","Andhra Pradesh","28","Explosion/Fire",0.0,0.0,0.0
+178,"2019","Andhra Pradesh","28","Fall From Train/Collision With People At Tracks",1511.0,1.0,1519.0
+179,"2019","Andhra Pradesh","28","Others",0.0,0.0,0.0
+180,"2019","Arunachal Pradesh","12","Collisions",0.0,0.0,0.0
+181,"2019","Arunachal Pradesh","12","Derailments",0.0,0.0,0.0
+182,"2019","Arunachal Pradesh","12","Explosion/Fire",0.0,0.0,0.0
+183,"2019","Arunachal Pradesh","12","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+184,"2019","Arunachal Pradesh","12","Others",0.0,0.0,0.0
+185,"2019","Assam","18","Collisions",0.0,0.0,0.0
+186,"2019","Assam","18","Derailments",0.0,0.0,0.0
+187,"2019","Assam","18","Explosion/Fire",0.0,0.0,0.0
+188,"2019","Assam","18","Fall From Train/Collision With People At Tracks",591.0,0.0,593.0
+189,"2019","Assam","18","Others",0.0,0.0,0.0
+190,"2019","Bihar","10","Collisions",0.0,0.0,0.0
+191,"2019","Bihar","10","Derailments",0.0,0.0,0.0
+192,"2019","Bihar","10","Explosion/Fire",0.0,0.0,0.0
+193,"2019","Bihar","10","Fall From Train/Collision With People At Tracks",1305.0,0.0,1338.0
+194,"2019","Bihar","10","Others",284.0,0.0,284.0
+195,"2019","Chandigarh","4","Collisions",0.0,0.0,0.0
+196,"2019","Chandigarh","4","Derailments",0.0,0.0,0.0
+197,"2019","Chandigarh","4","Explosion/Fire",0.0,0.0,0.0
+198,"2019","Chandigarh","4","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+199,"2019","Chandigarh","4","Others",0.0,0.0,0.0
+200,"2019","Chhattisgarh","22","Collisions",0.0,0.0,0.0
+201,"2019","Chhattisgarh","22","Derailments",0.0,0.0,0.0
+202,"2019","Chhattisgarh","22","Explosion/Fire",0.0,0.0,0.0
+203,"2019","Chhattisgarh","22","Fall From Train/Collision With People At Tracks",344.0,0.0,344.0
+204,"2019","Chhattisgarh","22","Others",122.0,0.0,122.0
+205,"2019","Delhi","7","Collisions",0.0,0.0,0.0
+206,"2019","Delhi","7","Derailments",0.0,0.0,0.0
+207,"2019","Delhi","7","Explosion/Fire",0.0,0.0,0.0
+208,"2019","Delhi","7","Fall From Train/Collision With People At Tracks",34.0,0.0,34.0
+209,"2019","Delhi","7","Others",824.0,62.0,762.0
+210,"2019","Goa","30","Collisions",0.0,0.0,0.0
+211,"2019","Goa","30","Derailments",0.0,0.0,0.0
+212,"2019","Goa","30","Explosion/Fire",0.0,0.0,0.0
+213,"2019","Goa","30","Fall From Train/Collision With People At Tracks",50.0,0.0,50.0
+214,"2019","Goa","30","Others",0.0,0.0,0.0
+215,"2019","Gujarat","24","Collisions",0.0,0.0,0.0
+216,"2019","Gujarat","24","Derailments",0.0,0.0,0.0
+217,"2019","Gujarat","24","Explosion/Fire",0.0,0.0,0.0
+218,"2019","Gujarat","24","Fall From Train/Collision With People At Tracks",994.0,0.0,1012.0
+219,"2019","Gujarat","24","Others",0.0,0.0,0.0
+220,"2019","Haryana","6","Collisions",0.0,0.0,0.0
+221,"2019","Haryana","6","Derailments",0.0,0.0,0.0
+222,"2019","Haryana","6","Explosion/Fire",0.0,0.0,0.0
+223,"2019","Haryana","6","Fall From Train/Collision With People At Tracks",756.0,96.0,660.0
+224,"2019","Haryana","6","Others",606.0,30.0,618.0
+225,"2019","Himachal Pradesh","2","Collisions",0.0,0.0,0.0
+226,"2019","Himachal Pradesh","2","Derailments",0.0,0.0,0.0
+227,"2019","Himachal Pradesh","2","Explosion/Fire",0.0,0.0,0.0
+228,"2019","Himachal Pradesh","2","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+229,"2019","Himachal Pradesh","2","Others",0.0,0.0,0.0
+230,"2019","Jammu And Kashmir","1","Collisions",0.0,0.0,0.0
+231,"2019","Jammu And Kashmir","1","Derailments",0.0,0.0,0.0
+232,"2019","Jammu And Kashmir","1","Explosion/Fire",0.0,0.0,0.0
+233,"2019","Jammu And Kashmir","1","Fall From Train/Collision With People At Tracks",40.0,0.0,41.0
+234,"2019","Jammu And Kashmir","1","Others",4.0,0.0,4.0
+235,"2019","Jharkhand","20","Collisions",0.0,0.0,0.0
+236,"2019","Jharkhand","20","Derailments",0.0,0.0,0.0
+237,"2019","Jharkhand","20","Explosion/Fire",0.0,0.0,0.0
+238,"2019","Jharkhand","20","Fall From Train/Collision With People At Tracks",483.0,1.0,486.0
+239,"2019","Jharkhand","20","Others",0.0,0.0,0.0
+240,"2019","Karnataka","29","Collisions",0.0,0.0,0.0
+241,"2019","Karnataka","29","Derailments",0.0,0.0,0.0
+242,"2019","Karnataka","29","Explosion/Fire",0.0,0.0,0.0
+243,"2019","Karnataka","29","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+244,"2019","Karnataka","29","Others",0.0,0.0,0.0
+245,"2019","Kerala","32","Collisions",0.0,0.0,0.0
+246,"2019","Kerala","32","Derailments",0.0,0.0,0.0
+247,"2019","Kerala","32","Explosion/Fire",0.0,0.0,0.0
+248,"2019","Kerala","32","Fall From Train/Collision With People At Tracks",202.0,1.0,202.0
+249,"2019","Kerala","32","Others",48.0,0.0,52.0
+250,"2019","Lakshadweep","31","Collisions",0.0,0.0,0.0
+251,"2019","Lakshadweep","31","Derailments",0.0,0.0,0.0
+252,"2019","Lakshadweep","31","Explosion/Fire",0.0,0.0,0.0
+253,"2019","Lakshadweep","31","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+254,"2019","Lakshadweep","31","Others",0.0,0.0,0.0
+255,"2019","Madhya Pradesh","23","Collisions",0.0,0.0,0.0
+256,"2019","Madhya Pradesh","23","Derailments",0.0,0.0,0.0
+257,"2019","Madhya Pradesh","23","Explosion/Fire",0.0,0.0,0.0
+258,"2019","Madhya Pradesh","23","Fall From Train/Collision With People At Tracks",1314.0,99.0,1217.0
+259,"2019","Madhya Pradesh","23","Others",194.0,0.0,192.0
+260,"2019","Maharashtra","27","Collisions",0.0,0.0,0.0
+261,"2019","Maharashtra","27","Derailments",0.0,0.0,0.0
+262,"2019","Maharashtra","27","Explosion/Fire",0.0,0.0,0.0
+263,"2019","Maharashtra","27","Fall From Train/Collision With People At Tracks",6059.0,2293.0,3778.0
+264,"2019","Maharashtra","27","Others",279.0,142.0,138.0
+265,"2019","Manipur","14","Collisions",0.0,0.0,0.0
+266,"2019","Manipur","14","Derailments",0.0,0.0,0.0
+267,"2019","Manipur","14","Explosion/Fire",0.0,0.0,0.0
+268,"2019","Manipur","14","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+269,"2019","Manipur","14","Others",0.0,0.0,0.0
+270,"2019","Meghalaya","17","Collisions",0.0,0.0,0.0
+271,"2019","Meghalaya","17","Derailments",0.0,0.0,0.0
+272,"2019","Meghalaya","17","Explosion/Fire",0.0,0.0,0.0
+273,"2019","Meghalaya","17","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+274,"2019","Meghalaya","17","Others",0.0,0.0,0.0
+275,"2019","Mizoram","15","Collisions",0.0,0.0,0.0
+276,"2019","Mizoram","15","Derailments",0.0,0.0,0.0
+277,"2019","Mizoram","15","Explosion/Fire",0.0,0.0,0.0
+278,"2019","Mizoram","15","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+279,"2019","Mizoram","15","Others",0.0,0.0,0.0
+280,"2019","Nagaland","13","Collisions",0.0,0.0,0.0
+281,"2019","Nagaland","13","Derailments",0.0,0.0,0.0
+282,"2019","Nagaland","13","Explosion/Fire",0.0,0.0,0.0
+283,"2019","Nagaland","13","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+284,"2019","Nagaland","13","Others",0.0,0.0,0.0
+285,"2019","Odisha","21","Collisions",0.0,0.0,0.0
+286,"2019","Odisha","21","Derailments",0.0,0.0,0.0
+287,"2019","Odisha","21","Explosion/Fire",0.0,0.0,0.0
+288,"2019","Odisha","21","Fall From Train/Collision With People At Tracks",444.0,0.0,446.0
+289,"2019","Odisha","21","Others",0.0,0.0,0.0
+290,"2019","Puducherry","34","Collisions",0.0,0.0,0.0
+291,"2019","Puducherry","34","Derailments",0.0,0.0,0.0
+292,"2019","Puducherry","34","Explosion/Fire",0.0,0.0,0.0
+293,"2019","Puducherry","34","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+294,"2019","Puducherry","34","Others",9.0,0.0,9.0
+295,"2019","Punjab","3","Collisions",0.0,0.0,0.0
+296,"2019","Punjab","3","Derailments",0.0,0.0,0.0
+297,"2019","Punjab","3","Explosion/Fire",0.0,0.0,0.0
+298,"2019","Punjab","3","Fall From Train/Collision With People At Tracks",893.0,65.0,831.0
+299,"2019","Punjab","3","Others",0.0,0.0,0.0
+300,"2019","Rajasthan","8","Collisions",0.0,0.0,0.0
+301,"2019","Rajasthan","8","Derailments",0.0,0.0,0.0
+302,"2019","Rajasthan","8","Explosion/Fire",0.0,0.0,0.0
+303,"2019","Rajasthan","8","Fall From Train/Collision With People At Tracks",753.0,30.0,724.0
+304,"2019","Rajasthan","8","Others",50.0,0.0,51.0
+305,"2019","Sikkim","11","Collisions",0.0,0.0,0.0
+306,"2019","Sikkim","11","Derailments",0.0,0.0,0.0
+307,"2019","Sikkim","11","Explosion/Fire",0.0,0.0,0.0
+308,"2019","Sikkim","11","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+309,"2019","Sikkim","11","Others",0.0,0.0,0.0
+310,"2019","Tamil Nadu","33","Collisions",0.0,0.0,0.0
+311,"2019","Tamil Nadu","33","Derailments",0.0,0.0,0.0
+312,"2019","Tamil Nadu","33","Explosion/Fire",0.0,0.0,0.0
+313,"2019","Tamil Nadu","33","Fall From Train/Collision With People At Tracks",2266.0,203.0,2081.0
+314,"2019","Tamil Nadu","33","Others",0.0,0.0,0.0
+315,"2019","Telangana","36","Collisions",0.0,0.0,0.0
+316,"2019","Telangana","36","Derailments",0.0,0.0,0.0
+317,"2019","Telangana","36","Explosion/Fire",0.0,0.0,0.0
+318,"2019","Telangana","36","Fall From Train/Collision With People At Tracks",626.0,0.0,631.0
+319,"2019","Telangana","36","Others",0.0,0.0,0.0
+320,"2019","The Dadra And Nagar Haveli And Daman And Diu","38","Collisions",0.0,0.0,0.0
+321,"2019","The Dadra And Nagar Haveli And Daman And Diu","38","Derailments",0.0,0.0,0.0
+322,"2019","The Dadra And Nagar Haveli And Daman And Diu","38","Explosion/Fire",0.0,0.0,0.0
+323,"2019","The Dadra And Nagar Haveli And Daman And Diu","38","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+324,"2019","The Dadra And Nagar Haveli And Daman And Diu","38","Others",0.0,0.0,0.0
+325,"2019","Tripura","16","Collisions",0.0,0.0,0.0
+326,"2019","Tripura","16","Derailments",0.0,0.0,0.0
+327,"2019","Tripura","16","Explosion/Fire",0.0,0.0,0.0
+328,"2019","Tripura","16","Fall From Train/Collision With People At Tracks",5.0,0.0,5.0
+329,"2019","Tripura","16","Others",0.0,0.0,0.0
+330,"2019","Uttar Pradesh","9","Collisions",49.0,11.0,42.0
+331,"2019","Uttar Pradesh","9","Derailments",10.0,1.0,10.0
+332,"2019","Uttar Pradesh","9","Explosion/Fire",0.0,0.0,0.0
+333,"2019","Uttar Pradesh","9","Fall From Train/Collision With People At Tracks",2584.0,345.0,2239.0
+334,"2019","Uttar Pradesh","9","Others",1337.0,145.0,1230.0
+335,"2019","Uttarakhand","5","Collisions",0.0,0.0,0.0
+336,"2019","Uttarakhand","5","Derailments",0.0,0.0,0.0
+337,"2019","Uttarakhand","5","Explosion/Fire",0.0,0.0,0.0
+338,"2019","Uttarakhand","5","Fall From Train/Collision With People At Tracks",41.0,0.0,42.0
+339,"2019","Uttarakhand","5","Others",0.0,0.0,0.0
+340,"2019","West Bengal","19","Collisions",0.0,0.0,0.0
+341,"2019","West Bengal","19","Derailments",0.0,0.0,0.0
+342,"2019","West Bengal","19","Explosion/Fire",0.0,0.0,0.0
+343,"2019","West Bengal","19","Fall From Train/Collision With People At Tracks",66.0,0.0,66.0
+344,"2019","West Bengal","19","Others",2810.0,44.0,2766.0
+345,"2020","Andaman And Nicobar Islands","35","Collisions",0.0,0.0,0.0
+346,"2020","Andaman And Nicobar Islands","35","Derailments",0.0,0.0,0.0
+347,"2020","Andaman And Nicobar Islands","35","Explosion/Fire",0.0,0.0,0.0
+348,"2020","Andaman And Nicobar Islands","35","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+349,"2020","Andaman And Nicobar Islands","35","Others",0.0,0.0,0.0
+350,"2020","Andhra Pradesh","28","Collisions",0.0,0.0,0.0
+351,"2020","Andhra Pradesh","28","Derailments",0.0,0.0,0.0
+352,"2020","Andhra Pradesh","28","Explosion/Fire",0.0,0.0,0.0
+353,"2020","Andhra Pradesh","28","Fall From Train/Collision With People At Tracks",594.0,0.0,596.0
+354,"2020","Andhra Pradesh","28","Others",17.0,0.0,17.0
+355,"2020","Arunachal Pradesh","12","Collisions",0.0,0.0,0.0
+356,"2020","Arunachal Pradesh","12","Derailments",0.0,0.0,0.0
+357,"2020","Arunachal Pradesh","12","Explosion/Fire",0.0,0.0,0.0
+358,"2020","Arunachal Pradesh","12","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+359,"2020","Arunachal Pradesh","12","Others",0.0,0.0,0.0
+360,"2020","Assam","18","Collisions",0.0,0.0,0.0
+361,"2020","Assam","18","Derailments",0.0,0.0,0.0
+362,"2020","Assam","18","Explosion/Fire",0.0,0.0,0.0
+363,"2020","Assam","18","Fall From Train/Collision With People At Tracks",413.0,3.0,413.0
+364,"2020","Assam","18","Others",0.0,0.0,0.0
+365,"2020","Bihar","10","Collisions",0.0,0.0,0.0
+366,"2020","Bihar","10","Derailments",0.0,0.0,0.0
+367,"2020","Bihar","10","Explosion/Fire",0.0,0.0,0.0
+368,"2020","Bihar","10","Fall From Train/Collision With People At Tracks",600.0,0.0,604.0
+369,"2020","Bihar","10","Others",180.0,3.0,177.0
+370,"2020","Chandigarh","4","Collisions",0.0,0.0,0.0
+371,"2020","Chandigarh","4","Derailments",0.0,0.0,0.0
+372,"2020","Chandigarh","4","Explosion/Fire",0.0,0.0,0.0
+373,"2020","Chandigarh","4","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+374,"2020","Chandigarh","4","Others",0.0,0.0,0.0
+375,"2020","Chhattisgarh","22","Collisions",0.0,0.0,0.0
+376,"2020","Chhattisgarh","22","Derailments",0.0,0.0,0.0
+377,"2020","Chhattisgarh","22","Explosion/Fire",0.0,0.0,0.0
+378,"2020","Chhattisgarh","22","Fall From Train/Collision With People At Tracks",205.0,1.0,204.0
+379,"2020","Chhattisgarh","22","Others",123.0,0.0,123.0
+380,"2020","Delhi","7","Collisions",0.0,0.0,0.0
+381,"2020","Delhi","7","Derailments",0.0,0.0,0.0
+382,"2020","Delhi","7","Explosion/Fire",0.0,0.0,0.0
+383,"2020","Delhi","7","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+384,"2020","Delhi","7","Others",526.0,111.0,415.0
+385,"2020","Goa","30","Collisions",0.0,0.0,0.0
+386,"2020","Goa","30","Derailments",0.0,0.0,0.0
+387,"2020","Goa","30","Explosion/Fire",0.0,0.0,0.0
+388,"2020","Goa","30","Fall From Train/Collision With People At Tracks",23.0,0.0,23.0
+389,"2020","Goa","30","Others",0.0,0.0,0.0
+390,"2020","Gujarat","24","Collisions",0.0,0.0,0.0
+391,"2020","Gujarat","24","Derailments",0.0,0.0,0.0
+392,"2020","Gujarat","24","Explosion/Fire",0.0,0.0,0.0
+393,"2020","Gujarat","24","Fall From Train/Collision With People At Tracks",490.0,0.0,492.0
+394,"2020","Gujarat","24","Others",0.0,0.0,0.0
+395,"2020","Haryana","6","Collisions",0.0,0.0,0.0
+396,"2020","Haryana","6","Derailments",0.0,0.0,0.0
+397,"2020","Haryana","6","Explosion/Fire",0.0,0.0,0.0
+398,"2020","Haryana","6","Fall From Train/Collision With People At Tracks",242.0,7.0,245.0
+399,"2020","Haryana","6","Others",281.0,13.0,259.0
+400,"2020","Himachal Pradesh","2","Collisions",0.0,0.0,0.0
+401,"2020","Himachal Pradesh","2","Derailments",0.0,0.0,0.0
+402,"2020","Himachal Pradesh","2","Explosion/Fire",0.0,0.0,0.0
+403,"2020","Himachal Pradesh","2","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+404,"2020","Himachal Pradesh","2","Others",0.0,0.0,0.0
+405,"2020","Jammu And Kashmir","1","Collisions",0.0,0.0,0.0
+406,"2020","Jammu And Kashmir","1","Derailments",0.0,0.0,0.0
+407,"2020","Jammu And Kashmir","1","Explosion/Fire",0.0,0.0,0.0
+408,"2020","Jammu And Kashmir","1","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+409,"2020","Jammu And Kashmir","1","Others",9.0,0.0,9.0
+410,"2020","Jharkhand","20","Collisions",1.0,0.0,2.0
+411,"2020","Jharkhand","20","Derailments",0.0,0.0,0.0
+412,"2020","Jharkhand","20","Explosion/Fire",8.0,0.0,3.0
+413,"2020","Jharkhand","20","Fall From Train/Collision With People At Tracks",265.0,5.0,261.0
+414,"2020","Jharkhand","20","Others",0.0,0.0,0.0
+415,"2020","Karnataka","29","Collisions",0.0,0.0,0.0
+416,"2020","Karnataka","29","Derailments",0.0,0.0,0.0
+417,"2020","Karnataka","29","Explosion/Fire",0.0,0.0,0.0
+418,"2020","Karnataka","29","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+419,"2020","Karnataka","29","Others",0.0,0.0,0.0
+420,"2020","Kerala","32","Collisions",0.0,0.0,0.0
+421,"2020","Kerala","32","Derailments",0.0,0.0,0.0
+422,"2020","Kerala","32","Explosion/Fire",2.0,0.0,2.0
+423,"2020","Kerala","32","Fall From Train/Collision With People At Tracks",73.0,5.0,73.0
+424,"2020","Kerala","32","Others",35.0,0.0,35.0
+425,"2020","Ladakh","37","Collisions",0.0,0.0,0.0
+426,"2020","Ladakh","37","Derailments",0.0,0.0,0.0
+427,"2020","Ladakh","37","Explosion/Fire",0.0,0.0,0.0
+428,"2020","Ladakh","37","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+429,"2020","Ladakh","37","Others",0.0,0.0,0.0
+430,"2020","Lakshadweep","31","Collisions",0.0,0.0,0.0
+431,"2020","Lakshadweep","31","Derailments",0.0,0.0,0.0
+432,"2020","Lakshadweep","31","Explosion/Fire",0.0,0.0,0.0
+433,"2020","Lakshadweep","31","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+434,"2020","Lakshadweep","31","Others",0.0,0.0,0.0
+435,"2020","Madhya Pradesh","23","Collisions",1.0,0.0,3.0
+436,"2020","Madhya Pradesh","23","Derailments",0.0,0.0,0.0
+437,"2020","Madhya Pradesh","23","Explosion/Fire",0.0,0.0,0.0
+438,"2020","Madhya Pradesh","23","Fall From Train/Collision With People At Tracks",453.0,0.0,453.0
+439,"2020","Madhya Pradesh","23","Others",366.0,0.0,366.0
+440,"2020","Maharashtra","27","Collisions",0.0,0.0,0.0
+441,"2020","Maharashtra","27","Derailments",0.0,0.0,0.0
+442,"2020","Maharashtra","27","Explosion/Fire",0.0,0.0,0.0
+443,"2020","Maharashtra","27","Fall From Train/Collision With People At Tracks",2547.0,662.0,1904.0
+444,"2020","Maharashtra","27","Others",150.0,130.0,18.0
+445,"2020","Manipur","14","Collisions",0.0,0.0,0.0
+446,"2020","Manipur","14","Derailments",0.0,0.0,0.0
+447,"2020","Manipur","14","Explosion/Fire",0.0,0.0,0.0
+448,"2020","Manipur","14","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+449,"2020","Manipur","14","Others",0.0,0.0,0.0
+450,"2020","Meghalaya","17","Collisions",0.0,0.0,0.0
+451,"2020","Meghalaya","17","Derailments",0.0,0.0,0.0
+452,"2020","Meghalaya","17","Explosion/Fire",0.0,0.0,0.0
+453,"2020","Meghalaya","17","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+454,"2020","Meghalaya","17","Others",0.0,0.0,0.0
+455,"2020","Mizoram","15","Collisions",0.0,0.0,0.0
+456,"2020","Mizoram","15","Derailments",0.0,0.0,0.0
+457,"2020","Mizoram","15","Explosion/Fire",0.0,0.0,0.0
+458,"2020","Mizoram","15","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+459,"2020","Mizoram","15","Others",0.0,0.0,0.0
+460,"2020","Nagaland","13","Collisions",0.0,0.0,0.0
+461,"2020","Nagaland","13","Derailments",0.0,0.0,0.0
+462,"2020","Nagaland","13","Explosion/Fire",0.0,0.0,0.0
+463,"2020","Nagaland","13","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+464,"2020","Nagaland","13","Others",0.0,0.0,0.0
+465,"2020","Odisha","21","Collisions",0.0,0.0,0.0
+466,"2020","Odisha","21","Derailments",0.0,0.0,0.0
+467,"2020","Odisha","21","Explosion/Fire",0.0,0.0,0.0
+468,"2020","Odisha","21","Fall From Train/Collision With People At Tracks",279.0,0.0,280.0
+469,"2020","Odisha","21","Others",0.0,0.0,0.0
+470,"2020","Puducherry","34","Collisions",0.0,0.0,0.0
+471,"2020","Puducherry","34","Derailments",0.0,0.0,0.0
+472,"2020","Puducherry","34","Explosion/Fire",0.0,0.0,0.0
+473,"2020","Puducherry","34","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+474,"2020","Puducherry","34","Others",0.0,0.0,0.0
+475,"2020","Punjab","3","Collisions",0.0,0.0,0.0
+476,"2020","Punjab","3","Derailments",0.0,0.0,0.0
+477,"2020","Punjab","3","Explosion/Fire",0.0,0.0,0.0
+478,"2020","Punjab","3","Fall From Train/Collision With People At Tracks",342.0,15.0,329.0
+479,"2020","Punjab","3","Others",0.0,0.0,0.0
+480,"2020","Rajasthan","8","Collisions",0.0,0.0,0.0
+481,"2020","Rajasthan","8","Derailments",0.0,0.0,0.0
+482,"2020","Rajasthan","8","Explosion/Fire",0.0,0.0,0.0
+483,"2020","Rajasthan","8","Fall From Train/Collision With People At Tracks",402.0,15.0,388.0
+484,"2020","Rajasthan","8","Others",27.0,0.0,27.0
+485,"2020","Sikkim","11","Collisions",0.0,0.0,0.0
+486,"2020","Sikkim","11","Derailments",0.0,0.0,0.0
+487,"2020","Sikkim","11","Explosion/Fire",0.0,0.0,0.0
+488,"2020","Sikkim","11","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+489,"2020","Sikkim","11","Others",0.0,0.0,0.0
+490,"2020","Tamil Nadu","33","Collisions",0.0,0.0,0.0
+491,"2020","Tamil Nadu","33","Derailments",0.0,0.0,0.0
+492,"2020","Tamil Nadu","33","Explosion/Fire",0.0,0.0,0.0
+493,"2020","Tamil Nadu","33","Fall From Train/Collision With People At Tracks",959.0,64.0,902.0
+494,"2020","Tamil Nadu","33","Others",0.0,0.0,0.0
+495,"2020","Telangana","36","Collisions",0.0,0.0,0.0
+496,"2020","Telangana","36","Derailments",0.0,0.0,0.0
+497,"2020","Telangana","36","Explosion/Fire",0.0,0.0,0.0
+498,"2020","Telangana","36","Fall From Train/Collision With People At Tracks",333.0,0.0,337.0
+499,"2020","Telangana","36","Others",0.0,0.0,0.0
+500,"2020","The Dadra And Nagar Haveli And Daman And Diu","38","Collisions",0.0,0.0,0.0
+501,"2020","The Dadra And Nagar Haveli And Daman And Diu","38","Derailments",0.0,0.0,0.0
+502,"2020","The Dadra And Nagar Haveli And Daman And Diu","38","Explosion/Fire",0.0,0.0,0.0
+503,"2020","The Dadra And Nagar Haveli And Daman And Diu","38","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+504,"2020","The Dadra And Nagar Haveli And Daman And Diu","38","Others",0.0,0.0,0.0
+505,"2020","Tripura","16","Collisions",0.0,0.0,0.0
+506,"2020","Tripura","16","Derailments",0.0,0.0,0.0
+507,"2020","Tripura","16","Explosion/Fire",0.0,0.0,0.0
+508,"2020","Tripura","16","Fall From Train/Collision With People At Tracks",2.0,0.0,2.0
+509,"2020","Tripura","16","Others",0.0,0.0,0.0
+510,"2020","Uttar Pradesh","9","Collisions",20.0,10.0,44.0
+511,"2020","Uttar Pradesh","9","Derailments",160.0,0.0,160.0
+512,"2020","Uttar Pradesh","9","Explosion/Fire",0.0,0.0,0.0
+513,"2020","Uttar Pradesh","9","Fall From Train/Collision With People At Tracks",891.0,3.0,891.0
+514,"2020","Uttar Pradesh","9","Others",489.0,18.0,463.0
+515,"2020","Uttarakhand","5","Collisions",0.0,0.0,0.0
+516,"2020","Uttarakhand","5","Derailments",0.0,0.0,0.0
+517,"2020","Uttarakhand","5","Explosion/Fire",0.0,0.0,0.0
+518,"2020","Uttarakhand","5","Fall From Train/Collision With People At Tracks",4.0,1.0,3.0
+519,"2020","Uttarakhand","5","Others",1.0,0.0,1.0
+520,"2020","West Bengal","19","Collisions",0.0,0.0,0.0
+521,"2020","West Bengal","19","Derailments",0.0,0.0,0.0
+522,"2020","West Bengal","19","Explosion/Fire",0.0,0.0,0.0
+523,"2020","West Bengal","19","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+524,"2020","West Bengal","19","Others",1505.0,61.0,1444.0
+525,"2021","Andaman And Nicobar Islands","35","Collisions",0.0,0.0,0.0
+526,"2021","Andaman And Nicobar Islands","35","Derailments",0.0,0.0,0.0
+527,"2021","Andaman And Nicobar Islands","35","Explosion/Fire",0.0,0.0,0.0
+528,"2021","Andaman And Nicobar Islands","35","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+529,"2021","Andaman And Nicobar Islands","35","Others",0.0,0.0,0.0
+530,"2021","Andhra Pradesh","28","Collisions",0.0,0.0,0.0
+531,"2021","Andhra Pradesh","28","Derailments",0.0,0.0,0.0
+532,"2021","Andhra Pradesh","28","Explosion/Fire",0.0,0.0,0.0
+533,"2021","Andhra Pradesh","28","Fall From Train/Collision With People At Tracks",750.0,0.0,755.0
+534,"2021","Andhra Pradesh","28","Others",5.0,0.0,5.0
+535,"2021","Arunachal Pradesh","12","Collisions",0.0,0.0,0.0
+536,"2021","Arunachal Pradesh","12","Derailments",0.0,0.0,0.0
+537,"2021","Arunachal Pradesh","12","Explosion/Fire",0.0,0.0,0.0
+538,"2021","Arunachal Pradesh","12","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+539,"2021","Arunachal Pradesh","12","Others",0.0,0.0,0.0
+540,"2021","Assam","18","Collisions",0.0,0.0,0.0
+541,"2021","Assam","18","Derailments",0.0,0.0,0.0
+542,"2021","Assam","18","Explosion/Fire",0.0,0.0,0.0
+543,"2021","Assam","18","Fall From Train/Collision With People At Tracks",459.0,0.0,459.0
+544,"2021","Assam","18","Others",0.0,0.0,0.0
+545,"2021","Bihar","10","Collisions",3.0,0.0,3.0
+546,"2021","Bihar","10","Derailments",0.0,0.0,0.0
+547,"2021","Bihar","10","Explosion/Fire",0.0,0.0,0.0
+548,"2021","Bihar","10","Fall From Train/Collision With People At Tracks",1109.0,47.0,1111.0
+549,"2021","Bihar","10","Others",35.0,0.0,37.0
+550,"2021","Chandigarh","4","Collisions",0.0,0.0,0.0
+551,"2021","Chandigarh","4","Derailments",0.0,0.0,0.0
+552,"2021","Chandigarh","4","Explosion/Fire",0.0,0.0,0.0
+553,"2021","Chandigarh","4","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+554,"2021","Chandigarh","4","Others",0.0,0.0,0.0
+555,"2021","Chhattisgarh","22","Collisions",0.0,0.0,0.0
+556,"2021","Chhattisgarh","22","Derailments",0.0,0.0,0.0
+557,"2021","Chhattisgarh","22","Explosion/Fire",0.0,0.0,0.0
+558,"2021","Chhattisgarh","22","Fall From Train/Collision With People At Tracks",273.0,0.0,272.0
+559,"2021","Chhattisgarh","22","Others",139.0,0.0,140.0
+560,"2021","Delhi","7","Collisions",0.0,0.0,0.0
+561,"2021","Delhi","7","Derailments",0.0,0.0,0.0
+562,"2021","Delhi","7","Explosion/Fire",0.0,0.0,0.0
+563,"2021","Delhi","7","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+564,"2021","Delhi","7","Others",676.0,126.0,550.0
+565,"2021","Goa","30","Collisions",0.0,0.0,0.0
+566,"2021","Goa","30","Derailments",0.0,0.0,0.0
+567,"2021","Goa","30","Explosion/Fire",0.0,0.0,0.0
+568,"2021","Goa","30","Fall From Train/Collision With People At Tracks",49.0,0.0,49.0
+569,"2021","Goa","30","Others",0.0,0.0,0.0
+570,"2021","Gujarat","24","Collisions",0.0,0.0,0.0
+571,"2021","Gujarat","24","Derailments",0.0,0.0,0.0
+572,"2021","Gujarat","24","Explosion/Fire",0.0,0.0,0.0
+573,"2021","Gujarat","24","Fall From Train/Collision With People At Tracks",571.0,1.0,579.0
+574,"2021","Gujarat","24","Others",0.0,0.0,0.0
+575,"2021","Haryana","6","Collisions",0.0,0.0,0.0
+576,"2021","Haryana","6","Derailments",0.0,0.0,0.0
+577,"2021","Haryana","6","Explosion/Fire",0.0,0.0,0.0
+578,"2021","Haryana","6","Fall From Train/Collision With People At Tracks",466.0,9.0,457.0
+579,"2021","Haryana","6","Others",340.0,7.0,333.0
+580,"2021","Himachal Pradesh","2","Collisions",0.0,0.0,0.0
+581,"2021","Himachal Pradesh","2","Derailments",0.0,0.0,0.0
+582,"2021","Himachal Pradesh","2","Explosion/Fire",0.0,0.0,0.0
+583,"2021","Himachal Pradesh","2","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+584,"2021","Himachal Pradesh","2","Others",0.0,0.0,0.0
+585,"2021","Jammu And Kashmir","1","Collisions",0.0,0.0,0.0
+586,"2021","Jammu And Kashmir","1","Derailments",0.0,0.0,0.0
+587,"2021","Jammu And Kashmir","1","Explosion/Fire",0.0,0.0,0.0
+588,"2021","Jammu And Kashmir","1","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+589,"2021","Jammu And Kashmir","1","Others",15.0,0.0,15.0
+590,"2021","Jharkhand","20","Collisions",11.0,0.0,11.0
+591,"2021","Jharkhand","20","Derailments",16.0,6.0,17.0
+592,"2021","Jharkhand","20","Explosion/Fire",0.0,0.0,0.0
+593,"2021","Jharkhand","20","Fall From Train/Collision With People At Tracks",238.0,14.0,224.0
+594,"2021","Jharkhand","20","Others",19.0,0.0,19.0
+595,"2021","Karnataka","29","Collisions",0.0,0.0,0.0
+596,"2021","Karnataka","29","Derailments",0.0,0.0,0.0
+597,"2021","Karnataka","29","Explosion/Fire",0.0,0.0,0.0
+598,"2021","Karnataka","29","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+599,"2021","Karnataka","29","Others",0.0,0.0,0.0
+600,"2021","Kerala","32","Collisions",0.0,0.0,0.0
+601,"2021","Kerala","32","Derailments",0.0,0.0,0.0
+602,"2021","Kerala","32","Explosion/Fire",0.0,0.0,0.0
+603,"2021","Kerala","32","Fall From Train/Collision With People At Tracks",131.0,0.0,132.0
+604,"2021","Kerala","32","Others",40.0,0.0,40.0
+605,"2021","Ladakh","37","Collisions",0.0,0.0,0.0
+606,"2021","Ladakh","37","Derailments",0.0,0.0,0.0
+607,"2021","Ladakh","37","Explosion/Fire",0.0,0.0,0.0
+608,"2021","Ladakh","37","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+609,"2021","Ladakh","37","Others",0.0,0.0,0.0
+610,"2021","Lakshadweep","31","Collisions",0.0,0.0,0.0
+611,"2021","Lakshadweep","31","Derailments",0.0,0.0,0.0
+612,"2021","Lakshadweep","31","Explosion/Fire",0.0,0.0,0.0
+613,"2021","Lakshadweep","31","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+614,"2021","Lakshadweep","31","Others",0.0,0.0,0.0
+615,"2021","Madhya Pradesh","23","Collisions",0.0,0.0,0.0
+616,"2021","Madhya Pradesh","23","Derailments",0.0,0.0,0.0
+617,"2021","Madhya Pradesh","23","Explosion/Fire",0.0,0.0,0.0
+618,"2021","Madhya Pradesh","23","Fall From Train/Collision With People At Tracks",586.0,0.0,586.0
+619,"2021","Madhya Pradesh","23","Others",492.0,0.0,493.0
+620,"2021","Maharashtra","27","Collisions",0.0,0.0,0.0
+621,"2021","Maharashtra","27","Derailments",0.0,0.0,0.0
+622,"2021","Maharashtra","27","Explosion/Fire",0.0,0.0,0.0
+623,"2021","Maharashtra","27","Fall From Train/Collision With People At Tracks",3285.0,816.0,2473.0
+624,"2021","Maharashtra","27","Others",203.0,141.0,62.0
+625,"2021","Manipur","14","Collisions",0.0,0.0,0.0
+626,"2021","Manipur","14","Derailments",0.0,0.0,0.0
+627,"2021","Manipur","14","Explosion/Fire",0.0,0.0,0.0
+628,"2021","Manipur","14","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+629,"2021","Manipur","14","Others",0.0,0.0,0.0
+630,"2021","Meghalaya","17","Collisions",0.0,0.0,0.0
+631,"2021","Meghalaya","17","Derailments",0.0,0.0,0.0
+632,"2021","Meghalaya","17","Explosion/Fire",0.0,0.0,0.0
+633,"2021","Meghalaya","17","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+634,"2021","Meghalaya","17","Others",0.0,0.0,0.0
+635,"2021","Mizoram","15","Collisions",0.0,0.0,0.0
+636,"2021","Mizoram","15","Derailments",0.0,0.0,0.0
+637,"2021","Mizoram","15","Explosion/Fire",0.0,0.0,0.0
+638,"2021","Mizoram","15","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+639,"2021","Mizoram","15","Others",0.0,0.0,0.0
+640,"2021","Nagaland","13","Collisions",0.0,0.0,0.0
+641,"2021","Nagaland","13","Derailments",0.0,0.0,0.0
+642,"2021","Nagaland","13","Explosion/Fire",0.0,0.0,0.0
+643,"2021","Nagaland","13","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+644,"2021","Nagaland","13","Others",0.0,0.0,0.0
+645,"2021","Odisha","21","Collisions",0.0,0.0,0.0
+646,"2021","Odisha","21","Derailments",0.0,0.0,0.0
+647,"2021","Odisha","21","Explosion/Fire",0.0,0.0,0.0
+648,"2021","Odisha","21","Fall From Train/Collision With People At Tracks",165.0,0.0,165.0
+649,"2021","Odisha","21","Others",141.0,94.0,141.0
+650,"2021","Puducherry","34","Collisions",0.0,0.0,0.0
+651,"2021","Puducherry","34","Derailments",0.0,0.0,0.0
+652,"2021","Puducherry","34","Explosion/Fire",0.0,0.0,0.0
+653,"2021","Puducherry","34","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+654,"2021","Puducherry","34","Others",0.0,0.0,0.0
+655,"2021","Punjab","3","Collisions",0.0,0.0,0.0
+656,"2021","Punjab","3","Derailments",0.0,0.0,0.0
+657,"2021","Punjab","3","Explosion/Fire",0.0,0.0,0.0
+658,"2021","Punjab","3","Fall From Train/Collision With People At Tracks",23.0,0.0,23.0
+659,"2021","Punjab","3","Others",592.0,40.0,553.0
+660,"2021","Rajasthan","8","Collisions",0.0,0.0,0.0
+661,"2021","Rajasthan","8","Derailments",0.0,0.0,0.0
+662,"2021","Rajasthan","8","Explosion/Fire",0.0,0.0,0.0
+663,"2021","Rajasthan","8","Fall From Train/Collision With People At Tracks",613.0,17.0,599.0
+664,"2021","Rajasthan","8","Others",56.0,0.0,56.0
+665,"2021","Sikkim","11","Collisions",0.0,0.0,0.0
+666,"2021","Sikkim","11","Derailments",0.0,0.0,0.0
+667,"2021","Sikkim","11","Explosion/Fire",0.0,0.0,0.0
+668,"2021","Sikkim","11","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+669,"2021","Sikkim","11","Others",0.0,0.0,0.0
+670,"2021","Tamil Nadu","33","Collisions",0.0,0.0,0.0
+671,"2021","Tamil Nadu","33","Derailments",0.0,0.0,0.0
+672,"2021","Tamil Nadu","33","Explosion/Fire",0.0,0.0,0.0
+673,"2021","Tamil Nadu","33","Fall From Train/Collision With People At Tracks",1407.0,107.0,1300.0
+674,"2021","Tamil Nadu","33","Others",0.0,0.0,0.0
+675,"2021","Telangana","36","Collisions",0.0,0.0,0.0
+676,"2021","Telangana","36","Derailments",0.0,0.0,0.0
+677,"2021","Telangana","36","Explosion/Fire",0.0,0.0,0.0
+678,"2021","Telangana","36","Fall From Train/Collision With People At Tracks",408.0,0.0,412.0
+679,"2021","Telangana","36","Others",0.0,0.0,0.0
+680,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Collisions",0.0,0.0,0.0
+681,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Derailments",0.0,0.0,0.0
+682,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Explosion/Fire",0.0,0.0,0.0
+683,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Fall From Train/Collision With People At Tracks",0.0,0.0,0.0
+684,"2021","The Dadra And Nagar Haveli And Daman And Diu","38","Others",0.0,0.0,0.0
+685,"2021","Tripura","16","Collisions",0.0,0.0,0.0
+686,"2021","Tripura","16","Derailments",0.0,0.0,0.0
+687,"2021","Tripura","16","Explosion/Fire",0.0,0.0,0.0
+688,"2021","Tripura","16","Fall From Train/Collision With People At Tracks",4.0,0.0,5.0
+689,"2021","Tripura","16","Others",0.0,0.0,0.0
+690,"2021","Uttar Pradesh","9","Collisions",74.0,0.0,72.0
+691,"2021","Uttar Pradesh","9","Derailments",5.0,0.0,5.0
+692,"2021","Uttar Pradesh","9","Explosion/Fire",0.0,0.0,0.0
+693,"2021","Uttar Pradesh","9","Fall From Train/Collision With People At Tracks",1602.0,256.0,1399.0
+694,"2021","Uttar Pradesh","9","Others",542.0,25.0,568.0
+695,"2021","Uttarakhand","5","Collisions",0.0,0.0,0.0
+696,"2021","Uttarakhand","5","Derailments",0.0,0.0,0.0
+697,"2021","Uttarakhand","5","Explosion/Fire",0.0,0.0,0.0
+698,"2021","Uttarakhand","5","Fall From Train/Collision With People At Tracks",25.0,0.0,29.0
+699,"2021","Uttarakhand","5","Others",0.0,0.0,0.0
+700,"2021","West Bengal","19","Collisions",0.0,0.0,0.0
+701,"2021","West Bengal","19","Derailments",0.0,0.0,0.0
+702,"2021","West Bengal","19","Explosion/Fire",0.0,0.0,0.0
+703,"2021","West Bengal","19","Fall From Train/Collision With People At Tracks",17.0,12.0,7.0
+704,"2021","West Bengal","19","Others",2408.0,134.0,2275.0
