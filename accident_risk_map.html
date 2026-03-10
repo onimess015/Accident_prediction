@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_63ae2ee02cfffa36a5d3fc220cc32aa5 {
+                #map_e49df7839df6c9bce476638aa0740b34 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -56,23 +56,29 @@
     
     
 <div style="position:fixed;bottom:50px;left:50px;z-index:1000;
-background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:14px;">
-<b>Accident Risk Level</b><br>
-<i style="background:red;width:12px;height:12px;display:inline-block;border-radius:50%;"></i> High Risk (Severity ≥ 2.2)<br>
-<i style="background:orange;width:12px;height:12px;display:inline-block;border-radius:50%;"></i> Moderate (1.9 - 2.2)<br>
-<i style="background:green;width:12px;height:12px;display:inline-block;border-radius:50%;"></i> Low Risk (< 1.9)
+background:white;padding:12px 16px;border-radius:8px;border:2px solid #555;
+font-size:13px;font-family:Arial;box-shadow:2px 2px 6px rgba(0,0,0,0.3);">
+<b>Accident Risk Level</b><br><br>
+<span style="background:red;width:14px;height:14px;display:inline-block;border-radius:50%;vertical-align:middle;"></span>
+ High Risk (Severity >= 2.15)<br>
+<span style="background:orange;width:14px;height:14px;display:inline-block;border-radius:50%;vertical-align:middle;"></span>
+ Moderate (1.9 - 2.15)<br>
+<span style="background:green;width:14px;height:14px;display:inline-block;border-radius:50%;vertical-align:middle;"></span>
+ Low Risk (< 1.9)<br><br>
+<small>Circle size = accident count<br>
+Heatmap intensity = severity x volume</small>
 </div>
     
-            <div class="folium-map" id="map_63ae2ee02cfffa36a5d3fc220cc32aa5" ></div>
+            <div class="folium-map" id="map_e49df7839df6c9bce476638aa0740b34" ></div>
         
 </body>
 <script>
     
     
-            var map_63ae2ee02cfffa36a5d3fc220cc32aa5 = L.map(
-                "map_63ae2ee02cfffa36a5d3fc220cc32aa5",
+            var map_e49df7839df6c9bce476638aa0740b34 = L.map(
+                "map_e49df7839df6c9bce476638aa0740b34",
                 {
-                    center: [20.5937, 78.9629],
+                    center: [22.0, 79.0],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 5,
@@ -87,7 +93,7 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
 
         
     
-            var tile_layer_9e812c32684e450ca96d744eb5e08983 = L.tileLayer(
+            var tile_layer_255e88c15412b300b48f5df8213f9d4d = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -104,49 +110,62 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            tile_layer_9e812c32684e450ca96d744eb5e08983.addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+            tile_layer_255e88c15412b300b48f5df8213f9d4d.addTo(map_e49df7839df6c9bce476638aa0740b34);
         
     
-            var heat_map_eddb9685c1dcb84b8be08a6306697e7c = L.heatLayer(
-                [[15.9129, 79.74, 1.6238532110091743], [28.218, 94.7278, 1.4862385321100917], [26.2006, 92.9376, 1.6788990825688073], [25.0961, 85.3131, 1.4770642201834865], [30.7333, 76.7794, 1.3669724770642202], [21.2787, 81.8661, 1.6697247706422018], [28.7041, 77.1025, 1.944954128440367], [15.2993, 74.124, 1.981651376146789], [22.2587, 71.1924, 1.798165137614679], [29.0588, 76.0856, 1.5871559633027523], [31.1048, 77.1734, 1.5504587155963303], [33.7782, 76.5762, 2.0091743119266057], [23.6102, 85.2799, 1.6788990825688073], [15.3173, 75.7139, 1.7339449541284404], [10.8505, 76.2711, 2.0], [22.9734, 78.6569, 1.5412844036697249], [19.7515, 75.7139, 1.7155963302752293], [24.6637, 93.9063, 1.5963302752293578], [25.467, 91.3662, 1.6330275229357798], [23.1645, 92.9376, 1.8073394495412842], [26.1584, 94.5624, 1.8807339449541285], [20.9517, 85.0985, 1.6055045871559632], [11.9416, 79.8083, 1.7706422018348624], [31.1471, 75.3412, 1.614678899082569], [27.0238, 74.2179, 1.6788990825688073], [27.533, 88.5122, 1.8990825688073394], [11.1271, 78.6569, 1.871559633027523], [18.1124, 79.0193, 1.6422018348623852], [23.9408, 91.9882, 1.3761467889908257], [26.8467, 80.9462, 1.651376146788991], [30.0668, 79.0193, 1.9174311926605505], [22.9868, 87.855, 1.8073394495412844]],
+            var heat_map_538e1eb27431ed7f6cb5aed26f88e786 = L.heatLayer(
+                [[15.9129, 79.74, 1.6238532110091743], [28.218, 94.7278, 1.4862385321100917], [26.2006, 92.9376, 1.6788990825688073], [25.0961, 85.3131, 1.4770642201834865], [30.7333, 76.7794, 1.3669724770642202], [21.2787, 81.8661, 1.6697247706422018], [28.7041, 77.1025, 1.944954128440367], [15.2993, 74.124, 1.981651376146789], [22.2587, 71.1924, 1.798165137614679], [29.0588, 76.0856, 1.5871559633027523], [31.1048, 77.1734, 1.5504587155963303], [33.7782, 76.5762, 2.0091743119266057], [23.6102, 85.2799, 1.6788990825688073], [15.3173, 75.7139, 1.7339449541284404], [10.8505, 76.2711, 2.0], [22.9734, 78.6569, 1.5412844036697249], [19.7515, 75.7139, 1.7155963302752293], [24.6637, 93.9063, 1.5963302752293578], [25.467, 91.3662, 1.6330275229357798], [23.1645, 92.9376, 1.8073394495412842], [26.1584, 94.5624, 1.8807339449541285], [20.9517, 85.0985, 1.6055045871559632], [11.9416, 79.8083, 1.7706422018348624], [31.1471, 75.3412, 1.614678899082569], [27.0238, 74.2179, 1.6788990825688073], [27.533, 88.5122, 1.8990825688073394], [11.1271, 78.6569, 1.871559633027523], [18.1124, 79.0193, 1.6422018348623852], [23.9408, 91.9882, 1.3761467889908257], [26.8467, 80.9462, 1.651376146788991], [30.0668, 79.0193, 1.9174311926605505], [22.9868, 87.855, 1.8073394495412844], [23.0225, 72.5714, 0.782051282051282], [12.9716, 77.5946, 0.7307692307692307], [13.0827, 80.2707, 0.8974358974358975], [11.0168, 76.9558, 0.9999999999999998], [23.5204, 87.3119, 0.7692307692307693], [22.2394, 68.9678, 0.9487179487179487], [26.9124, 75.7873, 0.6666666666666666], [26.2389, 73.0243, 0.8333333333333334], [26.4499, 80.3319, 0.7820512820512819], [22.5726, 88.3639, 0.782051282051282], [26.8467, 80.9462, 0.8974358974358975], [9.9252, 78.1198, 0.717948717948718], [12.9141, 74.856, 0.7307692307692307], [19.076, 72.8777, 0.7307692307692307], [12.2958, 76.6394, 0.9615384615384616], [21.1458, 79.0882, 0.8076923076923077], [28.6139, 77.209, 0.9743589743589743], [18.5204, 73.8567, 0.8589743589743589], [28.7495, 77.0565, 0.7948717948717948], [26.7271, 88.3953, 0.9743589743589743], [21.1702, 72.8311, 0.8717948717948718], [13.6288, 79.4192, 0.9487179487179487], [24.5854, 73.7125, 0.8461538461538461], [22.3072, 73.1812, 0.8589743589743589], [25.3176, 82.9739, 0.6282051282051282], [16.5062, 80.648, 0.6794871794871795], [17.6868, 83.2185, 0.6410256410256411]],
                 {
   "minOpacity": 0.5,
-  "maxZoom": 6,
-  "radius": 30,
-  "blur": 20,
+  "maxZoom": 7,
+  "radius": 35,
+  "blur": 25,
+  "gradient": {
+  "0.2": "blue",
+  "0.4": "lime",
+  "0.6": "yellow",
+  "0.8": "orange",
+  "1.0": "red",
+},
 }
             );
         
     
-            heat_map_eddb9685c1dcb84b8be08a6306697e7c.addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+            heat_map_538e1eb27431ed7f6cb5aed26f88e786.addTo(map_e49df7839df6c9bce476638aa0740b34);
         
     
-            var circle_marker_0127af361bace520ea44bd8df8ee6c2f = L.circleMarker(
+            var feature_group_21c672b739971c61a54dbbef4dc6bbf2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_938d86ea6319a068ff6e5a8a6c1d250b = L.circleMarker(
                 [15.9129, 79.74],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.0, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_9d6fc92795d831b13e35897cd6f2ba67 = L.popup({
+        var popup_a4f930807ce18ae481cb4d53f6243d83 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_c6f0a72b1bf5ac68a8bb9bb77bae8c71 = $(`<div id="html_c6f0a72b1bf5ac68a8bb9bb77bae8c71" style="width: 100.0%; height: 100.0%;"><b>Andhra Pradesh</b><br>Accidents: 88<br>Fatal: 32 (36%)<br>Avg Severity: 2.01/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_9d6fc92795d831b13e35897cd6f2ba67.setContent(html_c6f0a72b1bf5ac68a8bb9bb77bae8c71);
+                var html_d3786e5f7d551a72a0ce533769bb126b = $(`<div id="html_d3786e5f7d551a72a0ce533769bb126b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Andhra Pradesh</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 88<br><b>Fatal:</b> 32 (36%)<br><b>Serious:</b> 25<br><b>Avg Severity:</b> 2.01/3.00<br><b>Avg Speed:</b> 77 km/h<br><b>Alcohol Rate:</b> 44%</div></div>`)[0];
+                popup_a4f930807ce18ae481cb4d53f6243d83.setContent(html_d3786e5f7d551a72a0ce533769bb126b);
             
         
 
-        circle_marker_0127af361bace520ea44bd8df8ee6c2f.bindPopup(popup_9d6fc92795d831b13e35897cd6f2ba67)
+        circle_marker_938d86ea6319a068ff6e5a8a6c1d250b.bindPopup(popup_a4f930807ce18ae481cb4d53f6243d83)
         ;
 
         
     
     
-            circle_marker_0127af361bace520ea44bd8df8ee6c2f.bindTooltip(
+            circle_marker_938d86ea6319a068ff6e5a8a6c1d250b.bindTooltip(
                 `<div>
-                     Andhra Pradesh: MODERATE
+                     Andhra Pradesh: MODERATE (88 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -154,32 +173,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_93e3c2b98c6b298c48b69b5d5ff57a3a = L.circleMarker(
+            var circle_marker_befb54f9f0b562a6497a2c233990328e = L.circleMarker(
                 [28.218, 94.7278],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.875, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.166666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_4abe00910fdbdfd11e38eaffe5ac3d4c = L.popup({
+        var popup_687932f2c4b75c98fb1350941333c25f = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_587c253771512b7db931fcc1b4a0de47 = $(`<div id="html_587c253771512b7db931fcc1b4a0de47" style="width: 100.0%; height: 100.0%;"><b>Arunachal Pradesh</b><br>Accidents: 79<br>Fatal: 28 (35%)<br>Avg Severity: 2.05/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_4abe00910fdbdfd11e38eaffe5ac3d4c.setContent(html_587c253771512b7db931fcc1b4a0de47);
+                var html_ca1803d9b16edc9811a19713b1a242e9 = $(`<div id="html_ca1803d9b16edc9811a19713b1a242e9" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Arunachal Pradesh</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 79<br><b>Fatal:</b> 28 (35%)<br><b>Serious:</b> 27<br><b>Avg Severity:</b> 2.05/3.00<br><b>Avg Speed:</b> 76 km/h<br><b>Alcohol Rate:</b> 49%</div></div>`)[0];
+                popup_687932f2c4b75c98fb1350941333c25f.setContent(html_ca1803d9b16edc9811a19713b1a242e9);
             
         
 
-        circle_marker_93e3c2b98c6b298c48b69b5d5ff57a3a.bindPopup(popup_4abe00910fdbdfd11e38eaffe5ac3d4c)
+        circle_marker_befb54f9f0b562a6497a2c233990328e.bindPopup(popup_687932f2c4b75c98fb1350941333c25f)
         ;
 
         
     
     
-            circle_marker_93e3c2b98c6b298c48b69b5d5ff57a3a.bindTooltip(
+            circle_marker_befb54f9f0b562a6497a2c233990328e.bindTooltip(
                 `<div>
-                     Arunachal Pradesh: MODERATE
+                     Arunachal Pradesh: MODERATE (79 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -187,32 +206,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_b36decfe5e29534ee5bf04af5844c1c1 = L.circleMarker(
+            var circle_marker_8f9f0f45cf653d997bd9f2c5d76b2827 = L.circleMarker(
                 [26.2006, 92.9376],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.375, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.166666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_3c6ae6680928499376e14f2469f784ad = L.popup({
+        var popup_98d5e334b1abe5057164b4eee019d028 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_e532a0e52279320db0792e7494c72e1e = $(`<div id="html_e532a0e52279320db0792e7494c72e1e" style="width: 100.0%; height: 100.0%;"><b>Assam</b><br>Accidents: 91<br>Fatal: 29 (32%)<br>Avg Severity: 2.01/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_3c6ae6680928499376e14f2469f784ad.setContent(html_e532a0e52279320db0792e7494c72e1e);
+                var html_2e1cc5e828d9e6f702c140043ea0a8a2 = $(`<div id="html_2e1cc5e828d9e6f702c140043ea0a8a2" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Assam</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 91<br><b>Fatal:</b> 29 (32%)<br><b>Serious:</b> 34<br><b>Avg Severity:</b> 2.01/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 56%</div></div>`)[0];
+                popup_98d5e334b1abe5057164b4eee019d028.setContent(html_2e1cc5e828d9e6f702c140043ea0a8a2);
             
         
 
-        circle_marker_b36decfe5e29534ee5bf04af5844c1c1.bindPopup(popup_3c6ae6680928499376e14f2469f784ad)
+        circle_marker_8f9f0f45cf653d997bd9f2c5d76b2827.bindPopup(popup_98d5e334b1abe5057164b4eee019d028)
         ;
 
         
     
     
-            circle_marker_b36decfe5e29534ee5bf04af5844c1c1.bindTooltip(
+            circle_marker_8f9f0f45cf653d997bd9f2c5d76b2827.bindTooltip(
                 `<div>
-                     Assam: MODERATE
+                     Assam: MODERATE (91 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -220,32 +239,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_b79576bc7e06698e6841bcc77d0a4bd4 = L.circleMarker(
+            var circle_marker_3b68840345f9213554f1de15389fd7ba = L.circleMarker(
                 [25.0961, 85.3131],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.75, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_59f9d4fcccb0f8c96efa1f4b0b242e46 = L.popup({
+        var popup_256c2c2a2f8fee1de106754a50c6030d = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_48fd1d175eadd94e547c6a77a2546cd1 = $(`<div id="html_48fd1d175eadd94e547c6a77a2546cd1" style="width: 100.0%; height: 100.0%;"><b>Bihar</b><br>Accidents: 78<br>Fatal: 30 (38%)<br>Avg Severity: 2.06/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_59f9d4fcccb0f8c96efa1f4b0b242e46.setContent(html_48fd1d175eadd94e547c6a77a2546cd1);
+                var html_38404f9c8c84d9dc6cc5a7185560eabf = $(`<div id="html_38404f9c8c84d9dc6cc5a7185560eabf" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Bihar</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 78<br><b>Fatal:</b> 30 (38%)<br><b>Serious:</b> 23<br><b>Avg Severity:</b> 2.06/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 46%</div></div>`)[0];
+                popup_256c2c2a2f8fee1de106754a50c6030d.setContent(html_38404f9c8c84d9dc6cc5a7185560eabf);
             
         
 
-        circle_marker_b79576bc7e06698e6841bcc77d0a4bd4.bindPopup(popup_59f9d4fcccb0f8c96efa1f4b0b242e46)
+        circle_marker_3b68840345f9213554f1de15389fd7ba.bindPopup(popup_256c2c2a2f8fee1de106754a50c6030d)
         ;
 
         
     
     
-            circle_marker_b79576bc7e06698e6841bcc77d0a4bd4.bindTooltip(
+            circle_marker_3b68840345f9213554f1de15389fd7ba.bindTooltip(
                 `<div>
-                     Bihar: MODERATE
+                     Bihar: MODERATE (78 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -253,32 +272,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_48896ab5eaf0a5dab22c5196938b6646 = L.circleMarker(
+            var circle_marker_90ebe9ff581be88df350a4a0eab4329b = L.circleMarker(
                 [30.7333, 76.7794],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.25, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_f26df8122dff613b57c5355dc13f83e2 = L.popup({
+        var popup_7c2e767427b4a3ec08106a9a0ac24813 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_78318ff0a218ab5907b46466f01ff0a8 = $(`<div id="html_78318ff0a218ab5907b46466f01ff0a8" style="width: 100.0%; height: 100.0%;"><b>Chandigarh</b><br>Accidents: 82<br>Fatal: 17 (21%)<br>Avg Severity: 1.82/3<br>Risk: <b style='color:green'>LOW RISK</b></div>`)[0];
-                popup_f26df8122dff613b57c5355dc13f83e2.setContent(html_78318ff0a218ab5907b46466f01ff0a8);
+                var html_b124bb8f848474875f012c1150b6062d = $(`<div id="html_b124bb8f848474875f012c1150b6062d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:green;'>Chandigarh</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:green;font-weight:bold;'>LOW RISK</span><br><b>Total Accidents:</b> 82<br><b>Fatal:</b> 17 (21%)<br><b>Serious:</b> 33<br><b>Avg Severity:</b> 1.82/3.00<br><b>Avg Speed:</b> 76 km/h<br><b>Alcohol Rate:</b> 52%</div></div>`)[0];
+                popup_7c2e767427b4a3ec08106a9a0ac24813.setContent(html_b124bb8f848474875f012c1150b6062d);
             
         
 
-        circle_marker_48896ab5eaf0a5dab22c5196938b6646.bindPopup(popup_f26df8122dff613b57c5355dc13f83e2)
+        circle_marker_90ebe9ff581be88df350a4a0eab4329b.bindPopup(popup_7c2e767427b4a3ec08106a9a0ac24813)
         ;
 
         
     
     
-            circle_marker_48896ab5eaf0a5dab22c5196938b6646.bindTooltip(
+            circle_marker_90ebe9ff581be88df350a4a0eab4329b.bindTooltip(
                 `<div>
-                     Chandigarh: LOW RISK
+                     Chandigarh: LOW RISK (82 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -286,32 +305,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_d4d2e46c07f4b00390ffc7c21ae3888d = L.circleMarker(
+            var circle_marker_e1a71b782fff66a2f8118d73b9f41b6a = L.circleMarker(
                 [21.2787, 81.8661],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.5, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_621f14f626c70cd4b84e6aa82ca946eb = L.popup({
+        var popup_a2c63a3cd88f54409a85c63250071bc0 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_628defbde3516227ad0ad62126b783be = $(`<div id="html_628defbde3516227ad0ad62126b783be" style="width: 100.0%; height: 100.0%;"><b>Chhattisgarh</b><br>Accidents: 92<br>Fatal: 30 (33%)<br>Avg Severity: 1.98/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_621f14f626c70cd4b84e6aa82ca946eb.setContent(html_628defbde3516227ad0ad62126b783be);
+                var html_5fc4ffdc0140bfd4171d3ed6c3214390 = $(`<div id="html_5fc4ffdc0140bfd4171d3ed6c3214390" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Chhattisgarh</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 92<br><b>Fatal:</b> 30 (33%)<br><b>Serious:</b> 30<br><b>Avg Severity:</b> 1.98/3.00<br><b>Avg Speed:</b> 74 km/h<br><b>Alcohol Rate:</b> 43%</div></div>`)[0];
+                popup_a2c63a3cd88f54409a85c63250071bc0.setContent(html_5fc4ffdc0140bfd4171d3ed6c3214390);
             
         
 
-        circle_marker_d4d2e46c07f4b00390ffc7c21ae3888d.bindPopup(popup_621f14f626c70cd4b84e6aa82ca946eb)
+        circle_marker_e1a71b782fff66a2f8118d73b9f41b6a.bindPopup(popup_a2c63a3cd88f54409a85c63250071bc0)
         ;
 
         
     
     
-            circle_marker_d4d2e46c07f4b00390ffc7c21ae3888d.bindTooltip(
+            circle_marker_e1a71b782fff66a2f8118d73b9f41b6a.bindTooltip(
                 `<div>
-                     Chhattisgarh: MODERATE
+                     Chhattisgarh: MODERATE (92 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -319,32 +338,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_deb41ab8206382e044c5432dbba0bf95 = L.circleMarker(
+            var circle_marker_30be9f07eb99e42761c08aa5c9a1fd2d = L.circleMarker(
                 [28.7041, 77.1025],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.5, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_a7d6defb56218c387fd8f1dba0dd2306 = L.popup({
+        var popup_b29d06a6b51bd3314ea87fe29e5061aa = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_2e2cb843db0508328e34400fe92e117f = $(`<div id="html_2e2cb843db0508328e34400fe92e117f" style="width: 100.0%; height: 100.0%;"><b>Delhi</b><br>Accidents: 108<br>Fatal: 31 (29%)<br>Avg Severity: 1.96/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_a7d6defb56218c387fd8f1dba0dd2306.setContent(html_2e2cb843db0508328e34400fe92e117f);
+                var html_8d5da828f197335bf81e176c96f1e0fb = $(`<div id="html_8d5da828f197335bf81e176c96f1e0fb" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Delhi</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 108<br><b>Fatal:</b> 31 (29%)<br><b>Serious:</b> 42<br><b>Avg Severity:</b> 1.96/3.00<br><b>Avg Speed:</b> 79 km/h<br><b>Alcohol Rate:</b> 54%</div></div>`)[0];
+                popup_b29d06a6b51bd3314ea87fe29e5061aa.setContent(html_8d5da828f197335bf81e176c96f1e0fb);
             
         
 
-        circle_marker_deb41ab8206382e044c5432dbba0bf95.bindPopup(popup_a7d6defb56218c387fd8f1dba0dd2306)
+        circle_marker_30be9f07eb99e42761c08aa5c9a1fd2d.bindPopup(popup_b29d06a6b51bd3314ea87fe29e5061aa)
         ;
 
         
     
     
-            circle_marker_deb41ab8206382e044c5432dbba0bf95.bindTooltip(
+            circle_marker_30be9f07eb99e42761c08aa5c9a1fd2d.bindTooltip(
                 `<div>
-                     Delhi: MODERATE
+                     Delhi: MODERATE (108 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -352,32 +371,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_5cdd6a8b0fdd4d13bba3ac2a8f02dfe0 = L.circleMarker(
+            var circle_marker_3bdf1976168aae2433b8c97910400549 = L.circleMarker(
                 [15.2993, 74.124],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.625, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.166666666666668, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_7cfcfb35196630bfa13026848ab258f0 = L.popup({
+        var popup_6f0ae7e17d9f3b8d1eb02540a32166da = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_584c8f058ec22f18bf71c39e81f3d0d7 = $(`<div id="html_584c8f058ec22f18bf71c39e81f3d0d7" style="width: 100.0%; height: 100.0%;"><b>Goa</b><br>Accidents: 109<br>Fatal: 40 (37%)<br>Avg Severity: 1.98/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_7cfcfb35196630bfa13026848ab258f0.setContent(html_584c8f058ec22f18bf71c39e81f3d0d7);
+                var html_294809b2c88048784acde1ad607ea32a = $(`<div id="html_294809b2c88048784acde1ad607ea32a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Goa</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 109<br><b>Fatal:</b> 40 (37%)<br><b>Serious:</b> 27<br><b>Avg Severity:</b> 1.98/3.00<br><b>Avg Speed:</b> 79 km/h<br><b>Alcohol Rate:</b> 43%</div></div>`)[0];
+                popup_6f0ae7e17d9f3b8d1eb02540a32166da.setContent(html_294809b2c88048784acde1ad607ea32a);
             
         
 
-        circle_marker_5cdd6a8b0fdd4d13bba3ac2a8f02dfe0.bindPopup(popup_7cfcfb35196630bfa13026848ab258f0)
+        circle_marker_3bdf1976168aae2433b8c97910400549.bindPopup(popup_6f0ae7e17d9f3b8d1eb02540a32166da)
         ;
 
         
     
     
-            circle_marker_5cdd6a8b0fdd4d13bba3ac2a8f02dfe0.bindTooltip(
+            circle_marker_3bdf1976168aae2433b8c97910400549.bindTooltip(
                 `<div>
-                     Goa: MODERATE
+                     Goa: MODERATE (109 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -385,32 +404,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_7283edd0ec72efb7ff87c05a9bddff60 = L.circleMarker(
+            var circle_marker_57b9d8bdda50461d16dab802bc9ed909 = L.circleMarker(
                 [22.2587, 71.1924],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_9e8e592d6c665e5d8ed96b0160f61be2 = L.popup({
+        var popup_0671c66351f713ec3f7c345ddf51b5e5 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_a7d971868525e48a651eb213f7466c16 = $(`<div id="html_a7d971868525e48a651eb213f7466c16" style="width: 100.0%; height: 100.0%;"><b>Gujarat</b><br>Accidents: 100<br>Fatal: 32 (32%)<br>Avg Severity: 1.96/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_9e8e592d6c665e5d8ed96b0160f61be2.setContent(html_a7d971868525e48a651eb213f7466c16);
+                var html_c57809c19c7f3b2f521c9e9c9dbbc587 = $(`<div id="html_c57809c19c7f3b2f521c9e9c9dbbc587" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Gujarat</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 100<br><b>Fatal:</b> 32 (32%)<br><b>Serious:</b> 32<br><b>Avg Severity:</b> 1.96/3.00<br><b>Avg Speed:</b> 77 km/h<br><b>Alcohol Rate:</b> 45%</div></div>`)[0];
+                popup_0671c66351f713ec3f7c345ddf51b5e5.setContent(html_c57809c19c7f3b2f521c9e9c9dbbc587);
             
         
 
-        circle_marker_7283edd0ec72efb7ff87c05a9bddff60.bindPopup(popup_9e8e592d6c665e5d8ed96b0160f61be2)
+        circle_marker_57b9d8bdda50461d16dab802bc9ed909.bindPopup(popup_0671c66351f713ec3f7c345ddf51b5e5)
         ;
 
         
     
     
-            circle_marker_7283edd0ec72efb7ff87c05a9bddff60.bindTooltip(
+            circle_marker_57b9d8bdda50461d16dab802bc9ed909.bindTooltip(
                 `<div>
-                     Gujarat: MODERATE
+                     Gujarat: MODERATE (100 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -418,32 +437,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_37759133ec39449728a471cc73aa19c6 = L.circleMarker(
+            var circle_marker_2f635aee1a515713be98cfa677732fc8 = L.circleMarker(
                 [29.0588, 76.0856],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.75, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_9946251c909ac37ffa8456aaa59b38e2 = L.popup({
+        var popup_7865c250c4c5e413d2ded33ec68b298f = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_9d3f913df5ebc6aa59bb7569c28a9730 = $(`<div id="html_9d3f913df5ebc6aa59bb7569c28a9730" style="width: 100.0%; height: 100.0%;"><b>Haryana</b><br>Accidents: 94<br>Fatal: 24 (26%)<br>Avg Severity: 1.84/3<br>Risk: <b style='color:green'>LOW RISK</b></div>`)[0];
-                popup_9946251c909ac37ffa8456aaa59b38e2.setContent(html_9d3f913df5ebc6aa59bb7569c28a9730);
+                var html_1f86222cbf98778d050ece10868a87e0 = $(`<div id="html_1f86222cbf98778d050ece10868a87e0" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:green;'>Haryana</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:green;font-weight:bold;'>LOW RISK</span><br><b>Total Accidents:</b> 94<br><b>Fatal:</b> 24 (26%)<br><b>Serious:</b> 31<br><b>Avg Severity:</b> 1.84/3.00<br><b>Avg Speed:</b> 70 km/h<br><b>Alcohol Rate:</b> 57%</div></div>`)[0];
+                popup_7865c250c4c5e413d2ded33ec68b298f.setContent(html_1f86222cbf98778d050ece10868a87e0);
             
         
 
-        circle_marker_37759133ec39449728a471cc73aa19c6.bindPopup(popup_9946251c909ac37ffa8456aaa59b38e2)
+        circle_marker_2f635aee1a515713be98cfa677732fc8.bindPopup(popup_7865c250c4c5e413d2ded33ec68b298f)
         ;
 
         
     
     
-            circle_marker_37759133ec39449728a471cc73aa19c6.bindTooltip(
+            circle_marker_2f635aee1a515713be98cfa677732fc8.bindTooltip(
                 `<div>
-                     Haryana: LOW RISK
+                     Haryana: LOW RISK (94 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -451,32 +470,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_4794094e7687e27e74edf704eaae01e1 = L.circleMarker(
+            var circle_marker_a51f0eeb09122558123a569b677d96c5 = L.circleMarker(
                 [31.1048, 77.1734],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.375, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.166666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_84e548e586859adbc1bfae07ebb138b7 = L.popup({
+        var popup_f071f17524ec2ff2dc888b0c6ef02f70 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_8292235a74a90818db876f70582f7236 = $(`<div id="html_8292235a74a90818db876f70582f7236" style="width: 100.0%; height: 100.0%;"><b>Himachal Pradesh</b><br>Accidents: 91<br>Fatal: 25 (27%)<br>Avg Severity: 1.86/3<br>Risk: <b style='color:green'>LOW RISK</b></div>`)[0];
-                popup_84e548e586859adbc1bfae07ebb138b7.setContent(html_8292235a74a90818db876f70582f7236);
+                var html_98e19e4c046e8e451de73fab4b582f2f = $(`<div id="html_98e19e4c046e8e451de73fab4b582f2f" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:green;'>Himachal Pradesh</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:green;font-weight:bold;'>LOW RISK</span><br><b>Total Accidents:</b> 91<br><b>Fatal:</b> 25 (27%)<br><b>Serious:</b> 28<br><b>Avg Severity:</b> 1.86/3.00<br><b>Avg Speed:</b> 74 km/h<br><b>Alcohol Rate:</b> 58%</div></div>`)[0];
+                popup_f071f17524ec2ff2dc888b0c6ef02f70.setContent(html_98e19e4c046e8e451de73fab4b582f2f);
             
         
 
-        circle_marker_4794094e7687e27e74edf704eaae01e1.bindPopup(popup_84e548e586859adbc1bfae07ebb138b7)
+        circle_marker_a51f0eeb09122558123a569b677d96c5.bindPopup(popup_f071f17524ec2ff2dc888b0c6ef02f70)
         ;
 
         
     
     
-            circle_marker_4794094e7687e27e74edf704eaae01e1.bindTooltip(
+            circle_marker_a51f0eeb09122558123a569b677d96c5.bindTooltip(
                 `<div>
-                     Himachal Pradesh: LOW RISK
+                     Himachal Pradesh: LOW RISK (91 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -484,32 +503,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_9c870512434359290b80769a631413bd = L.circleMarker(
+            var circle_marker_3f5dba40a9fc7f0a8010d499671d1bdb = L.circleMarker(
                 [33.7782, 76.5762],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.125, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_e5d82a828fe3649d0464971087f97278 = L.popup({
+        var popup_df4658e8c19f4b51a2872bc7d6bcfc91 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_4c57e47d788c29ddda0987ab012a69e8 = $(`<div id="html_4c57e47d788c29ddda0987ab012a69e8" style="width: 100.0%; height: 100.0%;"><b>Jammu and Kashmir</b><br>Accidents: 105<br>Fatal: 35 (33%)<br>Avg Severity: 2.09/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_e5d82a828fe3649d0464971087f97278.setContent(html_4c57e47d788c29ddda0987ab012a69e8);
+                var html_932cd359e41b7c6ec68a1b11f9e06944 = $(`<div id="html_932cd359e41b7c6ec68a1b11f9e06944" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Jammu and Kashmir</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 105<br><b>Fatal:</b> 35 (33%)<br><b>Serious:</b> 44<br><b>Avg Severity:</b> 2.09/3.00<br><b>Avg Speed:</b> 73 km/h<br><b>Alcohol Rate:</b> 47%</div></div>`)[0];
+                popup_df4658e8c19f4b51a2872bc7d6bcfc91.setContent(html_932cd359e41b7c6ec68a1b11f9e06944);
             
         
 
-        circle_marker_9c870512434359290b80769a631413bd.bindPopup(popup_e5d82a828fe3649d0464971087f97278)
+        circle_marker_3f5dba40a9fc7f0a8010d499671d1bdb.bindPopup(popup_df4658e8c19f4b51a2872bc7d6bcfc91)
         ;
 
         
     
     
-            circle_marker_9c870512434359290b80769a631413bd.bindTooltip(
+            circle_marker_3f5dba40a9fc7f0a8010d499671d1bdb.bindTooltip(
                 `<div>
-                     Jammu and Kashmir: MODERATE
+                     Jammu and Kashmir: MODERATE (105 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -517,32 +536,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_961af09f08b292ab88b89e28871c1b62 = L.circleMarker(
+            var circle_marker_9467aba1d090582eff8d57cae0ec7ca8 = L.circleMarker(
                 [23.6102, 85.2799],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.75, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_f8603ffcc5606c320ca6d7bac1b3ee49 = L.popup({
+        var popup_e95e8f32e26bc552e69dc17c32559131 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_379a3bcfe11bb3a53cebad875cb18a67 = $(`<div id="html_379a3bcfe11bb3a53cebad875cb18a67" style="width: 100.0%; height: 100.0%;"><b>Jharkhand</b><br>Accidents: 94<br>Fatal: 27 (29%)<br>Avg Severity: 1.95/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_f8603ffcc5606c320ca6d7bac1b3ee49.setContent(html_379a3bcfe11bb3a53cebad875cb18a67);
+                var html_5e6f19b3a972ac94c7c510e44cdc039d = $(`<div id="html_5e6f19b3a972ac94c7c510e44cdc039d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Jharkhand</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 94<br><b>Fatal:</b> 27 (29%)<br><b>Serious:</b> 35<br><b>Avg Severity:</b> 1.95/3.00<br><b>Avg Speed:</b> 77 km/h<br><b>Alcohol Rate:</b> 44%</div></div>`)[0];
+                popup_e95e8f32e26bc552e69dc17c32559131.setContent(html_5e6f19b3a972ac94c7c510e44cdc039d);
             
         
 
-        circle_marker_961af09f08b292ab88b89e28871c1b62.bindPopup(popup_f8603ffcc5606c320ca6d7bac1b3ee49)
+        circle_marker_9467aba1d090582eff8d57cae0ec7ca8.bindPopup(popup_e95e8f32e26bc552e69dc17c32559131)
         ;
 
         
     
     
-            circle_marker_961af09f08b292ab88b89e28871c1b62.bindTooltip(
+            circle_marker_9467aba1d090582eff8d57cae0ec7ca8.bindTooltip(
                 `<div>
-                     Jharkhand: MODERATE
+                     Jharkhand: MODERATE (94 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -550,32 +569,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_3bb28106c4cfe382a0698eb384a72b0b = L.circleMarker(
+            var circle_marker_93495562c7a9453c71e0a572961efb05 = L.circleMarker(
                 [15.3173, 75.7139],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.875, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.833333333333334, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_d817c2943ad612a77dacbf979836fb6e = L.popup({
+        var popup_c1703acc527e3d29b9bf1d58148c5e43 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_6fec004ed3ca87141e19350a2fd201da = $(`<div id="html_6fec004ed3ca87141e19350a2fd201da" style="width: 100.0%; height: 100.0%;"><b>Karnataka</b><br>Accidents: 95<br>Fatal: 33 (35%)<br>Avg Severity: 1.99/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_d817c2943ad612a77dacbf979836fb6e.setContent(html_6fec004ed3ca87141e19350a2fd201da);
+                var html_8f26fa2ccde91c100dad2d83816aad99 = $(`<div id="html_8f26fa2ccde91c100dad2d83816aad99" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Karnataka</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 95<br><b>Fatal:</b> 33 (35%)<br><b>Serious:</b> 28<br><b>Avg Severity:</b> 1.99/3.00<br><b>Avg Speed:</b> 72 km/h<br><b>Alcohol Rate:</b> 56%</div></div>`)[0];
+                popup_c1703acc527e3d29b9bf1d58148c5e43.setContent(html_8f26fa2ccde91c100dad2d83816aad99);
             
         
 
-        circle_marker_3bb28106c4cfe382a0698eb384a72b0b.bindPopup(popup_d817c2943ad612a77dacbf979836fb6e)
+        circle_marker_93495562c7a9453c71e0a572961efb05.bindPopup(popup_c1703acc527e3d29b9bf1d58148c5e43)
         ;
 
         
     
     
-            circle_marker_3bb28106c4cfe382a0698eb384a72b0b.bindTooltip(
+            circle_marker_93495562c7a9453c71e0a572961efb05.bindTooltip(
                 `<div>
-                     Karnataka: MODERATE
+                     Karnataka: MODERATE (95 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -583,32 +602,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_fd2edba3d9857303d3ef964d97690ba5 = L.circleMarker(
+            var circle_marker_b87e7ebdda91da1e8cac54e02016ffcc = L.circleMarker(
                 [10.8505, 76.2711],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.75, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_347283c6fea7ed78aeacaa81880ee699 = L.popup({
+        var popup_d8ed44d7cf9e90495a51df6932299cf7 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_cfb59fd41e4c048989f42337386c8700 = $(`<div id="html_cfb59fd41e4c048989f42337386c8700" style="width: 100.0%; height: 100.0%;"><b>Kerala</b><br>Accidents: 102<br>Fatal: 40 (39%)<br>Avg Severity: 2.14/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_347283c6fea7ed78aeacaa81880ee699.setContent(html_cfb59fd41e4c048989f42337386c8700);
+                var html_e8b5076710bbaaedb22bb0658ec36e66 = $(`<div id="html_e8b5076710bbaaedb22bb0658ec36e66" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Kerala</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 102<br><b>Fatal:</b> 40 (39%)<br><b>Serious:</b> 36<br><b>Avg Severity:</b> 2.14/3.00<br><b>Avg Speed:</b> 78 km/h<br><b>Alcohol Rate:</b> 59%</div></div>`)[0];
+                popup_d8ed44d7cf9e90495a51df6932299cf7.setContent(html_e8b5076710bbaaedb22bb0658ec36e66);
             
         
 
-        circle_marker_fd2edba3d9857303d3ef964d97690ba5.bindPopup(popup_347283c6fea7ed78aeacaa81880ee699)
+        circle_marker_b87e7ebdda91da1e8cac54e02016ffcc.bindPopup(popup_d8ed44d7cf9e90495a51df6932299cf7)
         ;
 
         
     
     
-            circle_marker_fd2edba3d9857303d3ef964d97690ba5.bindTooltip(
+            circle_marker_b87e7ebdda91da1e8cac54e02016ffcc.bindTooltip(
                 `<div>
-                     Kerala: MODERATE
+                     Kerala: MODERATE (102 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -616,32 +635,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_776015b584b22a6d3d55fbc44d89be7d = L.circleMarker(
+            var circle_marker_599177fae66019493988b8a4cac3af70 = L.circleMarker(
                 [22.9734, 78.6569],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.375, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.833333333333334, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_84d21d93c0a2a12f0b34e9832853d13c = L.popup({
+        var popup_fd121444e5ce9515f31ebb0215bcf04e = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_a84e8b8f3a68bbdd46a93446606d8492 = $(`<div id="html_a84e8b8f3a68bbdd46a93446606d8492" style="width: 100.0%; height: 100.0%;"><b>Madhya Pradesh</b><br>Accidents: 83<br>Fatal: 28 (34%)<br>Avg Severity: 2.02/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_84d21d93c0a2a12f0b34e9832853d13c.setContent(html_a84e8b8f3a68bbdd46a93446606d8492);
+                var html_ec1f47e9d61305d968807f06b84dd392 = $(`<div id="html_ec1f47e9d61305d968807f06b84dd392" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Madhya Pradesh</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 83<br><b>Fatal:</b> 28 (34%)<br><b>Serious:</b> 29<br><b>Avg Severity:</b> 2.02/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 48%</div></div>`)[0];
+                popup_fd121444e5ce9515f31ebb0215bcf04e.setContent(html_ec1f47e9d61305d968807f06b84dd392);
             
         
 
-        circle_marker_776015b584b22a6d3d55fbc44d89be7d.bindPopup(popup_84d21d93c0a2a12f0b34e9832853d13c)
+        circle_marker_599177fae66019493988b8a4cac3af70.bindPopup(popup_fd121444e5ce9515f31ebb0215bcf04e)
         ;
 
         
     
     
-            circle_marker_776015b584b22a6d3d55fbc44d89be7d.bindTooltip(
+            circle_marker_599177fae66019493988b8a4cac3af70.bindTooltip(
                 `<div>
-                     Madhya Pradesh: MODERATE
+                     Madhya Pradesh: MODERATE (83 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -649,32 +668,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_4f4db56cadd8a9f640a1654e085cdcfb = L.circleMarker(
+            var circle_marker_e6eb48cfa338442fb76c0edbfdbd6d50 = L.circleMarker(
                 [19.7515, 75.7139],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.125, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.833333333333334, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_06f95e5086521be59ea78d6e7b0661dd = L.popup({
+        var popup_a9a689c4fc9a19cde9b57cabe35f7ab7 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_b5b56827a5d4b40f7772e69e41e00e84 = $(`<div id="html_b5b56827a5d4b40f7772e69e41e00e84" style="width: 100.0%; height: 100.0%;"><b>Maharashtra</b><br>Accidents: 89<br>Fatal: 35 (39%)<br>Avg Severity: 2.10/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_06f95e5086521be59ea78d6e7b0661dd.setContent(html_b5b56827a5d4b40f7772e69e41e00e84);
+                var html_5b210d217966a3930ecaaa7a125206c5 = $(`<div id="html_5b210d217966a3930ecaaa7a125206c5" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Maharashtra</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 89<br><b>Fatal:</b> 35 (39%)<br><b>Serious:</b> 28<br><b>Avg Severity:</b> 2.10/3.00<br><b>Avg Speed:</b> 73 km/h<br><b>Alcohol Rate:</b> 56%</div></div>`)[0];
+                popup_a9a689c4fc9a19cde9b57cabe35f7ab7.setContent(html_5b210d217966a3930ecaaa7a125206c5);
             
         
 
-        circle_marker_4f4db56cadd8a9f640a1654e085cdcfb.bindPopup(popup_06f95e5086521be59ea78d6e7b0661dd)
+        circle_marker_e6eb48cfa338442fb76c0edbfdbd6d50.bindPopup(popup_a9a689c4fc9a19cde9b57cabe35f7ab7)
         ;
 
         
     
     
-            circle_marker_4f4db56cadd8a9f640a1654e085cdcfb.bindTooltip(
+            circle_marker_e6eb48cfa338442fb76c0edbfdbd6d50.bindTooltip(
                 `<div>
-                     Maharashtra: MODERATE
+                     Maharashtra: MODERATE (89 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -682,32 +701,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_fad69758fd97eb3a6d144c3572663760 = L.circleMarker(
+            var circle_marker_f8bf1f207a78bbfeb758880f11cf12b3 = L.circleMarker(
                 [24.6637, 93.9063],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.875, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_5ada76b865b7a29ed95a1bc60e1dda46 = L.popup({
+        var popup_6a92cce07457279809f4a4a7fd695ed4 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_8a5d84e91d944a4d96e64df8efc1fb08 = $(`<div id="html_8a5d84e91d944a4d96e64df8efc1fb08" style="width: 100.0%; height: 100.0%;"><b>Manipur</b><br>Accidents: 87<br>Fatal: 30 (34%)<br>Avg Severity: 2.00/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_5ada76b865b7a29ed95a1bc60e1dda46.setContent(html_8a5d84e91d944a4d96e64df8efc1fb08);
+                var html_ddf192e598854ddae2b3844755ff55cc = $(`<div id="html_ddf192e598854ddae2b3844755ff55cc" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Manipur</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 87<br><b>Fatal:</b> 30 (34%)<br><b>Serious:</b> 27<br><b>Avg Severity:</b> 2.00/3.00<br><b>Avg Speed:</b> 73 km/h<br><b>Alcohol Rate:</b> 47%</div></div>`)[0];
+                popup_6a92cce07457279809f4a4a7fd695ed4.setContent(html_ddf192e598854ddae2b3844755ff55cc);
             
         
 
-        circle_marker_fad69758fd97eb3a6d144c3572663760.bindPopup(popup_5ada76b865b7a29ed95a1bc60e1dda46)
+        circle_marker_f8bf1f207a78bbfeb758880f11cf12b3.bindPopup(popup_6a92cce07457279809f4a4a7fd695ed4)
         ;
 
         
     
     
-            circle_marker_fad69758fd97eb3a6d144c3572663760.bindTooltip(
+            circle_marker_f8bf1f207a78bbfeb758880f11cf12b3.bindTooltip(
                 `<div>
-                     Manipur: MODERATE
+                     Manipur: MODERATE (87 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -715,32 +734,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_2de43cfef33050d5eb66518b116b8eb3 = L.circleMarker(
+            var circle_marker_15957a943246f1e670611b4847546534 = L.circleMarker(
                 [25.467, 91.3662],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.5, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_ea1e83c38c5bf1ea355ce4aafcd15d80 = L.popup({
+        var popup_6ed0de46f83a2e7ca5dc5202e8d9f21c = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_59d0c7ba140b88c4a66e5ad4c52a82ce = $(`<div id="html_59d0c7ba140b88c4a66e5ad4c52a82ce" style="width: 100.0%; height: 100.0%;"><b>Meghalaya</b><br>Accidents: 92<br>Fatal: 28 (30%)<br>Avg Severity: 1.93/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_ea1e83c38c5bf1ea355ce4aafcd15d80.setContent(html_59d0c7ba140b88c4a66e5ad4c52a82ce);
+                var html_77d8cd45f8d68734e01db1e6ce9e3503 = $(`<div id="html_77d8cd45f8d68734e01db1e6ce9e3503" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Meghalaya</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 92<br><b>Fatal:</b> 28 (30%)<br><b>Serious:</b> 30<br><b>Avg Severity:</b> 1.93/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 53%</div></div>`)[0];
+                popup_6ed0de46f83a2e7ca5dc5202e8d9f21c.setContent(html_77d8cd45f8d68734e01db1e6ce9e3503);
             
         
 
-        circle_marker_2de43cfef33050d5eb66518b116b8eb3.bindPopup(popup_ea1e83c38c5bf1ea355ce4aafcd15d80)
+        circle_marker_15957a943246f1e670611b4847546534.bindPopup(popup_6ed0de46f83a2e7ca5dc5202e8d9f21c)
         ;
 
         
     
     
-            circle_marker_2de43cfef33050d5eb66518b116b8eb3.bindTooltip(
+            circle_marker_15957a943246f1e670611b4847546534.bindTooltip(
                 `<div>
-                     Meghalaya: MODERATE
+                     Meghalaya: MODERATE (92 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -748,32 +767,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_9a8ed3446a04d086b90936449101fe48 = L.circleMarker(
+            var circle_marker_1b2e514b3776bcddd704e8f1186562ad = L.circleMarker(
                 [23.1645, 92.9376],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.875, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.833333333333334, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_26cefbb31c47868b7e8709102fef2f5a = L.popup({
+        var popup_255080564dc12122cb8240119114f6c3 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_30d3a241233084523b273c58ae148933 = $(`<div id="html_30d3a241233084523b273c58ae148933" style="width: 100.0%; height: 100.0%;"><b>Mizoram</b><br>Accidents: 95<br>Fatal: 34 (36%)<br>Avg Severity: 2.07/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_26cefbb31c47868b7e8709102fef2f5a.setContent(html_30d3a241233084523b273c58ae148933);
+                var html_b53abf956b733003ef5b4044b3bf8db5 = $(`<div id="html_b53abf956b733003ef5b4044b3bf8db5" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Mizoram</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 95<br><b>Fatal:</b> 34 (36%)<br><b>Serious:</b> 34<br><b>Avg Severity:</b> 2.07/3.00<br><b>Avg Speed:</b> 78 km/h<br><b>Alcohol Rate:</b> 59%</div></div>`)[0];
+                popup_255080564dc12122cb8240119114f6c3.setContent(html_b53abf956b733003ef5b4044b3bf8db5);
             
         
 
-        circle_marker_9a8ed3446a04d086b90936449101fe48.bindPopup(popup_26cefbb31c47868b7e8709102fef2f5a)
+        circle_marker_1b2e514b3776bcddd704e8f1186562ad.bindPopup(popup_255080564dc12122cb8240119114f6c3)
         ;
 
         
     
     
-            circle_marker_9a8ed3446a04d086b90936449101fe48.bindTooltip(
+            circle_marker_1b2e514b3776bcddd704e8f1186562ad.bindTooltip(
                 `<div>
-                     Mizoram: MODERATE
+                     Mizoram: MODERATE (95 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -781,32 +800,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_2b14d272a3ad599cafd954a345e6571c = L.circleMarker(
+            var circle_marker_5c4a6d9b69767a4d6939b875ff6abf02 = L.circleMarker(
                 [26.1584, 94.5624],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.625, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.833333333333332, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_bc0b14b5d78c5b2d3dda3b5572064025 = L.popup({
+        var popup_47df934c8f8c69cdd4923922bb394657 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_c17674cff3ead0d6c982d2cf80585462 = $(`<div id="html_c17674cff3ead0d6c982d2cf80585462" style="width: 100.0%; height: 100.0%;"><b>Nagaland</b><br>Accidents: 101<br>Fatal: 39 (39%)<br>Avg Severity: 2.03/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_bc0b14b5d78c5b2d3dda3b5572064025.setContent(html_c17674cff3ead0d6c982d2cf80585462);
+                var html_524c28d63bfd0cb19a0700e5e2082e2f = $(`<div id="html_524c28d63bfd0cb19a0700e5e2082e2f" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Nagaland</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 101<br><b>Fatal:</b> 39 (39%)<br><b>Serious:</b> 26<br><b>Avg Severity:</b> 2.03/3.00<br><b>Avg Speed:</b> 71 km/h<br><b>Alcohol Rate:</b> 52%</div></div>`)[0];
+                popup_47df934c8f8c69cdd4923922bb394657.setContent(html_524c28d63bfd0cb19a0700e5e2082e2f);
             
         
 
-        circle_marker_2b14d272a3ad599cafd954a345e6571c.bindPopup(popup_bc0b14b5d78c5b2d3dda3b5572064025)
+        circle_marker_5c4a6d9b69767a4d6939b875ff6abf02.bindPopup(popup_47df934c8f8c69cdd4923922bb394657)
         ;
 
         
     
     
-            circle_marker_2b14d272a3ad599cafd954a345e6571c.bindTooltip(
+            circle_marker_5c4a6d9b69767a4d6939b875ff6abf02.bindTooltip(
                 `<div>
-                     Nagaland: MODERATE
+                     Nagaland: MODERATE (101 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -814,32 +833,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_004fa1fb84c2ef3cfada8ad931e00f4e = L.circleMarker(
+            var circle_marker_e7de17e92e3c4c54b2c8bdad1156f308 = L.circleMarker(
                 [20.9517, 85.0985],
-                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.625, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_8b49153d949e5c922675e99c8f109f51 = L.popup({
+        var popup_7234b8bceb3ba8a0e421b2859739b093 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_b4e1c8e47e0b6db811e89a4140d3728c = $(`<div id="html_b4e1c8e47e0b6db811e89a4140d3728c" style="width: 100.0%; height: 100.0%;"><b>Odisha</b><br>Accidents: 93<br>Fatal: 25 (27%)<br>Avg Severity: 1.88/3<br>Risk: <b style='color:green'>LOW RISK</b></div>`)[0];
-                popup_8b49153d949e5c922675e99c8f109f51.setContent(html_b4e1c8e47e0b6db811e89a4140d3728c);
+                var html_c608e733d63b34f34ec22459d0ffee2e = $(`<div id="html_c608e733d63b34f34ec22459d0ffee2e" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:green;'>Odisha</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:green;font-weight:bold;'>LOW RISK</span><br><b>Total Accidents:</b> 93<br><b>Fatal:</b> 25 (27%)<br><b>Serious:</b> 32<br><b>Avg Severity:</b> 1.88/3.00<br><b>Avg Speed:</b> 71 km/h<br><b>Alcohol Rate:</b> 51%</div></div>`)[0];
+                popup_7234b8bceb3ba8a0e421b2859739b093.setContent(html_c608e733d63b34f34ec22459d0ffee2e);
             
         
 
-        circle_marker_004fa1fb84c2ef3cfada8ad931e00f4e.bindPopup(popup_8b49153d949e5c922675e99c8f109f51)
+        circle_marker_e7de17e92e3c4c54b2c8bdad1156f308.bindPopup(popup_7234b8bceb3ba8a0e421b2859739b093)
         ;
 
         
     
     
-            circle_marker_004fa1fb84c2ef3cfada8ad931e00f4e.bindTooltip(
+            circle_marker_e7de17e92e3c4c54b2c8bdad1156f308.bindTooltip(
                 `<div>
-                     Odisha: LOW RISK
+                     Odisha: LOW RISK (93 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -847,32 +866,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_9b725e7ca1b190ea12146a5114bde46b = L.circleMarker(
+            var circle_marker_552dc3fa2e3523524dc17e01257c6519 = L.circleMarker(
                 [11.9416, 79.8083],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.25, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.333333333333332, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_9def0983bc7f0e67b0296672963b14ac = L.popup({
+        var popup_7a30be9628f0eff386a5476c9e2c2164 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_2f8cabf02a7961094d7ea3743f58e829 = $(`<div id="html_2f8cabf02a7961094d7ea3743f58e829" style="width: 100.0%; height: 100.0%;"><b>Puducherry</b><br>Accidents: 98<br>Fatal: 35 (36%)<br>Avg Severity: 1.97/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_9def0983bc7f0e67b0296672963b14ac.setContent(html_2f8cabf02a7961094d7ea3743f58e829);
+                var html_96e2f4d979337d939152dc1e8a52582b = $(`<div id="html_96e2f4d979337d939152dc1e8a52582b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Puducherry</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 98<br><b>Fatal:</b> 35 (36%)<br><b>Serious:</b> 25<br><b>Avg Severity:</b> 1.97/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 43%</div></div>`)[0];
+                popup_7a30be9628f0eff386a5476c9e2c2164.setContent(html_96e2f4d979337d939152dc1e8a52582b);
             
         
 
-        circle_marker_9b725e7ca1b190ea12146a5114bde46b.bindPopup(popup_9def0983bc7f0e67b0296672963b14ac)
+        circle_marker_552dc3fa2e3523524dc17e01257c6519.bindPopup(popup_7a30be9628f0eff386a5476c9e2c2164)
         ;
 
         
     
     
-            circle_marker_9b725e7ca1b190ea12146a5114bde46b.bindTooltip(
+            circle_marker_552dc3fa2e3523524dc17e01257c6519.bindTooltip(
                 `<div>
-                     Puducherry: MODERATE
+                     Puducherry: MODERATE (98 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -880,32 +899,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_ecc845b708112c486eddf292984ac9c8 = L.circleMarker(
+            var circle_marker_1ae4502f7cb3eb8a4bbdb943ca060180 = L.circleMarker(
                 [31.1471, 75.3412],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.25, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_0c715e529b2e7b92cd8ac4d6d146ec7f = L.popup({
+        var popup_2f75c64f8ed816be7dd006c57ab9fc1e = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_76047d7307f07290aedfe582d892e5a1 = $(`<div id="html_76047d7307f07290aedfe582d892e5a1" style="width: 100.0%; height: 100.0%;"><b>Punjab</b><br>Accidents: 90<br>Fatal: 28 (31%)<br>Avg Severity: 1.96/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_0c715e529b2e7b92cd8ac4d6d146ec7f.setContent(html_76047d7307f07290aedfe582d892e5a1);
+                var html_23c9b6dc7d7be414a9922f9c7b960b17 = $(`<div id="html_23c9b6dc7d7be414a9922f9c7b960b17" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Punjab</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 90<br><b>Fatal:</b> 28 (31%)<br><b>Serious:</b> 30<br><b>Avg Severity:</b> 1.96/3.00<br><b>Avg Speed:</b> 77 km/h<br><b>Alcohol Rate:</b> 49%</div></div>`)[0];
+                popup_2f75c64f8ed816be7dd006c57ab9fc1e.setContent(html_23c9b6dc7d7be414a9922f9c7b960b17);
             
         
 
-        circle_marker_ecc845b708112c486eddf292984ac9c8.bindPopup(popup_0c715e529b2e7b92cd8ac4d6d146ec7f)
+        circle_marker_1ae4502f7cb3eb8a4bbdb943ca060180.bindPopup(popup_2f75c64f8ed816be7dd006c57ab9fc1e)
         ;
 
         
     
     
-            circle_marker_ecc845b708112c486eddf292984ac9c8.bindTooltip(
+            circle_marker_1ae4502f7cb3eb8a4bbdb943ca060180.bindTooltip(
                 `<div>
-                     Punjab: MODERATE
+                     Punjab: MODERATE (90 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -913,32 +932,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_a0292015fc1cd52d2120a7aa5d4b2e36 = L.circleMarker(
+            var circle_marker_9d4050980730cdcd578c06c6aa4d5871 = L.circleMarker(
                 [27.0238, 74.2179],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.625, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_db882ee2f40218b74af15150b45db29e = L.popup({
+        var popup_062efc0693eb89b635b2e8cc3e0dd747 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_b9de7de05fd10bf1f33d348e32ebb932 = $(`<div id="html_b9de7de05fd10bf1f33d348e32ebb932" style="width: 100.0%; height: 100.0%;"><b>Rajasthan</b><br>Accidents: 93<br>Fatal: 30 (32%)<br>Avg Severity: 1.97/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_db882ee2f40218b74af15150b45db29e.setContent(html_b9de7de05fd10bf1f33d348e32ebb932);
+                var html_fa64d320e328f9a20a3076f743988380 = $(`<div id="html_fa64d320e328f9a20a3076f743988380" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Rajasthan</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 93<br><b>Fatal:</b> 30 (32%)<br><b>Serious:</b> 30<br><b>Avg Severity:</b> 1.97/3.00<br><b>Avg Speed:</b> 72 km/h<br><b>Alcohol Rate:</b> 54%</div></div>`)[0];
+                popup_062efc0693eb89b635b2e8cc3e0dd747.setContent(html_fa64d320e328f9a20a3076f743988380);
             
         
 
-        circle_marker_a0292015fc1cd52d2120a7aa5d4b2e36.bindPopup(popup_db882ee2f40218b74af15150b45db29e)
+        circle_marker_9d4050980730cdcd578c06c6aa4d5871.bindPopup(popup_062efc0693eb89b635b2e8cc3e0dd747)
         ;
 
         
     
     
-            circle_marker_a0292015fc1cd52d2120a7aa5d4b2e36.bindTooltip(
+            circle_marker_9d4050980730cdcd578c06c6aa4d5871.bindTooltip(
                 `<div>
-                     Rajasthan: MODERATE
+                     Rajasthan: MODERATE (93 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -946,32 +965,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_9ef0effd78fe1a809419c0b299329d46 = L.circleMarker(
+            var circle_marker_fc6651d3d143c2914c2b17b0d35bb328 = L.circleMarker(
                 [27.533, 88.5122],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.5, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_3d21ad3cd8c1d1a83c043c7dba978e68 = L.popup({
+        var popup_fa3e1af870079902c121afd644e178a8 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_148345e1442f3cfe7b00e01d1ded4cf3 = $(`<div id="html_148345e1442f3cfe7b00e01d1ded4cf3" style="width: 100.0%; height: 100.0%;"><b>Sikkim</b><br>Accidents: 108<br>Fatal: 29 (27%)<br>Avg Severity: 1.92/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_3d21ad3cd8c1d1a83c043c7dba978e68.setContent(html_148345e1442f3cfe7b00e01d1ded4cf3);
+                var html_57bd20ddd061c053ed8a75d287883bfe = $(`<div id="html_57bd20ddd061c053ed8a75d287883bfe" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Sikkim</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 108<br><b>Fatal:</b> 29 (27%)<br><b>Serious:</b> 41<br><b>Avg Severity:</b> 1.92/3.00<br><b>Avg Speed:</b> 76 km/h<br><b>Alcohol Rate:</b> 50%</div></div>`)[0];
+                popup_fa3e1af870079902c121afd644e178a8.setContent(html_57bd20ddd061c053ed8a75d287883bfe);
             
         
 
-        circle_marker_9ef0effd78fe1a809419c0b299329d46.bindPopup(popup_3d21ad3cd8c1d1a83c043c7dba978e68)
+        circle_marker_fc6651d3d143c2914c2b17b0d35bb328.bindPopup(popup_fa3e1af870079902c121afd644e178a8)
         ;
 
         
     
     
-            circle_marker_9ef0effd78fe1a809419c0b299329d46.bindTooltip(
+            circle_marker_fc6651d3d143c2914c2b17b0d35bb328.bindTooltip(
                 `<div>
-                     Sikkim: MODERATE
+                     Sikkim: MODERATE (108 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -979,32 +998,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_effde229af8a4712eb5546383c0fef0d = L.circleMarker(
+            var circle_marker_cc560918e8abad4da9cb1d663ad0fbfc = L.circleMarker(
                 [11.1271, 78.6569],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.625, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.833333333333332, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_8818dc103d2cbc015535edb1f93097ea = L.popup({
+        var popup_8b63e5a952219ffb2c963b49b00594c2 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_ce84cd3d2b6f8aab343852f6f8263e14 = $(`<div id="html_ce84cd3d2b6f8aab343852f6f8263e14" style="width: 100.0%; height: 100.0%;"><b>Tamil Nadu</b><br>Accidents: 101<br>Fatal: 38 (38%)<br>Avg Severity: 2.02/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_8818dc103d2cbc015535edb1f93097ea.setContent(html_ce84cd3d2b6f8aab343852f6f8263e14);
+                var html_610fb80b55b96e48c0117843027a05e4 = $(`<div id="html_610fb80b55b96e48c0117843027a05e4" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Tamil Nadu</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 101<br><b>Fatal:</b> 38 (38%)<br><b>Serious:</b> 27<br><b>Avg Severity:</b> 2.02/3.00<br><b>Avg Speed:</b> 74 km/h<br><b>Alcohol Rate:</b> 44%</div></div>`)[0];
+                popup_8b63e5a952219ffb2c963b49b00594c2.setContent(html_610fb80b55b96e48c0117843027a05e4);
             
         
 
-        circle_marker_effde229af8a4712eb5546383c0fef0d.bindPopup(popup_8818dc103d2cbc015535edb1f93097ea)
+        circle_marker_cc560918e8abad4da9cb1d663ad0fbfc.bindPopup(popup_8b63e5a952219ffb2c963b49b00594c2)
         ;
 
         
     
     
-            circle_marker_effde229af8a4712eb5546383c0fef0d.bindTooltip(
+            circle_marker_cc560918e8abad4da9cb1d663ad0fbfc.bindTooltip(
                 `<div>
-                     Tamil Nadu: MODERATE
+                     Tamil Nadu: MODERATE (101 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -1012,32 +1031,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_c74e839759b3b2936d43f414dea10146 = L.circleMarker(
+            var circle_marker_e0813f5c9a853e7bcdb323073837ee27 = L.circleMarker(
                 [18.1124, 79.0193],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.5, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_a99c067d986716abf40882870f48db69 = L.popup({
+        var popup_aac2e4687a0e63531ca4e1d9fa683812 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_cf7cb4a104da416357926a174af939ac = $(`<div id="html_cf7cb4a104da416357926a174af939ac" style="width: 100.0%; height: 100.0%;"><b>Telangana</b><br>Accidents: 92<br>Fatal: 29 (32%)<br>Avg Severity: 1.95/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_a99c067d986716abf40882870f48db69.setContent(html_cf7cb4a104da416357926a174af939ac);
+                var html_c6cd14bd9445bf8a61f85ebb305e3f30 = $(`<div id="html_c6cd14bd9445bf8a61f85ebb305e3f30" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Telangana</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 92<br><b>Fatal:</b> 29 (32%)<br><b>Serious:</b> 29<br><b>Avg Severity:</b> 1.95/3.00<br><b>Avg Speed:</b> 71 km/h<br><b>Alcohol Rate:</b> 53%</div></div>`)[0];
+                popup_aac2e4687a0e63531ca4e1d9fa683812.setContent(html_c6cd14bd9445bf8a61f85ebb305e3f30);
             
         
 
-        circle_marker_c74e839759b3b2936d43f414dea10146.bindPopup(popup_a99c067d986716abf40882870f48db69)
+        circle_marker_e0813f5c9a853e7bcdb323073837ee27.bindPopup(popup_aac2e4687a0e63531ca4e1d9fa683812)
         ;
 
         
     
     
-            circle_marker_c74e839759b3b2936d43f414dea10146.bindTooltip(
+            circle_marker_e0813f5c9a853e7bcdb323073837ee27.bindTooltip(
                 `<div>
-                     Telangana: MODERATE
+                     Telangana: MODERATE (92 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -1045,32 +1064,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_58a1991c214e953026300a1a067a5055 = L.circleMarker(
+            var circle_marker_3e382c086cd08434980ad7bc1db841a0 = L.circleMarker(
                 [23.9408, 91.9882],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.5, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_09b775cbe5826faa5d15a62215d01ab9 = L.popup({
+        var popup_83cad7074e23825b9a9639a9190a7513 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_b00266827afef1093e69c1e5300e7b3b = $(`<div id="html_b00266827afef1093e69c1e5300e7b3b" style="width: 100.0%; height: 100.0%;"><b>Tripura</b><br>Accidents: 76<br>Fatal: 22 (29%)<br>Avg Severity: 1.97/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_09b775cbe5826faa5d15a62215d01ab9.setContent(html_b00266827afef1093e69c1e5300e7b3b);
+                var html_a9d8ea1fb0e49fec0e4ef1399b979636 = $(`<div id="html_a9d8ea1fb0e49fec0e4ef1399b979636" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Tripura</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 76<br><b>Fatal:</b> 22 (29%)<br><b>Serious:</b> 30<br><b>Avg Severity:</b> 1.97/3.00<br><b>Avg Speed:</b> 79 km/h<br><b>Alcohol Rate:</b> 45%</div></div>`)[0];
+                popup_83cad7074e23825b9a9639a9190a7513.setContent(html_a9d8ea1fb0e49fec0e4ef1399b979636);
             
         
 
-        circle_marker_58a1991c214e953026300a1a067a5055.bindPopup(popup_09b775cbe5826faa5d15a62215d01ab9)
+        circle_marker_3e382c086cd08434980ad7bc1db841a0.bindPopup(popup_83cad7074e23825b9a9639a9190a7513)
         ;
 
         
     
     
-            circle_marker_58a1991c214e953026300a1a067a5055.bindTooltip(
+            circle_marker_3e382c086cd08434980ad7bc1db841a0.bindTooltip(
                 `<div>
-                     Tripura: MODERATE
+                     Tripura: MODERATE (76 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -1078,32 +1097,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_9d005d55cdbe659878a6fc3684e3694c = L.circleMarker(
+            var circle_marker_acfe4c433f6083e2f742337f79f13898 = L.circleMarker(
                 [26.8467, 80.9462],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.75, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_b0cb0aff1bd2eced12c058845d70e7ed = L.popup({
+        var popup_cbdb0b8e1afe44d9b4f6d48dfa817c53 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_a4855595dfe3090ec386ad1c995536bd = $(`<div id="html_a4855595dfe3090ec386ad1c995536bd" style="width: 100.0%; height: 100.0%;"><b>Uttar Pradesh</b><br>Accidents: 94<br>Fatal: 29 (31%)<br>Avg Severity: 1.91/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_b0cb0aff1bd2eced12c058845d70e7ed.setContent(html_a4855595dfe3090ec386ad1c995536bd);
+                var html_fe379f9fca66410364fe973c7cc21e1a = $(`<div id="html_fe379f9fca66410364fe973c7cc21e1a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Uttar Pradesh</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 94<br><b>Fatal:</b> 29 (31%)<br><b>Serious:</b> 28<br><b>Avg Severity:</b> 1.91/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 55%</div></div>`)[0];
+                popup_cbdb0b8e1afe44d9b4f6d48dfa817c53.setContent(html_fe379f9fca66410364fe973c7cc21e1a);
             
         
 
-        circle_marker_9d005d55cdbe659878a6fc3684e3694c.bindPopup(popup_b0cb0aff1bd2eced12c058845d70e7ed)
+        circle_marker_acfe4c433f6083e2f742337f79f13898.bindPopup(popup_cbdb0b8e1afe44d9b4f6d48dfa817c53)
         ;
 
         
     
     
-            circle_marker_9d005d55cdbe659878a6fc3684e3694c.bindTooltip(
+            circle_marker_acfe4c433f6083e2f742337f79f13898.bindTooltip(
                 `<div>
-                     Uttar Pradesh: MODERATE
+                     Uttar Pradesh: MODERATE (94 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -1111,32 +1130,32 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_c1bbd8cd3d1355f2ce6e00f312ae933f = L.circleMarker(
+            var circle_marker_a5bb98c8cbf8da7a5921f7376f2011dd = L.circleMarker(
                 [30.0668, 79.0193],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.25, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_963782c8388afedd02b6a3424502f387 = L.popup({
+        var popup_32ba9be35b55808dd820246ee76cb9c5 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_a9865d991e8b3bc757b3d720cc8ade82 = $(`<div id="html_a9865d991e8b3bc757b3d720cc8ade82" style="width: 100.0%; height: 100.0%;"><b>Uttarakhand</b><br>Accidents: 106<br>Fatal: 37 (35%)<br>Avg Severity: 1.97/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_963782c8388afedd02b6a3424502f387.setContent(html_a9865d991e8b3bc757b3d720cc8ade82);
+                var html_1322b9d527f9cb61e73f520f998c972b = $(`<div id="html_1322b9d527f9cb61e73f520f998c972b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>Uttarakhand</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 106<br><b>Fatal:</b> 37 (35%)<br><b>Serious:</b> 29<br><b>Avg Severity:</b> 1.97/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 54%</div></div>`)[0];
+                popup_32ba9be35b55808dd820246ee76cb9c5.setContent(html_1322b9d527f9cb61e73f520f998c972b);
             
         
 
-        circle_marker_c1bbd8cd3d1355f2ce6e00f312ae933f.bindPopup(popup_963782c8388afedd02b6a3424502f387)
+        circle_marker_a5bb98c8cbf8da7a5921f7376f2011dd.bindPopup(popup_32ba9be35b55808dd820246ee76cb9c5)
         ;
 
         
     
     
-            circle_marker_c1bbd8cd3d1355f2ce6e00f312ae933f.bindTooltip(
+            circle_marker_a5bb98c8cbf8da7a5921f7376f2011dd.bindTooltip(
                 `<div>
-                     Uttarakhand: MODERATE
+                     Uttarakhand: MODERATE (106 accidents)
                  </div>`,
                 {
   "sticky": true,
@@ -1144,37 +1163,1367 @@ background:white;padding:10px;border-radius:5px;border:2px solid grey;font-size:
             );
         
     
-            var circle_marker_c07cb2dfeaeb4308af7a3b1680ba73e3 = L.circleMarker(
+            var circle_marker_1200621b754c1e3a80038dbf52537484 = L.circleMarker(
                 [22.9868, 87.855],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.75, "stroke": true, "weight": 3}
-            ).addTo(map_63ae2ee02cfffa36a5d3fc220cc32aa5);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(feature_group_21c672b739971c61a54dbbef4dc6bbf2);
         
     
-        var popup_d44c336e514b5094e723faf55af1c1cd = L.popup({
+        var popup_a732fa51c2b0f8bdfb36dc7881772553 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_82f4c53fc8dbec7d125af4a100eaeaa2 = $(`<div id="html_82f4c53fc8dbec7d125af4a100eaeaa2" style="width: 100.0%; height: 100.0%;"><b>West Bengal</b><br>Accidents: 94<br>Fatal: 36 (38%)<br>Avg Severity: 2.10/3<br>Risk: <b style='color:orange'>MODERATE</b></div>`)[0];
-                popup_d44c336e514b5094e723faf55af1c1cd.setContent(html_82f4c53fc8dbec7d125af4a100eaeaa2);
+                var html_b6924f3900a2f6935fa37ced6367cc53 = $(`<div id="html_b6924f3900a2f6935fa37ced6367cc53" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:220px;'><h4 style='margin:0;color:orange;'>West Bengal</h4><hr style='margin:3px 0;'><b>Risk Level:</b> <span style='color:orange;font-weight:bold;'>MODERATE</span><br><b>Total Accidents:</b> 94<br><b>Fatal:</b> 36 (38%)<br><b>Serious:</b> 31<br><b>Avg Severity:</b> 2.10/3.00<br><b>Avg Speed:</b> 75 km/h<br><b>Alcohol Rate:</b> 53%</div></div>`)[0];
+                popup_a732fa51c2b0f8bdfb36dc7881772553.setContent(html_b6924f3900a2f6935fa37ced6367cc53);
             
         
 
-        circle_marker_c07cb2dfeaeb4308af7a3b1680ba73e3.bindPopup(popup_d44c336e514b5094e723faf55af1c1cd)
+        circle_marker_1200621b754c1e3a80038dbf52537484.bindPopup(popup_a732fa51c2b0f8bdfb36dc7881772553)
         ;
 
         
     
     
-            circle_marker_c07cb2dfeaeb4308af7a3b1680ba73e3.bindTooltip(
+            circle_marker_1200621b754c1e3a80038dbf52537484.bindTooltip(
                 `<div>
-                     West Bengal: MODERATE
+                     West Bengal: MODERATE (94 accidents)
                  </div>`,
                 {
   "sticky": true,
 }
             );
+        
+    
+            feature_group_21c672b739971c61a54dbbef4dc6bbf2.addTo(map_e49df7839df6c9bce476638aa0740b34);
+        
+    
+            var feature_group_cabb97de3e661261dec899bd3538e41e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ae56f018b02740d564fbb7720429805a = L.marker(
+                [23.0225, 72.5714],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_b338c97dceb4ef24b279ab14722ee96b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c4d18a3c72cf956510692a09419cd35 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_e6732ad8e5ebdb9ece4148e5e546730b = $(`<div id="html_e6732ad8e5ebdb9ece4148e5e546730b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Ahmedabad</h4><small>Gujarat</small><hr style='margin:3px 0;'><b>Accidents:</b> 30<br><b>Fatal:</b> 12 (40%)<br><b>Severity:</b> 2.03/3<br><b>Avg Speed:</b> 80 km/h</div></div>`)[0];
+                popup_3c4d18a3c72cf956510692a09419cd35.setContent(html_e6732ad8e5ebdb9ece4148e5e546730b);
+            
+        
+
+        marker_ae56f018b02740d564fbb7720429805a.bindPopup(popup_3c4d18a3c72cf956510692a09419cd35)
+        ;
+
+        
+    
+    
+            marker_ae56f018b02740d564fbb7720429805a.bindTooltip(
+                `<div>
+                     Ahmedabad: 30 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae56f018b02740d564fbb7720429805a.setIcon(icon_b338c97dceb4ef24b279ab14722ee96b);
+            
+    
+            var marker_0a0b4e0a215a264d6bfcf33a54d57985 = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_f267a833a2896a416e68f634d8d09711 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b122da8bf15b79e9e8dd686371a176f8 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_6bd79d264a3e99330cb9352171bfd78b = $(`<div id="html_6bd79d264a3e99330cb9352171bfd78b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Bangalore</h4><small>Karnataka</small><hr style='margin:3px 0;'><b>Accidents:</b> 29<br><b>Fatal:</b> 12 (41%)<br><b>Severity:</b> 1.97/3<br><b>Avg Speed:</b> 78 km/h</div></div>`)[0];
+                popup_b122da8bf15b79e9e8dd686371a176f8.setContent(html_6bd79d264a3e99330cb9352171bfd78b);
+            
+        
+
+        marker_0a0b4e0a215a264d6bfcf33a54d57985.bindPopup(popup_b122da8bf15b79e9e8dd686371a176f8)
+        ;
+
+        
+    
+    
+            marker_0a0b4e0a215a264d6bfcf33a54d57985.bindTooltip(
+                `<div>
+                     Bangalore: 29 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a0b4e0a215a264d6bfcf33a54d57985.setIcon(icon_f267a833a2896a416e68f634d8d09711);
+            
+    
+            var marker_e77cc0b2131cd1ac95da2de618306f72 = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_38e84a9afbfee3e1f6141e842d6f91c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c291d76604e6d59023d44ae08249ae7 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_77e909301ee901b16539cc95fdfeba11 = $(`<div id="html_77e909301ee901b16539cc95fdfeba11" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Chennai</h4><small>Tamil Nadu</small><hr style='margin:3px 0;'><b>Accidents:</b> 32<br><b>Fatal:</b> 14 (44%)<br><b>Severity:</b> 2.19/3<br><b>Avg Speed:</b> 72 km/h</div></div>`)[0];
+                popup_7c291d76604e6d59023d44ae08249ae7.setContent(html_77e909301ee901b16539cc95fdfeba11);
+            
+        
+
+        marker_e77cc0b2131cd1ac95da2de618306f72.bindPopup(popup_7c291d76604e6d59023d44ae08249ae7)
+        ;
+
+        
+    
+    
+            marker_e77cc0b2131cd1ac95da2de618306f72.bindTooltip(
+                `<div>
+                     Chennai: 32 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e77cc0b2131cd1ac95da2de618306f72.setIcon(icon_38e84a9afbfee3e1f6141e842d6f91c1);
+            
+    
+            var marker_91cb69be5b84e7cc15c2628f22613c36 = L.marker(
+                [11.0168, 76.9558],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_9708eafe09bd0733dffe5e6006ffca28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d515eb57a1a5fc2b5b67dc6b61312574 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_4d6167d20f2ed6b39ee9d1d9860b323d = $(`<div id="html_4d6167d20f2ed6b39ee9d1d9860b323d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Coimbatore</h4><small>Tamil Nadu</small><hr style='margin:3px 0;'><b>Accidents:</b> 37<br><b>Fatal:</b> 15 (41%)<br><b>Severity:</b> 2.11/3<br><b>Avg Speed:</b> 74 km/h</div></div>`)[0];
+                popup_d515eb57a1a5fc2b5b67dc6b61312574.setContent(html_4d6167d20f2ed6b39ee9d1d9860b323d);
+            
+        
+
+        marker_91cb69be5b84e7cc15c2628f22613c36.bindPopup(popup_d515eb57a1a5fc2b5b67dc6b61312574)
+        ;
+
+        
+    
+    
+            marker_91cb69be5b84e7cc15c2628f22613c36.bindTooltip(
+                `<div>
+                     Coimbatore: 37 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91cb69be5b84e7cc15c2628f22613c36.setIcon(icon_9708eafe09bd0733dffe5e6006ffca28);
+            
+    
+            var marker_8cd80eb13ad1e9ba5411248549102438 = L.marker(
+                [23.5204, 87.3119],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_2f029a5241cd852acfe1f4b626808762 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bcefbec5a83bbcd49868d8d40b15e170 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_aa0b2e6f6416eb933d4ddbee21b7c2ab = $(`<div id="html_aa0b2e6f6416eb933d4ddbee21b7c2ab" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Durgapur</h4><small>West Bengal</small><hr style='margin:3px 0;'><b>Accidents:</b> 28<br><b>Fatal:</b> 13 (46%)<br><b>Severity:</b> 2.14/3<br><b>Avg Speed:</b> 77 km/h</div></div>`)[0];
+                popup_bcefbec5a83bbcd49868d8d40b15e170.setContent(html_aa0b2e6f6416eb933d4ddbee21b7c2ab);
+            
+        
+
+        marker_8cd80eb13ad1e9ba5411248549102438.bindPopup(popup_bcefbec5a83bbcd49868d8d40b15e170)
+        ;
+
+        
+    
+    
+            marker_8cd80eb13ad1e9ba5411248549102438.bindTooltip(
+                `<div>
+                     Durgapur: 28 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8cd80eb13ad1e9ba5411248549102438.setIcon(icon_2f029a5241cd852acfe1f4b626808762);
+            
+    
+            var marker_2b4ff60c9d19518b4160570c7dd3d1c3 = L.marker(
+                [22.2394, 68.9678],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_1d64cc51f55726fbe81aee6bfb97ac98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2403d11e45a83cfca7d69f458e6e39a = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_bc35e39fa5d0ed2c7dba0686dffb1e73 = $(`<div id="html_bc35e39fa5d0ed2c7dba0686dffb1e73" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Dwarka</h4><small>Delhi</small><hr style='margin:3px 0;'><b>Accidents:</b> 38<br><b>Fatal:</b> 8 (21%)<br><b>Severity:</b> 1.95/3<br><b>Avg Speed:</b> 84 km/h</div></div>`)[0];
+                popup_f2403d11e45a83cfca7d69f458e6e39a.setContent(html_bc35e39fa5d0ed2c7dba0686dffb1e73);
+            
+        
+
+        marker_2b4ff60c9d19518b4160570c7dd3d1c3.bindPopup(popup_f2403d11e45a83cfca7d69f458e6e39a)
+        ;
+
+        
+    
+    
+            marker_2b4ff60c9d19518b4160570c7dd3d1c3.bindTooltip(
+                `<div>
+                     Dwarka: 38 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2b4ff60c9d19518b4160570c7dd3d1c3.setIcon(icon_1d64cc51f55726fbe81aee6bfb97ac98);
+            
+    
+            var marker_0dc73fc5926b65acafaa76bbf5ac4198 = L.marker(
+                [26.9124, 75.7873],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_95c85ea25d6322d742a3d257ccb3ffcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1581b85bd54d683958d3216f9a9e603 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_bc9ac8593fc7990e398ba9c036bfc49a = $(`<div id="html_bc9ac8593fc7990e398ba9c036bfc49a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Jaipur</h4><small>Rajasthan</small><hr style='margin:3px 0;'><b>Accidents:</b> 27<br><b>Fatal:</b> 8 (30%)<br><b>Severity:</b> 1.93/3<br><b>Avg Speed:</b> 71 km/h</div></div>`)[0];
+                popup_b1581b85bd54d683958d3216f9a9e603.setContent(html_bc9ac8593fc7990e398ba9c036bfc49a);
+            
+        
+
+        marker_0dc73fc5926b65acafaa76bbf5ac4198.bindPopup(popup_b1581b85bd54d683958d3216f9a9e603)
+        ;
+
+        
+    
+    
+            marker_0dc73fc5926b65acafaa76bbf5ac4198.bindTooltip(
+                `<div>
+                     Jaipur: 27 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0dc73fc5926b65acafaa76bbf5ac4198.setIcon(icon_95c85ea25d6322d742a3d257ccb3ffcf);
+            
+    
+            var marker_1d1a5d0279d5871809e5768d56c488bf = L.marker(
+                [26.2389, 73.0243],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_9e1c67e17ffa78cd61b6fe0de04f8e8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1f59bf97c9817d292152227cc68496c = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_2a2291304e59f0d843b27a6862d71869 = $(`<div id="html_2a2291304e59f0d843b27a6862d71869" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Jodhpur</h4><small>Rajasthan</small><hr style='margin:3px 0;'><b>Accidents:</b> 31<br><b>Fatal:</b> 13 (42%)<br><b>Severity:</b> 2.10/3<br><b>Avg Speed:</b> 73 km/h</div></div>`)[0];
+                popup_a1f59bf97c9817d292152227cc68496c.setContent(html_2a2291304e59f0d843b27a6862d71869);
+            
+        
+
+        marker_1d1a5d0279d5871809e5768d56c488bf.bindPopup(popup_a1f59bf97c9817d292152227cc68496c)
+        ;
+
+        
+    
+    
+            marker_1d1a5d0279d5871809e5768d56c488bf.bindTooltip(
+                `<div>
+                     Jodhpur: 31 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d1a5d0279d5871809e5768d56c488bf.setIcon(icon_9e1c67e17ffa78cd61b6fe0de04f8e8b);
+            
+    
+            var marker_272543db256b8aa8b9363d56bd73cb1f = L.marker(
+                [26.4499, 80.3319],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_481ef0b224d54186d7732a8fd9a4eb43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d06f40ca5bcfbc836e2dcfb175bb3883 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_a0faf75b820586545aa241d6c65e657b = $(`<div id="html_a0faf75b820586545aa241d6c65e657b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Kanpur</h4><small>Uttar Pradesh</small><hr style='margin:3px 0;'><b>Accidents:</b> 28<br><b>Fatal:</b> 12 (43%)<br><b>Severity:</b> 2.18/3<br><b>Avg Speed:</b> 77 km/h</div></div>`)[0];
+                popup_d06f40ca5bcfbc836e2dcfb175bb3883.setContent(html_a0faf75b820586545aa241d6c65e657b);
+            
+        
+
+        marker_272543db256b8aa8b9363d56bd73cb1f.bindPopup(popup_d06f40ca5bcfbc836e2dcfb175bb3883)
+        ;
+
+        
+    
+    
+            marker_272543db256b8aa8b9363d56bd73cb1f.bindTooltip(
+                `<div>
+                     Kanpur: 28 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_272543db256b8aa8b9363d56bd73cb1f.setIcon(icon_481ef0b224d54186d7732a8fd9a4eb43);
+            
+    
+            var marker_5c1f7e296c16e341f99cba6657796011 = L.marker(
+                [22.5726, 88.3639],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_d327f589dac4ff5f6fe2034e8ebe48c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a512ba731518500bd3997d3fd5d0a3f6 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_c2097faa29de952865c45a149811de1b = $(`<div id="html_c2097faa29de952865c45a149811de1b" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Kolkata</h4><small>West Bengal</small><hr style='margin:3px 0;'><b>Accidents:</b> 31<br><b>Fatal:</b> 10 (32%)<br><b>Severity:</b> 1.97/3<br><b>Avg Speed:</b> 71 km/h</div></div>`)[0];
+                popup_a512ba731518500bd3997d3fd5d0a3f6.setContent(html_c2097faa29de952865c45a149811de1b);
+            
+        
+
+        marker_5c1f7e296c16e341f99cba6657796011.bindPopup(popup_a512ba731518500bd3997d3fd5d0a3f6)
+        ;
+
+        
+    
+    
+            marker_5c1f7e296c16e341f99cba6657796011.bindTooltip(
+                `<div>
+                     Kolkata: 31 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c1f7e296c16e341f99cba6657796011.setIcon(icon_d327f589dac4ff5f6fe2034e8ebe48c4);
+            
+    
+            var marker_e80426bbb01fbec87e5a0bdb0d6daf7a = L.marker(
+                [26.8467, 80.9462],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_1bd6f050e6b70b2ef49a21aca775c779 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24aaede2be6b529e340724ac1b4594d3 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_bd085b8bd07cc039ee73c30fcd34fe20 = $(`<div id="html_bd085b8bd07cc039ee73c30fcd34fe20" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Lucknow</h4><small>Uttar Pradesh</small><hr style='margin:3px 0;'><b>Accidents:</b> 38<br><b>Fatal:</b> 8 (21%)<br><b>Severity:</b> 1.84/3<br><b>Avg Speed:</b> 74 km/h</div></div>`)[0];
+                popup_24aaede2be6b529e340724ac1b4594d3.setContent(html_bd085b8bd07cc039ee73c30fcd34fe20);
+            
+        
+
+        marker_e80426bbb01fbec87e5a0bdb0d6daf7a.bindPopup(popup_24aaede2be6b529e340724ac1b4594d3)
+        ;
+
+        
+    
+    
+            marker_e80426bbb01fbec87e5a0bdb0d6daf7a.bindTooltip(
+                `<div>
+                     Lucknow: 38 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e80426bbb01fbec87e5a0bdb0d6daf7a.setIcon(icon_1bd6f050e6b70b2ef49a21aca775c779);
+            
+    
+            var marker_cfd0f8232e19ae6656fb3db0555557a6 = L.marker(
+                [9.9252, 78.1198],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_918223b3433e62d6700ffe1106d2df48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1fa551a0a63e20bc86f932e1a31588e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_2710de9a0abdf7a83630a3ccddbc0e3c = $(`<div id="html_2710de9a0abdf7a83630a3ccddbc0e3c" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Madurai</h4><small>Tamil Nadu</small><hr style='margin:3px 0;'><b>Accidents:</b> 32<br><b>Fatal:</b> 9 (28%)<br><b>Severity:</b> 1.75/3<br><b>Avg Speed:</b> 75 km/h</div></div>`)[0];
+                popup_c1fa551a0a63e20bc86f932e1a31588e.setContent(html_2710de9a0abdf7a83630a3ccddbc0e3c);
+            
+        
+
+        marker_cfd0f8232e19ae6656fb3db0555557a6.bindPopup(popup_c1fa551a0a63e20bc86f932e1a31588e)
+        ;
+
+        
+    
+    
+            marker_cfd0f8232e19ae6656fb3db0555557a6.bindTooltip(
+                `<div>
+                     Madurai: 32 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfd0f8232e19ae6656fb3db0555557a6.setIcon(icon_918223b3433e62d6700ffe1106d2df48);
+            
+    
+            var marker_76f5299a17ae654ecd9b988581b43719 = L.marker(
+                [12.9141, 74.856],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_8b19d614e52fa24e83b01b49adf187e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_694827a4d9f175083a7c7d2f4a00f6a2 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_0f63768cb9ffb49ae00500e32a984411 = $(`<div id="html_0f63768cb9ffb49ae00500e32a984411" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Mangalore</h4><small>Karnataka</small><hr style='margin:3px 0;'><b>Accidents:</b> 29<br><b>Fatal:</b> 8 (28%)<br><b>Severity:</b> 1.97/3<br><b>Avg Speed:</b> 70 km/h</div></div>`)[0];
+                popup_694827a4d9f175083a7c7d2f4a00f6a2.setContent(html_0f63768cb9ffb49ae00500e32a984411);
+            
+        
+
+        marker_76f5299a17ae654ecd9b988581b43719.bindPopup(popup_694827a4d9f175083a7c7d2f4a00f6a2)
+        ;
+
+        
+    
+    
+            marker_76f5299a17ae654ecd9b988581b43719.bindTooltip(
+                `<div>
+                     Mangalore: 29 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_76f5299a17ae654ecd9b988581b43719.setIcon(icon_8b19d614e52fa24e83b01b49adf187e3);
+            
+    
+            var marker_43feb084ce9c25b0cd337da195aca779 = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_abfe91ad3196cd286058182623877dc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1d09cb8f6c92c702ec29284344381b5 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_c4362d1c0474c012c5ebb5600419ebba = $(`<div id="html_c4362d1c0474c012c5ebb5600419ebba" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Mumbai</h4><small>Maharashtra</small><hr style='margin:3px 0;'><b>Accidents:</b> 28<br><b>Fatal:</b> 9 (32%)<br><b>Severity:</b> 2.04/3<br><b>Avg Speed:</b> 69 km/h</div></div>`)[0];
+                popup_f1d09cb8f6c92c702ec29284344381b5.setContent(html_c4362d1c0474c012c5ebb5600419ebba);
+            
+        
+
+        marker_43feb084ce9c25b0cd337da195aca779.bindPopup(popup_f1d09cb8f6c92c702ec29284344381b5)
+        ;
+
+        
+    
+    
+            marker_43feb084ce9c25b0cd337da195aca779.bindTooltip(
+                `<div>
+                     Mumbai: 28 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43feb084ce9c25b0cd337da195aca779.setIcon(icon_abfe91ad3196cd286058182623877dc4);
+            
+    
+            var marker_873a8719f5870ea2074c7e734749e1df = L.marker(
+                [12.2958, 76.6394],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_298a440cc989749698e699f32c0ef56a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c40e543aa7df9b068fb85cf791f0b197 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_6d0b5f290fff6045a3e2053ade1a338e = $(`<div id="html_6d0b5f290fff6045a3e2053ade1a338e" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Mysore</h4><small>Karnataka</small><hr style='margin:3px 0;'><b>Accidents:</b> 37<br><b>Fatal:</b> 13 (35%)<br><b>Severity:</b> 2.03/3<br><b>Avg Speed:</b> 69 km/h</div></div>`)[0];
+                popup_c40e543aa7df9b068fb85cf791f0b197.setContent(html_6d0b5f290fff6045a3e2053ade1a338e);
+            
+        
+
+        marker_873a8719f5870ea2074c7e734749e1df.bindPopup(popup_c40e543aa7df9b068fb85cf791f0b197)
+        ;
+
+        
+    
+    
+            marker_873a8719f5870ea2074c7e734749e1df.bindTooltip(
+                `<div>
+                     Mysore: 37 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_873a8719f5870ea2074c7e734749e1df.setIcon(icon_298a440cc989749698e699f32c0ef56a);
+            
+    
+            var marker_5f46a67714a2970c55afefc7d9f73df0 = L.marker(
+                [21.1458, 79.0882],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_c2253239474a96d9a69366c5563c2b4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77addb776a5a44e125ac413c18f188be = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_264062dc855525242495ddb5ab709e15 = $(`<div id="html_264062dc855525242495ddb5ab709e15" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Nagpur</h4><small>Maharashtra</small><hr style='margin:3px 0;'><b>Accidents:</b> 28<br><b>Fatal:</b> 13 (46%)<br><b>Severity:</b> 2.25/3<br><b>Avg Speed:</b> 72 km/h</div></div>`)[0];
+                popup_77addb776a5a44e125ac413c18f188be.setContent(html_264062dc855525242495ddb5ab709e15);
+            
+        
+
+        marker_5f46a67714a2970c55afefc7d9f73df0.bindPopup(popup_77addb776a5a44e125ac413c18f188be)
+        ;
+
+        
+    
+    
+            marker_5f46a67714a2970c55afefc7d9f73df0.bindTooltip(
+                `<div>
+                     Nagpur: 28 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f46a67714a2970c55afefc7d9f73df0.setIcon(icon_c2253239474a96d9a69366c5563c2b4a);
+            
+    
+            var marker_c04353e3b0447305075fb5919fa92a97 = L.marker(
+                [28.6139, 77.209],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_1317b271cc610764efb50b8ac8454a10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86a381660423b896ee15faf0ba45516b = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_fee6c3d492e53310704068a8bc9e3bea = $(`<div id="html_fee6c3d492e53310704068a8bc9e3bea" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>New Delhi</h4><small>Delhi</small><hr style='margin:3px 0;'><b>Accidents:</b> 39<br><b>Fatal:</b> 12 (31%)<br><b>Severity:</b> 1.95/3<br><b>Avg Speed:</b> 77 km/h</div></div>`)[0];
+                popup_86a381660423b896ee15faf0ba45516b.setContent(html_fee6c3d492e53310704068a8bc9e3bea);
+            
+        
+
+        marker_c04353e3b0447305075fb5919fa92a97.bindPopup(popup_86a381660423b896ee15faf0ba45516b)
+        ;
+
+        
+    
+    
+            marker_c04353e3b0447305075fb5919fa92a97.bindTooltip(
+                `<div>
+                     New Delhi: 39 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c04353e3b0447305075fb5919fa92a97.setIcon(icon_1317b271cc610764efb50b8ac8454a10);
+            
+    
+            var marker_ddfa6be6431bdc76a3527c16d8756e90 = L.marker(
+                [18.5204, 73.8567],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_2b757ac9b452820eb42da8db91af23d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2516a45a3ad1adc09dac05527f3ba8f2 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_94af28ccf019f05e45205bb796f4bdc2 = $(`<div id="html_94af28ccf019f05e45205bb796f4bdc2" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Pune</h4><small>Maharashtra</small><hr style='margin:3px 0;'><b>Accidents:</b> 33<br><b>Fatal:</b> 13 (39%)<br><b>Severity:</b> 2.03/3<br><b>Avg Speed:</b> 77 km/h</div></div>`)[0];
+                popup_2516a45a3ad1adc09dac05527f3ba8f2.setContent(html_94af28ccf019f05e45205bb796f4bdc2);
+            
+        
+
+        marker_ddfa6be6431bdc76a3527c16d8756e90.bindPopup(popup_2516a45a3ad1adc09dac05527f3ba8f2)
+        ;
+
+        
+    
+    
+            marker_ddfa6be6431bdc76a3527c16d8756e90.bindTooltip(
+                `<div>
+                     Pune: 33 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ddfa6be6431bdc76a3527c16d8756e90.setIcon(icon_2b757ac9b452820eb42da8db91af23d3);
+            
+    
+            var marker_d1adb338c598fac6acfbae08531c597a = L.marker(
+                [28.7495, 77.0565],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_ea1dfdc5666cb3c27e5b97814d27ab2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4797a98e12b428c3a0b8f40df71683d3 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_075c5506c1f13eaa089428a933991f25 = $(`<div id="html_075c5506c1f13eaa089428a933991f25" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Rohini</h4><small>Delhi</small><hr style='margin:3px 0;'><b>Accidents:</b> 31<br><b>Fatal:</b> 11 (35%)<br><b>Severity:</b> 2.00/3<br><b>Avg Speed:</b> 77 km/h</div></div>`)[0];
+                popup_4797a98e12b428c3a0b8f40df71683d3.setContent(html_075c5506c1f13eaa089428a933991f25);
+            
+        
+
+        marker_d1adb338c598fac6acfbae08531c597a.bindPopup(popup_4797a98e12b428c3a0b8f40df71683d3)
+        ;
+
+        
+    
+    
+            marker_d1adb338c598fac6acfbae08531c597a.bindTooltip(
+                `<div>
+                     Rohini: 31 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1adb338c598fac6acfbae08531c597a.setIcon(icon_ea1dfdc5666cb3c27e5b97814d27ab2c);
+            
+    
+            var marker_05240ab2af287e150dba0d0be5f0894f = L.marker(
+                [26.7271, 88.3953],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_7e982f07bc5c2cb9717e2501614f16c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09b9b35b208f2ec6179fa71a7e4d5719 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_b578f001aed9674749eb816e6a998733 = $(`<div id="html_b578f001aed9674749eb816e6a998733" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Siliguri</h4><small>West Bengal</small><hr style='margin:3px 0;'><b>Accidents:</b> 35<br><b>Fatal:</b> 13 (37%)<br><b>Severity:</b> 2.17/3<br><b>Avg Speed:</b> 77 km/h</div></div>`)[0];
+                popup_09b9b35b208f2ec6179fa71a7e4d5719.setContent(html_b578f001aed9674749eb816e6a998733);
+            
+        
+
+        marker_05240ab2af287e150dba0d0be5f0894f.bindPopup(popup_09b9b35b208f2ec6179fa71a7e4d5719)
+        ;
+
+        
+    
+    
+            marker_05240ab2af287e150dba0d0be5f0894f.bindTooltip(
+                `<div>
+                     Siliguri: 35 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05240ab2af287e150dba0d0be5f0894f.setIcon(icon_7e982f07bc5c2cb9717e2501614f16c0);
+            
+    
+            var marker_5bddeca485af654bb041a5f0ad3451b1 = L.marker(
+                [21.1702, 72.8311],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_eddada2112ac413960f7cc83ccd85026 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa73c826de75a26dc927c2dcd0bbf2ba = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_3a245c24dd5fa8c796c63adf86151e33 = $(`<div id="html_3a245c24dd5fa8c796c63adf86151e33" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Surat</h4><small>Gujarat</small><hr style='margin:3px 0;'><b>Accidents:</b> 38<br><b>Fatal:</b> 8 (21%)<br><b>Severity:</b> 1.79/3<br><b>Avg Speed:</b> 79 km/h</div></div>`)[0];
+                popup_fa73c826de75a26dc927c2dcd0bbf2ba.setContent(html_3a245c24dd5fa8c796c63adf86151e33);
+            
+        
+
+        marker_5bddeca485af654bb041a5f0ad3451b1.bindPopup(popup_fa73c826de75a26dc927c2dcd0bbf2ba)
+        ;
+
+        
+    
+    
+            marker_5bddeca485af654bb041a5f0ad3451b1.bindTooltip(
+                `<div>
+                     Surat: 38 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5bddeca485af654bb041a5f0ad3451b1.setIcon(icon_eddada2112ac413960f7cc83ccd85026);
+            
+    
+            var marker_74ffa6d3d33bfa617b7ae2e9030419f8 = L.marker(
+                [13.6288, 79.4192],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_80be21a1eeb5c77e54e17806a060922d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6da30fe0c6899db1e9ae7f755b21c8b9 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_05bc7599483f9247073cf304aadccef2 = $(`<div id="html_05bc7599483f9247073cf304aadccef2" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Tirupati</h4><small>Andhra Pradesh</small><hr style='margin:3px 0;'><b>Accidents:</b> 32<br><b>Fatal:</b> 16 (50%)<br><b>Severity:</b> 2.31/3<br><b>Avg Speed:</b> 71 km/h</div></div>`)[0];
+                popup_6da30fe0c6899db1e9ae7f755b21c8b9.setContent(html_05bc7599483f9247073cf304aadccef2);
+            
+        
+
+        marker_74ffa6d3d33bfa617b7ae2e9030419f8.bindPopup(popup_6da30fe0c6899db1e9ae7f755b21c8b9)
+        ;
+
+        
+    
+    
+            marker_74ffa6d3d33bfa617b7ae2e9030419f8.bindTooltip(
+                `<div>
+                     Tirupati: 32 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74ffa6d3d33bfa617b7ae2e9030419f8.setIcon(icon_80be21a1eeb5c77e54e17806a060922d);
+            
+    
+            var marker_7e5a87b0ca9afc9fa3e113ac4479bcd8 = L.marker(
+                [24.5854, 73.7125],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_e9238c149ceacbe8e555c8e7b8d58fcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_723d787ee1fc52179b2a611ce9bafe12 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_71ea7cdfaf761c5aacc8ce45f74e98ca = $(`<div id="html_71ea7cdfaf761c5aacc8ce45f74e98ca" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Udaipur</h4><small>Rajasthan</small><hr style='margin:3px 0;'><b>Accidents:</b> 35<br><b>Fatal:</b> 9 (26%)<br><b>Severity:</b> 1.89/3<br><b>Avg Speed:</b> 72 km/h</div></div>`)[0];
+                popup_723d787ee1fc52179b2a611ce9bafe12.setContent(html_71ea7cdfaf761c5aacc8ce45f74e98ca);
+            
+        
+
+        marker_7e5a87b0ca9afc9fa3e113ac4479bcd8.bindPopup(popup_723d787ee1fc52179b2a611ce9bafe12)
+        ;
+
+        
+    
+    
+            marker_7e5a87b0ca9afc9fa3e113ac4479bcd8.bindTooltip(
+                `<div>
+                     Udaipur: 35 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e5a87b0ca9afc9fa3e113ac4479bcd8.setIcon(icon_e9238c149ceacbe8e555c8e7b8d58fcf);
+            
+    
+            var marker_22e94e581fb48b9feedc048e012c6f50 = L.marker(
+                [22.3072, 73.1812],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_863af06294c7f24bd8fa8e1edc9d656f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18399eb1f360b339df015a37ab965e1e = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_2c29efe8f3dafeb29a66d94217411eef = $(`<div id="html_2c29efe8f3dafeb29a66d94217411eef" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Vadodara</h4><small>Gujarat</small><hr style='margin:3px 0;'><b>Accidents:</b> 32<br><b>Fatal:</b> 12 (38%)<br><b>Severity:</b> 2.09/3<br><b>Avg Speed:</b> 72 km/h</div></div>`)[0];
+                popup_18399eb1f360b339df015a37ab965e1e.setContent(html_2c29efe8f3dafeb29a66d94217411eef);
+            
+        
+
+        marker_22e94e581fb48b9feedc048e012c6f50.bindPopup(popup_18399eb1f360b339df015a37ab965e1e)
+        ;
+
+        
+    
+    
+            marker_22e94e581fb48b9feedc048e012c6f50.bindTooltip(
+                `<div>
+                     Vadodara: 32 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22e94e581fb48b9feedc048e012c6f50.setIcon(icon_863af06294c7f24bd8fa8e1edc9d656f);
+            
+    
+            var marker_b1233449244902e09f68d74334669367 = L.marker(
+                [25.3176, 82.9739],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_59f411c78fb628f01f4230c38ab15bb8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a68b99d8f124ada10e095c2a5b267acf = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_1ebdeb72af4a2905c2ee1df57a37ab1d = $(`<div id="html_1ebdeb72af4a2905c2ee1df57a37ab1d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Varanasi</h4><small>Uttar Pradesh</small><hr style='margin:3px 0;'><b>Accidents:</b> 28<br><b>Fatal:</b> 9 (32%)<br><b>Severity:</b> 1.75/3<br><b>Avg Speed:</b> 74 km/h</div></div>`)[0];
+                popup_a68b99d8f124ada10e095c2a5b267acf.setContent(html_1ebdeb72af4a2905c2ee1df57a37ab1d);
+            
+        
+
+        marker_b1233449244902e09f68d74334669367.bindPopup(popup_a68b99d8f124ada10e095c2a5b267acf)
+        ;
+
+        
+    
+    
+            marker_b1233449244902e09f68d74334669367.bindTooltip(
+                `<div>
+                     Varanasi: 28 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1233449244902e09f68d74334669367.setIcon(icon_59f411c78fb628f01f4230c38ab15bb8);
+            
+    
+            var marker_eb112eca860a93d9954451f482b77900 = L.marker(
+                [16.5062, 80.648],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_c8bb62df2c10b987e7b69469429761ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85141adf7fa3d4a3179f2861b4b9b844 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_248171820aa433563c0c2f391905094e = $(`<div id="html_248171820aa433563c0c2f391905094e" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Vijayawada</h4><small>Andhra Pradesh</small><hr style='margin:3px 0;'><b>Accidents:</b> 27<br><b>Fatal:</b> 8 (30%)<br><b>Severity:</b> 1.96/3<br><b>Avg Speed:</b> 75 km/h</div></div>`)[0];
+                popup_85141adf7fa3d4a3179f2861b4b9b844.setContent(html_248171820aa433563c0c2f391905094e);
+            
+        
+
+        marker_eb112eca860a93d9954451f482b77900.bindPopup(popup_85141adf7fa3d4a3179f2861b4b9b844)
+        ;
+
+        
+    
+    
+            marker_eb112eca860a93d9954451f482b77900.bindTooltip(
+                `<div>
+                     Vijayawada: 27 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb112eca860a93d9954451f482b77900.setIcon(icon_c8bb62df2c10b987e7b69469429761ae);
+            
+    
+            var marker_325e211240ce765cdc17289e46422c88 = L.marker(
+                [17.6868, 83.2185],
+                {
+}
+            ).addTo(feature_group_cabb97de3e661261dec899bd3538e41e);
+        
+    
+            var icon_8b20cb3c3072073484311017ff0a1b78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c16ef2bfb450589e2e142ca55e285c9 = L.popup({
+  "maxWidth": 220,
+});
+
+        
+            
+                var html_453d6078c68a23a54d5647e8d5854556 = $(`<div id="html_453d6078c68a23a54d5647e8d5854556" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;width:200px;'><h4 style='margin:0;'>Visakhapatnam</h4><small>Andhra Pradesh</small><hr style='margin:3px 0;'><b>Accidents:</b> 29<br><b>Fatal:</b> 8 (28%)<br><b>Severity:</b> 1.72/3<br><b>Avg Speed:</b> 85 km/h</div></div>`)[0];
+                popup_3c16ef2bfb450589e2e142ca55e285c9.setContent(html_453d6078c68a23a54d5647e8d5854556);
+            
+        
+
+        marker_325e211240ce765cdc17289e46422c88.bindPopup(popup_3c16ef2bfb450589e2e142ca55e285c9)
+        ;
+
+        
+    
+    
+            marker_325e211240ce765cdc17289e46422c88.bindTooltip(
+                `<div>
+                     Visakhapatnam: 29 accidents
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_325e211240ce765cdc17289e46422c88.setIcon(icon_8b20cb3c3072073484311017ff0a1b78);
+            
+    
+            feature_group_cabb97de3e661261dec899bd3538e41e.addTo(map_e49df7839df6c9bce476638aa0740b34);
+        
+    
+            var layer_control_7fd59eec7a87c3e364f2207ed8744144_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_255e88c15412b300b48f5df8213f9d4d,
+                },
+                overlays :  {
+                    "macro_element_538e1eb27431ed7f6cb5aed26f88e786" : heat_map_538e1eb27431ed7f6cb5aed26f88e786,
+                    "State Risk Zones" : feature_group_21c672b739971c61a54dbbef4dc6bbf2,
+                    "City Details" : feature_group_cabb97de3e661261dec899bd3538e41e,
+                },
+            };
+            let layer_control_7fd59eec7a87c3e364f2207ed8744144 = L.control.layers(
+                layer_control_7fd59eec7a87c3e364f2207ed8744144_layers.base_layers,
+                layer_control_7fd59eec7a87c3e364f2207ed8744144_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_e49df7839df6c9bce476638aa0740b34);
+
         
 </script>
 </html>
