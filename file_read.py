@@ -14,8 +14,8 @@ df["Traffic_Control_Missing"] = df["Traffic Control Presence"].isnull().astype(i
 df["License_Status_Missing"] = df["Driver License Status"].isnull().astype(int)
 
 # Fill missing values with "Unknown"
-df["Traffic Control Presence"].fillna("Unknown", inplace=True)
-df["Driver License Status"].fillna("Unknown", inplace=True)
+df["Traffic Control Presence"] = df["Traffic Control Presence"].fillna("Unknown")
+df["Driver License Status"] = df["Driver License Status"].fillna("Unknown")
 
 print(f"\nNull values after filling: {df.isnull().sum().sum()}")
 print(f"New columns added: Traffic_Control_Missing, License_Status_Missing")
